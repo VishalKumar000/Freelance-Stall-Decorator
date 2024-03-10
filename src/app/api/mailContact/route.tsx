@@ -25,7 +25,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
   try {
     const sendResult = await transport.sendMail({
       from: NEXT_PUBLIC_PERSONAL_EMAIL,
-      to: NEXT_PUBLIC_PERSONAL_EMAIL,
+      to: "mruniquedecoration@gmail.com",
       subject: "MRUniqueDecoration: New User Joined " + email,
       html: "New User Register Successfully " + email,
     });
