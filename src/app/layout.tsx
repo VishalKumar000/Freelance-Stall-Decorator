@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  title: "Mr Unique Decorator",
+  title: {
+    template: "%s | Mr Unique Decorator",
+    default: "Mr Unique Decorator",
+  },
   description: "for exhibition stall & octornom",
 };
 
@@ -17,9 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <Toaster />
         {children}
+        <Footer />
       </body>
     </html>
   );
