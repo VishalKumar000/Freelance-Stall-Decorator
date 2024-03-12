@@ -3,6 +3,8 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/components/Footer";
+import AppContext from "@/context/AppContext";
+import CustomCursor from "@/components/CustomCursor";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -24,9 +26,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <Toaster />
-        {children}
-        <Footer />
+        <AppContext>
+          <Toaster />
+          {children}
+          <Footer />
+          <CustomCursor />
+        </AppContext>
       </body>
     </html>
   );

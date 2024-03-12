@@ -16,7 +16,7 @@ https://www.youtube.com/watch?v=c5p3bsYaioM&ab_channel=Codegrid
 
 github.com-hp
 
-git clone git@github.com-hp:VishalKumar000/Freelance-Stall-Decorator.git 
+git clone git@github.com-hp:VishalKumar000/Freelance-Stall-Decorator.git
 
 <!-- #Account-1
 Host github.com-OMS
@@ -24,3 +24,8 @@ Host github.com-OMS
     # Ignore Unknown UseKeyChain
     # UseKeyChain yes
     IdentityFile ~/.ssh/multi_id_rsa -->
+
+page transition
+https://www.youtube.com/watch?v=c5p3bsYaioM&ab_channel=Codegrid
+magnet effect icons
+view in custom cursor

@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import styles from "../styles/Footer.module.css";
@@ -8,8 +10,11 @@ import {
   OUR_OFFERINGS_DATA,
   SOCIAL_MEDIA_DATA,
 } from "@/constants/footer.constant";
+import { useCustomCursor } from "@/context/CustomCursorContext";
 
 const Footer = () => {
+  const { customCursorEnter, customCursorLeave } = useCustomCursor();
+
   return (
     <>
       <footer className={`${styles.footer} px-2 sm:px-4 md:px-6`}>
@@ -27,19 +32,23 @@ const Footer = () => {
                         alt="MR Unique Decoration"
                         width={200}
                         height={160}
+                        onMouseEnter={() => customCursorEnter("text")}
+                        onMouseLeave={customCursorLeave}
                       />
                     </Link>
                   </div>
                   <p
                     style={{ textAlign: "left", margin: "10px 0" }}
-                    className="font-bold text-[11px] capitalize tracking-[4px] leading-[1.6] mb-4 mt-8 block"
+                    className="font-bold text-[11px] capitalize tracking-[4px] leading-[1.6] mb-4 mt-8 block cursor-pointer"
+                    onMouseEnter={() => customCursorEnter("contrast_text")}
+                    onMouseLeave={customCursorLeave}
                   >
                     We&apos;re All About Passion, And Creativity Is At The Heart
                     Of Our DNA, Fusing Into Brands To Create One-Of-A-Kind
                     Experiences For Customers.
                   </p>
                   <div className={styles.footer__social}>
-                    <ul className="flex gap-5 flex-wrap w-full my-3">
+                    <ul className="flex gap-5 flex-wrap w-full my-3 min-h-min">
                       {SOCIAL_MEDIA_DATA.map((item) => {
                         return (
                           <li
@@ -49,7 +58,13 @@ const Footer = () => {
                               borderColor: "rgba(255, 255, 255, 0.07)",
                             }}
                           >
-                            <Link href={item.link} target="_blank">
+                            <Link
+                              href={item.link}
+                              target="_blank"
+                              onMouseEnter={() => customCursorEnter("text")}
+                              onMouseLeave={customCursorLeave}
+                              className="cursor-pointer"
+                            >
                               {item.title}
                             </Link>
                           </li>
@@ -61,16 +76,29 @@ const Footer = () => {
               </div>
               <div className="col-md-3 dsn-col-footer">
                 <div className="footer-block col-menu">
-                  <h4 className={styles.footer__title}>Navigation</h4>
+                  <h4
+                    className={`${styles.footer__title} cursor-pointer`}
+                    onMouseEnter={() => customCursorEnter("contrast_text")}
+                    onMouseLeave={customCursorLeave}
+                  >
+                    Navigation
+                  </h4>
                   <nav>
                     <ul>
                       {NAVIGATION_DATA.map((item) => {
                         return (
                           <li
                             key={item.link + item.title + Math.random()}
-                            className=" mb-3 font-bold text-[11px] capitalize tracking-[4px] leading-[1.6] my-3"
+                            className="mb-3 font-bold text-[11px] capitalize tracking-[4px] leading-[1.6] my-3"
                           >
-                            <Link href={item.link}>{item.title}</Link>
+                            <Link
+                              href={item.link}
+                              onMouseEnter={() => customCursorEnter("text")}
+                              onMouseLeave={customCursorLeave}
+                              className="cursor-pointer"
+                            >
+                              {item.title}
+                            </Link>
                           </li>
                         );
                       })}
@@ -80,7 +108,13 @@ const Footer = () => {
               </div>
               <div className="col-md-3 dsn-col-footer fu_sndb">
                 <div className="footer-block col-menu">
-                  <h4 className={styles.footer__title}>Our Offerings</h4>
+                  <h4
+                    className={`${styles.footer__title} cursor-pointer`}
+                    onMouseEnter={() => customCursorEnter("contrast_text")}
+                    onMouseLeave={customCursorLeave}
+                  >
+                    Our Offerings
+                  </h4>
                   <nav>
                     <ul>
                       {OUR_OFFERINGS_DATA.map((item) => {
@@ -89,7 +123,14 @@ const Footer = () => {
                             key={item.link + item.title + Math.random()}
                             className=" mb-3 font-bold text-[11px] capitalize tracking-[4px] leading-[1.6] my-3"
                           >
-                            <Link href={item.link}>{item.title}</Link>
+                            <Link
+                              href={item.link}
+                              onMouseEnter={() => customCursorEnter("text")}
+                              onMouseLeave={customCursorLeave}
+                              className="cursor-pointer"
+                            >
+                              {item.title}
+                            </Link>
                           </li>
                         );
                       })}
@@ -97,9 +138,15 @@ const Footer = () => {
                   </nav>
                 </div>
               </div>
-              <div className="col-md-3 dsn-col-footer">
+              <div
+                className="col-md-3 dsn-col-footer cursor-pointer"
+                onMouseEnter={() => customCursorEnter("contrast_text")}
+                onMouseLeave={customCursorLeave}
+              >
                 <div className="col-address">
-                  <h4 className={styles.footer__title}>Contact</h4>
+                  <h4 className={`${styles.footer__title} cursor-pointer`}>
+                    Contact
+                  </h4>
                   <div className="font-bold text-[11px] capitalize tracking-[4px] leading-[1.6] my-3">
                     <strong className="inline-block text-teal-600">
                       Head Office
@@ -140,7 +187,11 @@ const Footer = () => {
           </div>
           <div className={styles.copyright}>
             <div className=" text-left">
-              <p className="font-bold text-[11px] capitalize tracking-[4px] leading-[1.6] my-3">
+              <p
+                className="font-bold text-[11px] capitalize tracking-[4px] leading-[1.6] my-3 cursor-pointer"
+                onMouseEnter={() => customCursorEnter("contrast_text")}
+                onMouseLeave={customCursorLeave}
+              >
                 © {new Date().getFullYear()} {CONTACT_DATA.brand_name}
               </p>
             </div>
