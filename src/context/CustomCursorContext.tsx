@@ -56,6 +56,24 @@ export const CustomCursorProvider = ({ children }: { children: ReactNode }) => {
       color: "rgb(0, 0, 0)",
       mixBlendMode: "difference",
     },
+    header_overlay_contrast_text: {
+      height: 20,
+      width: 20,
+      x: mousePosition.x - 10,
+      y: mousePosition.y - 10,
+      backgroundColor: "rgb(183, 250, 91)",
+      color: "rgb(0, 0, 0)",
+      mixBlendMode: "difference",
+    },
+    header_overlay_text: {
+      height: 75,
+      width: 75,
+      x: mousePosition.x - 32.5,
+      y: mousePosition.y - 32.5,
+      backgroundColor: "rgb(183, 250, 91)",
+      color: "rgb(0, 0, 0)",
+      mixBlendMode: "difference",
+    },
   };
 
   const customCursorEnter = (title: "contrast_text" | "title" | "default") =>

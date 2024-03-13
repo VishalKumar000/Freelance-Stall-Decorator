@@ -1,20 +1,18 @@
-"use client";
-
-import React, { useEffect } from "react";
+import AboutOwnerMask from "@/pages/AboutUs/AboutOwnerMask";
+import AboutWelcomeBanner from "@/pages/AboutUs/AboutWelcomeBanner";
+import BackgroundMask from "@/pages/AboutUs/BackgroundMask";
+import WhatWeLiveBy from "@/pages/AboutUs/WhatWeLiveBy";
+import React from "react";
 
 const AboutUs = () => {
-  useEffect(() => {
-    // Simulate fetching data from an API
-    setTimeout(() => {
-      fetchData();
-    }, 2000);
-  }, []);
-
-  const fetchData = async () => {
-    await fetch("https://catfact.ninja/fact");
-  };
-
-  return <div>route</div>;
+  return (
+    <>
+      <AboutWelcomeBanner />
+      <AboutOwnerMask />
+      <BackgroundMask />
+      <WhatWeLiveBy />
+    </>
+  );
 };
 
 export default AboutUs;

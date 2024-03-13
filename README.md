@@ -6,13 +6,12 @@
 /offerings/?url=modular-infrastructure
 /offerings/?url=weddings
 
-https://www.youtube.com/watch?v=nr3U-RpaQuM&ab_channel=CandDev
 https://www.youtube.com/watch?v=Sb00VR5N-fw&ab_channel=OlivierLarose
-https://www.youtube.com/results?search_query=menu+framer+motion
 https://www.youtube.com/watch?v=-ImDebNmaVM&ab_channel=Codegrid
 https://www.youtube.com/watch?v=QZcjrh_v6wE&ab_channel=TTP
 https://www.youtube.com/watch?v=6VbETTS67rM&ab_channel=SheryiansCodingSchool
 https://www.youtube.com/watch?v=c5p3bsYaioM&ab_channel=Codegrid
+https://www.youtube.com/watch?v=zqPy1bHUjrg
 
 github.com-hp
 
@@ -25,7 +24,14 @@ Host github.com-OMS
     # UseKeyChain yes
     IdentityFile ~/.ssh/multi_id_rsa -->
 
-page transition
-https://www.youtube.com/watch?v=c5p3bsYaioM&ab_channel=Codegrid
 magnet effect icons
 view in custom cursor
+
+smooth scroll
+
+locomotive scroll
+
+https://www.youtube.com/watch?v=0e4nHHOTXus&ab_channel=snorklTV
+
+
+https://www.youtube.com/watch?v=-CYruydmDfg&ab_channel=OlivierLarose

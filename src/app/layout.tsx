@@ -5,6 +5,7 @@ import { Toaster } from "react-hot-toast";
 import Footer from "@/components/Footer";
 import AppContext from "@/context/AppContext";
 import CustomCursor from "@/components/CustomCursor";
+import Header from "@/components/Header";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <AppContext>
           <Toaster />
+          <Header />
           {children}
           <Footer />
           <CustomCursor />
