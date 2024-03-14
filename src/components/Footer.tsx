@@ -11,6 +11,7 @@ import {
   SOCIAL_MEDIA_DATA,
 } from "@/constants/footer.constant";
 import { useCustomCursor } from "@/context/CustomCursorContext";
+import GsapMagnetic from "./GsapMagnetic";
 
 const Footer = () => {
   const { customCursorEnter, customCursorLeave } = useCustomCursor();
