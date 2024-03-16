@@ -44,7 +44,7 @@ const Testimonials = () => {
                   src={item}
                   alt="image selected by user"
                   fill
-                  style={{ objectFit: "cover" }}
+                  className=" object-cover"
                 />
               </SwiperSlide>
             );

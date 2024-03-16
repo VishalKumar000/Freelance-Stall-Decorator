@@ -40,8 +40,7 @@ const OurClient = () => {
                   src={item}
                   alt="image selected by user"
                   fill
-                  style={{ objectFit: "cover" }}
-                  className=" transition-all hover:scale-110"
+                  className=" transition-all hover:scale-110 object-cover"
                 />
               </div>
             );

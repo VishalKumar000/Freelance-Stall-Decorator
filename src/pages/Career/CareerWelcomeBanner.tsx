@@ -14,7 +14,7 @@ const CareerWelcomeBanner = () => {
             data-dsn-y="30%"
             data-dsn-scale={1}
             layout="fill"
-            style={{ objectFit: "cover" }}
+            className=" object-cover"
             alt=""
             // style={{
             //   transform:

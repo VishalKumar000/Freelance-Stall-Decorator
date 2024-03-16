@@ -14,7 +14,7 @@ const AboutWelcomeBanner = () => {
             data-dsn-y="30%"
             data-dsn-scale={1}
             layout="fill"
-            style={{ objectFit: "cover" }}
+            className=" object-cover"
             alt=""
             // style={{
             //   transform:
@@ -22,7 +22,7 @@ const AboutWelcomeBanner = () => {
             // }}
           />
         </div>
-        <div className="w-[60%] h-full bg-[#0d0d0db3] p-10 z-[1] n max-lg:hidden">
+        <div className="w-[60%] bg-[#0d0d0db3] p-10 z-[1] n max-lg:hidden">
           <div data-dsn-animate="up" className="dsn-active">
             <h1 className="text-4xl font-extrabold tracking-wide">Meet</h1>
             <h1 className="text-4xl font-extrabold tracking-wide">
