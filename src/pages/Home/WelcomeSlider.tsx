@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 "use client";
 
 import React, { useRef, useState } from "react";
@@ -40,17 +42,13 @@ const WelcomeSlider = () => {
 
   return (
     <div
-      className="relative w-full h-full"
+      className="relative w-full h-full bg-black"
       style={{
         maxHeight: "calc(100vh - 72px)",
         minHeight: "calc(100vh - 72px)",
       }}
     >
       <Swiper
-        style={{
-          "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff",
-        }}
         loop={true}
         spaceBetween={10}
         navigation={true}
@@ -59,7 +57,8 @@ const WelcomeSlider = () => {
           disableOnInteraction: false,
         }}
         thumbs={{
-          swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
+          swiper:
+            thumbsSwiper && !thumbsSwiper?.destroyed ? thumbsSwiper : null,
         }}
         modules={[Autoplay, FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
