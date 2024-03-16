@@ -43,6 +43,7 @@ const WelcomeSlider = () => {
   return (
     <div
       className="relative w-full h-full bg-black"
+      id="welcome-slider"
       style={{
         maxHeight: "calc(100vh - 72px)",
         minHeight: "calc(100vh - 72px)",

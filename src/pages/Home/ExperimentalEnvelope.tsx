@@ -84,7 +84,7 @@ const ExperimentalEnvelope = () => {
                 key={
                   item.imgUrl + index + Math.random() + item.title + item.link
                 }
-                className={`p-3 ${
+                className={`p-6 ${
                   index % 2
                     ? "max-[550px]: bg-[#000]"
                     : "max-[550px]: bg-[#1c2027]"

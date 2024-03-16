@@ -1,9 +1,9 @@
-.swiper {
+#welcome-slider .swiper {
     width: 100%;
     height: 100%;
 }
 
-.swiper-slide {
+#welcome-slider .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -14,26 +14,26 @@
     align-items: center;
 }
 
-.swiper-slide img {
+#welcome-slider .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.swiper {
+#welcome-slider .swiper {
     width: 100%;
     height: 60vh;
     margin-left: auto;
     margin-right: auto;
 }
 
-.swiper-slide {
+#welcome-slider .swiper-slide {
     background-size: cover;
     background-position: center;
 }
 
-.mySwiper2 {
+#welcome-slider .mySwiper2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -44,7 +44,7 @@
     background-color: #000;
 }
 
-.mySwiper {
+#welcome-slider .mySwiper {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -53,29 +53,29 @@
     padding: 10px 0;
 }
 
-.mySwiper .swiper-slide {
+#welcome-slider .mySwiper .swiper-slide {
     width: 25%;
     height: 100%;
     opacity: 0.4;
 }
 
-.mySwiper .swiper-slide-thumb-active {
+#welcome-slider .mySwiper .swiper-slide-thumb-active {
     opacity: 1;
 }
 
-.swiper-slide img {
+#welcome-slider .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.swiper-button-prev:after,
-.swiper-button-next:after {
+#welcome-slider .swiper-button-prev:after,
+#welcome-slider .swiper-button-next:after {
     font-size: 25px;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+#welcome-slider .swiper-button-prev,
+#welcome-slider .swiper-button-next {
     color: #fff;
 }

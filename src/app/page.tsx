@@ -1,5 +1,6 @@
 import ExperimentalEnvelope from "@/pages/Home/ExperimentalEnvelope";
 import OurClient from "@/pages/Home/OurClient";
+import Testimonials from "@/pages/Home/Testimonials";
 import WelcomeSlider from "@/pages/Home/WelcomeSlider";
 import React from "react";
 
@@ -9,6 +10,7 @@ const Home = () => {
       <WelcomeSlider />
       <ExperimentalEnvelope />
       <OurClient />
+      <Testimonials />
     </>
   );
 };
