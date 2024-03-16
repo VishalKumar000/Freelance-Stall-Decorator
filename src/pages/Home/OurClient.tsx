@@ -20,19 +20,16 @@ const OurClient = () => {
     <section className="w-full bg-black text-white py-14">
       <div className="w-full max-w-[1200px] my-0 mx-auto px-4 flex flex-col gap-8">
         <div className=" mb-7">
-          <div className=" pl-20 mb-5 relative">
-            <div className="text-[#ffffffb0] uppercase text-sm font-semibold tracking-[2px] pl-10 mb-4 relative before:absolute before:left-[-30px] before:w-[5px] before:h-[5px] before:bg-white before:rounded-full before:top-1/2 before:translate-x-[-50%] before:translate-y-[-50%] after:absolute after:top-1/2 after:left-[-20px] after:h-[1px] after:w-12 after:bg-[rgba(233, 233, 233, 0.1)]">
+          <div className=" pl-10 lg:pl-20 mb-5 relative">
+            <div className="text-[9px] min-[550px]:text-[12px] lg:text-sm text-[#ffffffb0] uppercase font-semibold tracking-[2px] pl-10 mb-4 relative before:absolute before:left-[-30px] before:w-[5px] before:h-[5px] before:bg-white before:rounded-full before:top-1/2 before:translate-x-[-50%] before:translate-y-[-50%] after:absolute after:top-1/2 after:left-[-20px] after:h-[1px] after:w-12 after:bg-[rgba(233, 233, 233, 0.1)]">
               our clients
             </div>
           </div>
-          <h2 className="text-5xl font-bold tracking-[0.01em]">Our Client</h2>
+          <h2 className="text-2xl min-[550px]:text-4xl lg:text-5xl font-bold tracking-[0.01em]">
+            Our Client
+          </h2>
         </div>
         <div className="grid grid-cols-1 gap-4 min-[450px]:grid-cols-2 min-[450px]:gap-2 md:grid-cols-2 md:gap-3 lg:grid-cols-4 lg:gap-4">
-          <Image
-            src={"/Home/Client/image1.jpg"}
-            alt="image selected by user"
-            fill
-          />
           {OUR_CLIENT_DATA.map((item, index) => {
             return (
               <div
@@ -43,7 +40,7 @@ const OurClient = () => {
                   src={item}
                   alt="image selected by user"
                   fill
-                  objectFit="cover"
+                  style={{ objectFit: "cover" }}
                 />
               </div>
             );

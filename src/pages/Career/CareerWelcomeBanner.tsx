@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 const CareerWelcomeBanner = () => {
   return (
@@ -14,7 +14,7 @@ const CareerWelcomeBanner = () => {
             data-dsn-y="30%"
             data-dsn-scale={1}
             layout="fill"
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
             alt=""
             // style={{
             //   transform:
@@ -25,6 +25,6 @@ const CareerWelcomeBanner = () => {
       </div>
     </div>
   );
-}
+};
 
-export default CareerWelcomeBanner
+export default CareerWelcomeBanner;

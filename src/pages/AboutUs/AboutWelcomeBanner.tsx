@@ -14,7 +14,7 @@ const AboutWelcomeBanner = () => {
             data-dsn-y="30%"
             data-dsn-scale={1}
             layout="fill"
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
             alt=""
             // style={{
             //   transform:

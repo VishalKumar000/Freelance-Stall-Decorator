@@ -14,7 +14,7 @@ const BackgroundMask = () => {
             data-dsn-y="30%"
             src="/AboutUs/5193back-a.png"
             layout="fill"
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
             alt=""
             //   style={{
             //     transform:

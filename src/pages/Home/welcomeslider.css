@@ -74,3 +74,8 @@
 .swiper-button-next:after {
     font-size: 25px;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #fff;
+}

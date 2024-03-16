@@ -24,7 +24,7 @@ const WhatWeLiveBy = () => {
                   <Image
                     src={item.imgSrc}
                     layout="fill"
-                    objectFit="contain"
+                    style={{ objectFit: "contain" }}
                     alt=""
                   />
                 </div>
