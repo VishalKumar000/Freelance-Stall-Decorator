@@ -33,5 +33,17 @@ locomotive scroll
 
 https://www.youtube.com/watch?v=0e4nHHOTXus&ab_channel=snorklTV
 
-
 https://www.youtube.com/watch?v=-CYruydmDfg&ab_channel=OlivierLarose
+
+<!-- Filter Data -->
+
+https://codesandbox.io/p/github/anjaneykumar7/filterableGallery/main?file=%2Fsrc%2Fdata%2FFilterableData.ts%3A12%2C25
+
+
+<!-- Codegrid -->
+
+https://www.youtube.com/watch?v=QkYJM-hbqw0
+
+https://codepen.io/snorkltv/pen/vYVBPJq?editors=0010
+
+https://www.youtube.com/watch?v=6VbETTS67rM

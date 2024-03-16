@@ -149,17 +149,17 @@ const Footer = () => {
                     Contact
                   </h4>
                   <div className="font-bold text-[11px] capitalize tracking-[4px] leading-[1.6] my-3">
-                    <strong className="inline-block text-teal-600">
+                    <strong className="inline-block heading-highlight">
                       Head Office
                     </strong>
-                    <span className="inline-block text-teal-600">
+                    <span className="inline-block heading-highlight">
                       &nbsp;:&nbsp;
                     </span>
                     <p className="mb-2">{CONTACT_DATA.address}</p>
-                    <strong className="inline-block text-teal-600">
+                    <strong className="inline-block heading-highlight">
                       Phone
                     </strong>
-                    <span className="inline-block text-teal-600">
+                    <span className="inline-block heading-highlight">
                       &nbsp;:&nbsp;
                     </span>
                     <Link
@@ -168,10 +168,10 @@ const Footer = () => {
                     >
                       {CONTACT_DATA.phone}
                     </Link>
-                    <strong className="inline-block text-teal-600">
+                    <strong className="inline-block heading-highlight">
                       Email
                     </strong>
-                    <span className="inline-block text-teal-600">
+                    <span className="inline-block heading-highlight">
                       &nbsp;:&nbsp;
                     </span>
                     <Link

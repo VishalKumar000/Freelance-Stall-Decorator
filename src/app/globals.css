@@ -27,6 +27,18 @@ a {
 body {
   font-family: 'Roboto Condensed', sans-serif;
   line-height: 1;
+  background: #000;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.heading-highlight {
+  background: linear-gradient(90deg, #f9572a, #ff8a05);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .container {

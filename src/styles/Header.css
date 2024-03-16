@@ -4,7 +4,7 @@
 
 .header-menu-container a,
 .header-menu-container p {
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
@@ -39,7 +39,8 @@
 }
 
 .header-menu-container .menu-close p {
-    color: #000;
+    /* color: #000; */
+    color: #fff;
     cursor: pointer;
 }
 
@@ -50,7 +51,8 @@
     width: 100vw;
     height: 100vh;
     padding: 2em;
-    background: #c5fb45;
+    /* background: #c5fb45; */
+    background: linear-gradient(90deg, #f9572a, #ff8a05);
     z-index: 3;
     display: flex;
     flex-direction: column;
@@ -58,7 +60,8 @@
 }
 
 .header-menu-container .menu-overlay-bar {
-    color: #262626;
+    /* color: #262626; */
+    color: #fff;
     width: 100%;
     display: flex;
     align-items: center;
@@ -113,7 +116,8 @@
 }
 
 .header-menu-container .menu-link-item-holder a {
-    color: #000;
+    /* color: #000; */
+    color: #fff;
     font-size: 45px;
     font-weight: 400;
     letter-spacing: -0.02em;
