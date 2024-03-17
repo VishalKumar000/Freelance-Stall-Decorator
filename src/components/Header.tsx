@@ -181,8 +181,8 @@ const Header = () => {
               }
               onMouseLeave={customCursorLeave}
             >
-              <p>info@codegrid.com</p>
-              <p>+918077124436</p>
+              <p>mruniquedecoration@gmail.com</p>
+              <p>+917042535020</p>
             </div>
             <div
               className="menu-preview cursor-pointer"

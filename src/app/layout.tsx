@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import AppContext from "@/context/AppContext";
 import CustomCursor from "@/components/CustomCursor";
 import Header from "@/components/Header";
+import SocialIcons from "@/components/SocialIcons";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <CustomCursor />
+          <SocialIcons />
         </AppContext>
       </body>
     </html>

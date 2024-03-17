@@ -49,7 +49,7 @@ export const SOCIAL_MEDIA_DATA = [
     title: <FaFacebookSquare />,
   },
   {
-    link: "https://api.whatsapp.com/send?phone=+917669482904&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
+    link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
     title: <FaWhatsapp />,
   },
   {
@@ -69,7 +69,7 @@ export const SOCIAL_MEDIA_DATA = [
 
 export const CONTACT_DATA = {
   email: "mruniquedecoration@gmail.com",
-  phone: "+91 70425 35020",
+  phone: "tel:+91-7042535020",
   address:
     "PROPERTY NUMBER NO-G-12/574, Ground Floor, Gali Number 12, opposite NTPC Park Lane, Block G, Khadda Colony, Badarpur, New Delhi, Delhi 110044",
   brand_name: "MR Unique Decoration",
