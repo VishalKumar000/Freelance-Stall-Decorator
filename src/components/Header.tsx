@@ -13,7 +13,7 @@ const menuLinks = [
   { label: "Home", path: "/" },
   { label: "Meet Deepali", path: "/about-us" },
   { label: "Our Offerings", path: "/" },
-  { label: "Case Studies", path: "/" },
+  { label: "Case Studies", path: "/case-studies" },
   { label: "Careers", path: "/" },
   { label: "Blog", path: "/" },
   { label: "Reach Us", path: "/" },

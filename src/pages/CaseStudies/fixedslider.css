@@ -1,0 +1,56 @@
+#fixed-slider-case-studies .elem {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    /* border-top: 1px solid #000; */
+    /* border-bottom: 1px solid #38383864; */
+    border-bottom: 1px solid #495057;
+
+    overflow: hidden;
+}
+
+/* relative h-36 w-full flex items-center py-0 px-[2vw] border-t border-black */
+
+#fixed-slider-case-studies .elem h1 {
+    position: relative;
+    font-size: 25px;
+    z-index: 2;
+    margin-bottom: 5px;
+    font-weight: 600;
+
+    background: linear-gradient(90deg, #f9572a, #ff8a05);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#fixed-slider-case-studies .overlay {
+    position: absolute;
+    /* background: orange; */
+    background: linear-gradient(90deg, #f9572a, #ff8a05);
+    width: 500%;
+    height: 100%;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.2s;
+}
+
+/* absolute bg-orange-600 w-full h-full left-0 top-[-100%] */
+
+
+#fixed-slider-case-studies .elem:hover .overlay {
+    top: 0;
+}
+
+#fixed-slider-case-studies .elem:hover h3 {
+    color: white;
+}
+#fixed-slider-case-studies .elem:hover h1 {
+background: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

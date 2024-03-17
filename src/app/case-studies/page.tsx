@@ -1,7 +1,12 @@
 import React from "react";
+import FixedSlider from "@/pages/CaseStudies/FixedSlider";
 
 const CaseStudies = () => {
-  return <div>CaseStudies</div>;
+  return (
+    <>
+      <FixedSlider />
+    </>
+  );
 };
 
 export default CaseStudies;
