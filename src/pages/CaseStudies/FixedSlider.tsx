@@ -50,13 +50,6 @@ const CASE_STUDIES_DATA = [
     imgUrl: "/CaseStudies/image3.JPG",
     link: "/project/staging-it-globally",
   },
-  {
-    key: "07",
-    title: "Green Is The Color Of AgriCommerce",
-    type: "EXHIBITIONS & TRADESHOWS",
-    imgUrl: "/CaseStudies/image4.JPG",
-    link: "/project/green-is-the-color-of-agricommerce",
-  },
 ];
 
 const FixedSlider = () => {

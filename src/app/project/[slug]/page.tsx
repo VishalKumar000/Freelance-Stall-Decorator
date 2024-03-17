@@ -1,13 +1,5 @@
-import ProjectGallery from "@/pages/Projects/ProjectGallery";
-import React from "react";
+import { redirect } from "next/navigation";
 
-const ProjectId = () => {
-  return (
-    <>
-    
-      <ProjectGallery />
-    </>
-  );
-};
+const ProjectId = () => redirect("/case-studies");
 
 export default ProjectId;
