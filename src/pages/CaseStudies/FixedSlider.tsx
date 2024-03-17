@@ -5,6 +5,7 @@
 import React, { useRef } from "react";
 import "./fixedslider.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const CASE_STUDIES_DATA = [
   {
@@ -12,42 +13,49 @@ const CASE_STUDIES_DATA = [
     title: "Lifesaver In The NorthEast",
     type: "MODULAR INFRASTRUCTURE",
     imgUrl: "/CaseStudies/image1.JPG",
+    link: "/project/lifesaver-in-the-northeast",
   },
   {
     key: "02",
     title: "Pandemic Vs. Opportunity",
     type: "MODULAR INFRASTRUCTURE",
     imgUrl: "/CaseStudies/image2.png",
+    link: "/project/pandemic-vs-opportunity",
   },
   {
     key: "03",
     title: "Outstanding Outreach",
     type: "OUTREACH PROGRAM",
     imgUrl: "/CaseStudies/image3.JPG",
+    link: "/project/outstanding-outreach",
   },
   {
     key: "04",
     title: "Green Is The Color Of AgriCommerce",
     type: "EXHIBITION",
     imgUrl: "/CaseStudies/image4.JPG",
+    link: "/project/green-is-the-color-of-agricommerce",
   },
   {
     key: "05",
     title: "Uncontainable Delight",
     type: "EVENT",
     imgUrl: "/CaseStudies/image5.jpg",
+    link: "/project/uncontainable-delight",
   },
   {
     key: "06",
     title: "Staging It Globally",
     type: "EVENT, EXHIBITION & CONFERENCE",
     imgUrl: "/CaseStudies/image3.JPG",
+    link: "/project/staging-it-globally",
   },
   {
     key: "07",
     title: "Green Is The Color Of AgriCommerce",
     type: "EXHIBITIONS & TRADESHOWS",
     imgUrl: "/CaseStudies/image4.JPG",
+    link: "/project/green-is-the-color-of-agricommerce",
   },
 ];
 
@@ -64,44 +72,55 @@ const FixedSlider = () => {
         <div className=" w-full h-full min-h-screen bg-[#090909] text-white relative py-[4vw]">
           {CASE_STUDIES_DATA.map((item, index) => {
             return (
-              <div
-                className="elem"
-                key={index + item.title + item.key + item.title + Math.random()}
-                onMouseEnter={() => {
-                  if (thumbnailImgContainer.current) {
-                    thumbnailImgContainer.current.style.opacity = "1";
-                  }
-                  if (thumbnailImg.current) {
-                    thumbnailImg.current.src = item.imgUrl;
-                    thumbnailImg.current.style.display = "flex";
-                  }
-                }}
-                onMouseLeave={() => {
-                  if (thumbnailImgContainer.current) {
-                    thumbnailImgContainer.current.style.opacity = "0";
-                  }
-                  if (thumbnailImg.current) {
-                    thumbnailImg.current.src = null;
-                    thumbnailImg.current.style.display = "none";
-                  }
-                }}
+              <Link
+                key={
+                  index +
+                  item.title +
+                  item.key +
+                  item.title +
+                  Math.random() +
+                  item.link
+                }
+                href={item.link}
               >
-                <div className="overlay"></div>
-                <div className=" flex justify-between w-full z-[2]">
-                  <div>
-                    <h1>{item.title}</h1> 
-                    <p className="text-[9px] min-[550px]:text-[12px] lg:text-sm text-[#ffffffb0] uppercase font-semibold tracking-[2px] mb-4">
-                      {item.type}
-                    </p>
+                <div
+                  className="elem"
+                  onMouseEnter={() => {
+                    if (thumbnailImgContainer.current) {
+                      thumbnailImgContainer.current.style.opacity = "1";
+                    }
+                    if (thumbnailImg.current) {
+                      thumbnailImg.current.src = item.imgUrl;
+                      thumbnailImg.current.style.display = "flex";
+                    }
+                  }}
+                  onMouseLeave={() => {
+                    if (thumbnailImgContainer.current) {
+                      thumbnailImgContainer.current.style.opacity = "0";
+                    }
+                    if (thumbnailImg.current) {
+                      thumbnailImg.current.src = null;
+                      thumbnailImg.current.style.display = "none";
+                    }
+                  }}
+                >
+                  <div className="overlay"></div>
+                  <div className=" flex justify-between w-full z-[2]">
+                    <div>
+                      <h1>{item.title}</h1>
+                      <p className="text-[9px] min-[550px]:text-[12px] lg:text-sm text-[#ffffffb0] uppercase font-semibold tracking-[2px] mb-4">
+                        {item.type}
+                      </p>
+                    </div>
+                    <h3
+                      className="text-5xl font-black text-transparent tracking-[4px]"
+                      style={{ WebkitTextStroke: "1px white" }}
+                    >
+                      {item.key}
+                    </h3>
                   </div>
-                  <h3
-                    className="text-5xl font-black text-transparent tracking-[4px]"
-                    style={{ WebkitTextStroke: "1px white" }}
-                  >
-                    {item.key}
-                  </h3>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>

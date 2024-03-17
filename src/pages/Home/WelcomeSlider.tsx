@@ -17,22 +17,30 @@ import "./welcomeslider.css";
 import { Autoplay, FreeMode, Navigation, Thumbs } from "swiper/modules";
 import Image from "next/image";
 
+import img1 from "../../../public/Home/WelcomeSlider/1005Khelo-India-University-Games-2022-9.webp";
+import img2 from "../../../public/Home/WelcomeSlider/2157Khelo-India-University-Games-2022-2-_1_.webp";
+import img3 from "../../../public/Home/WelcomeSlider/3941Khelo-India-University-Games-2022-5.webp";
+import img4 from "../../../public/Home/WelcomeSlider/8899Khelo-India-University-Games-2022-7.webp";
+
 const slider = [
   {
-    imgUrl: "/Home/WelcomeSlider/1005Khelo-India-University-Games-2022-9.webp",
+    // imgUrl: "/Home/WelcomeSlider/1005Khelo-India-University-Games-2022-9.webp",
+    imgUrl: img1,
     link: "",
   },
   {
-    imgUrl:
-      "/Home/WelcomeSlider/2157Khelo-India-University-Games-2022-2-_1_.webp",
+    /// imgUrl: "/Home/WelcomeSlider/2157Khelo-India-University-Games-2022-2-_1_.webp",
+    imgUrl: img2,
     link: "",
   },
   {
-    imgUrl: "/Home/WelcomeSlider/3941Khelo-India-University-Games-2022-5.webp",
+    // imgUrl: "/Home/WelcomeSlider/3941Khelo-India-University-Games-2022-5.webp",
+    imgUrl: img3,
     link: "",
   },
   {
-    imgUrl: "/Home/WelcomeSlider/8899Khelo-India-University-Games-2022-7.webp",
+    // imgUrl: "/Home/WelcomeSlider/8899Khelo-India-University-Games-2022-7.webp",
+    imgUrl: img4,
     link: "",
   },
 ];
@@ -75,7 +83,13 @@ const WelcomeSlider = () => {
                 Math.random()
               }
             >
-              <Image src={slide.imgUrl} alt="" fill />
+              <Image
+                src={slide.imgUrl}
+                alt=""
+                fill
+                placeholder="blur"
+                priority
+              />
             </SwiperSlide>
           );
         })}

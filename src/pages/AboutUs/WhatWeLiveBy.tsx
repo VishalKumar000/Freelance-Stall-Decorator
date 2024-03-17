@@ -29,7 +29,7 @@ const WhatWeLiveBy = () => {
                   />
                 </div>
                 <h4 className="font-medium text-3xl">{item.title}</h4>
-                <div className="bg-teal-500 w-20 h-[1px] mb-3" />
+                <div className="bg-gradient-to-r from-orange-500 to-yellow-500 w-20 h-[1px] mb-3" />
                 {item.content.map((_item, index) => {
                   return (
                     <span key={_item + index + Math.random()}>
