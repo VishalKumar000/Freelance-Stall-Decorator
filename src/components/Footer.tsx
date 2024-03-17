@@ -88,19 +88,17 @@ const Footer = () => {
                     <ul>
                       {NAVIGATION_DATA.map((item) => {
                         return (
-                          <li
+                          <Link
                             key={item.link + item.title + Math.random()}
-                            className="mb-3 font-bold text-[11px] capitalize tracking-[4px] leading-[1.6] my-3"
+                            href={item.link}
+                            onMouseEnter={() => customCursorEnter("text")}
+                            onMouseLeave={customCursorLeave}
+                            className="cursor-pointer"
                           >
-                            <Link
-                              href={item.link}
-                              onMouseEnter={() => customCursorEnter("text")}
-                              onMouseLeave={customCursorLeave}
-                              className="cursor-pointer"
-                            >
+                            <li className="mb-3 font-bold text-[11px] capitalize tracking-[4px] leading-[1.6] my-3">
                               {item.title}
-                            </Link>
-                          </li>
+                            </li>
+                          </Link>
                         );
                       })}
                     </ul>
@@ -120,19 +118,17 @@ const Footer = () => {
                     <ul>
                       {OUR_OFFERINGS_DATA.map((item) => {
                         return (
-                          <li
+                          <Link
                             key={item.link + item.title + Math.random()}
-                            className=" mb-3 font-bold text-[11px] capitalize tracking-[4px] leading-[1.6] my-3"
+                            href={item.link}
+                            onMouseEnter={() => customCursorEnter("text")}
+                            onMouseLeave={customCursorLeave}
+                            className="cursor-pointer"
                           >
-                            <Link
-                              href={item.link}
-                              onMouseEnter={() => customCursorEnter("text")}
-                              onMouseLeave={customCursorLeave}
-                              className="cursor-pointer"
-                            >
+                            <li className=" mb-3 font-bold text-[11px] capitalize tracking-[4px] leading-[1.6] my-3">
                               {item.title}
-                            </Link>
-                          </li>
+                            </li>
+                          </Link>
                         );
                       })}
                     </ul>

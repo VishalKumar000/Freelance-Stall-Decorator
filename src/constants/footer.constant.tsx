@@ -8,57 +8,61 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 export const NAVIGATION_DATA = [
   { link: "/", title: "Home" },
-  { link: "about-us/", title: "Meet Deepali" },
-  { link: "case-studies/", title: "Case Studies" },
-  { link: "career/", title: "Careers" },
-  { link: "contact-us/", title: "Reach Us" },
+  { link: "/about-us", title: "Meet Deepali" },
+  { title: "Our Offerings", link: "/offerings" },
+  { link: "/case-studies", title: "Case Studies" },
+  { link: "/career", title: "Careers" },
+  { link: "/contact-us", title: "Reach Us" },
 ];
 
 export const OUR_OFFERINGS_DATA = [
   {
-    link: "offerings/?url=deepali-rd-division",
-    title: "Deepali R&amp;D Division",
+    link: "/offerings/deepali-rd-division",
+    title: "Deepali R&D Division",
   },
   {
-    link: "offerings/?url=events-activations-promotions",
-    title: "Events, Activations &amp; Promotions",
+    link: "/offerings/events-activations-promotions",
+    title: "Events, Activations & Promotions",
   },
   {
-    link: "offerings/?url=exhibits-tradeshows",
-    title: "Exhibits &amp; Tradeshows",
+    link: "/offerings/exhibits-tradeshows",
+    title: "Exhibits & Tradeshows",
   },
   {
-    link: "offerings/?url=conferences-and-seminars",
+    link: "/offerings/conferences-and-seminars",
     title: "Conferences and Seminars",
   },
   {
-    link: "offerings/?url=sports-events-infrastructure",
-    title: "Sports Events &amp; Infrastructure",
+    link: "/offerings/sports-events-infrastructure",
+    title: "Sports Events & Infrastructure",
   },
   {
-    link: "offerings/?url=modular-infrastructure",
+    link: "/offerings/modular-infrastructure",
     title: "Modular Infrastructure",
   },
-  { link: "offerings/?url=weddings", title: "Weddings" },
+  { link: "/offerings/weddings", title: "Weddings" },
 ];
 
 export const SOCIAL_MEDIA_DATA = [
   {
-    link: "https://www.facebook.com/officialddepl",
+    link: "/",
     title: <FaFacebookSquare />,
   },
   {
     link: "https://api.whatsapp.com/send?phone=+917669482904&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
     title: <FaWhatsapp />,
   },
-  { link: "https://www.instagram.com/officialddepl", title: <FaInstagram /> },
-  { link: "https://twitter.com/official_ddepl", title: <FaXTwitter /> },
   {
-    link: "https://www.youtube.com/channel/UCWEBqHSRzjHygQ7zi4_b5EA",
+    link: "/",
+    title: <FaInstagram />,
+  },
+  { link: "/", title: <FaXTwitter /> },
+  {
+    link: "/",
     title: <FaYoutube />,
   },
   {
-    link: "https://www.linkedin.com/company/officialddepl",
+    link: "/",
     title: <FaLinkedinIn />,
   },
 ];

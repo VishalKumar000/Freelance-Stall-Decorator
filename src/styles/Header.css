@@ -29,7 +29,8 @@
 
 .header-menu-container .menu-bar {
     position: relative;
-    background: #000;
+    background: #090909;
+    padding: 10px 3vw;
 }
 
 .header-menu-container .menu-bar a,

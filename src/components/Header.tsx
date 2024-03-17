@@ -8,15 +8,16 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { IoMdClose } from "react-icons/io";
 import { useCustomCursor } from "@/context/CustomCursorContext";
+import Image from "next/image";
 
 const menuLinks = [
   { label: "Home", path: "/" },
   { label: "Meet Deepali", path: "/about-us" },
-  { label: "Our Offerings", path: "/" },
+  { label: "Our Offerings", path: "/offerings" },
   { label: "Case Studies", path: "/case-studies" },
-  { label: "Careers", path: "/" },
-  { label: "Blog", path: "/" },
-  { label: "Reach Us", path: "/" },
+  { label: "Careers", path: "/career" },
+  { label: "Blog", path: "https://blog.www.mruniquedecoration.in/" },
+  { label: "Reach Us", path: "/contact-us" },
 ];
 
 const socialLinks = [
@@ -64,14 +65,23 @@ const Header = () => {
   }, [isMenuOpen]);
 
   return (
-    <div className="header-menu-container" ref={container}>
+    <div className="header-menu-container bg-[#090909]" ref={container}>
       <div className="menu-bar">
         <div
           className="menu-logo cursor-pointer"
           onMouseEnter={() => customCursorEnter("header_overlay_contrast_text")}
           onMouseLeave={customCursorLeave}
         >
-          <Link href={"/"}>MR Unique Decoration</Link>
+          <Link href={"/"}>
+            <Image
+              src="/footer/3268white logo.png"
+              alt="MR Unique Decoration"
+              width={70}
+              height={50}
+              onMouseEnter={() => customCursorEnter("text")}
+              onMouseLeave={customCursorLeave}
+            />
+          </Link>
         </div>
         <div
           className="menu-open  cursor-pointer"
@@ -91,7 +101,16 @@ const Header = () => {
             }
             onMouseLeave={customCursorLeave}
           >
-            <Link href={"/"}>MR Unique Decoration</Link>
+            <Link href={"/"}>
+              <Image
+                src="/footer/3268white logo.png"
+                alt="MR Unique Decoration"
+                width={70}
+                height={50}
+                onMouseEnter={() => customCursorEnter("text")}
+                onMouseLeave={customCursorLeave}
+              />
+            </Link>
           </div>
           <div
             className="menu-close cursor-pointer"
