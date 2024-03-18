@@ -12,3 +12,7 @@ https://www.youtube.com/watch?v=SPwc3BUp5Vg&ab_channel=WebUnlocked
 npm i photoswipe --save
 
 plaiceholder
+
+https://www.youtube.com/watch?v=UdDX8X68VaI
+
+https://www.youtube.com/watch?v=JLfBo4p9ANw
