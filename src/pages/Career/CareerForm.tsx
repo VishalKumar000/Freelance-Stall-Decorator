@@ -2,16 +2,24 @@
 
 "use client";
 
-// import ImagePicker from "@/components/meals/image-picker";
 import styles from "./page.module.css";
-// import { shareMeal } from "@/lib/actions";
 import CareerFormSubmit from "./CareerFormSubmit";
-// import { useFormState } from "react-dom";
-import ImagePicker from "./image-picker";
+import { useFormState } from "react-dom";
+import PDFPicker from "./PDFPicker";
+import { handleCareerSubmit } from "@/lib/CareerForm";
+import { useRef, useEffect } from "react";
 
 export default function CareerForm() {
-  // const [state, formAction] = useFormState(() => {}, { message: null }); // for error
+  const [state, formAction] = useFormState(handleCareerSubmit, {
+    message: null,
+    success: false,
+    random: Math.random(),
+  });
+  const formRef = useRef<HTMLFormElement>(null);
 
+  useEffect(() => {
+    if (formRef.current) formRef.current.reset();
+  }, [state.random]);
   return (
     <>
       <header className={styles.header}>
@@ -20,8 +28,7 @@ export default function CareerForm() {
         </h1>
       </header>
       <main className={styles.main}>
-        <form className={styles.form} action={() => {}}>
-        {/* <form className={styles.form} action={formAction}> */}
+        <form ref={formRef} className={styles.form} action={formAction}>
           <div className={styles.row}>
             <p>
               <label htmlFor="name">Your name</label>
@@ -40,8 +47,12 @@ export default function CareerForm() {
             <label htmlFor="message">Message</label>
             <textarea id="message" name="message" rows={10} required></textarea>
           </p>
-          <ImagePicker label={"image"} name={"image"} />
-          {/* {state?.message && <p>{state?.message}</p>} */}
+          <PDFPicker label={"Resume"} name={"resume"} />
+          {state.message && (
+            <p className={state.success ? "text-[#9dff00]" : "text-red-500"}>
+              {state.message}
+            </p>
+          )}
           <p className={styles.actions}>
             <CareerFormSubmit />
           </p>

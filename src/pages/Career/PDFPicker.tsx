@@ -6,7 +6,7 @@ import React, { useRef, useState } from "react";
 import styles from "./image-picker.module.css";
 import Image from "next/image";
 
-const ImagePicker = ({ label, name }) => {
+const PDFPicker = ({ label, name }) => {
   const [pickedImage, setPickedImage] = useState();
   const imageInputRef = useRef();
 
@@ -29,12 +29,6 @@ const ImagePicker = ({ label, name }) => {
     <div className={styles.picker}>
       <label htmlFor={name}>{label}</label>
       <div className={styles.controls}>
-        <div className={styles.preview}>
-          {!pickedImage && <p>No Image Picked yet</p>}
-          {pickedImage?.length > 0 && (
-            <Image src={pickedImage} alt="image selected by user" fill />
-          )}
-        </div>
         <input
           type="file"
           id={name}
@@ -44,18 +38,17 @@ const ImagePicker = ({ label, name }) => {
           ref={imageInputRef}
           onChange={handleImageChange}
         />
-        <button
-          type="submit"
+        <div
           className={styles.button}
           onClick={() => {
             imageInputRef.current.click();
           }}
         >
-          Pick an Image
-        </button>
+          Pick an PDF
+        </div>
       </div>
     </div>
   );
 };
 
-export default ImagePicker;
+export default PDFPicker;
