@@ -14,17 +14,12 @@ export async function handleCareerSubmit(prevState: any, formData: FormData) {
         .string()
         .min(1, { message: "Please provide your email address." })
         .email("Please enter a valid email address."),
-      phone: z.string(),
-      // phone: z.string().refine(validator.isMobilePhone, {
-      //   message: "Please enter a valid mobile phone number.",
-      // }),
-      message: z.string(),
-      // message: z.string().min(1, {
-      //   message: "Please provide a message at least 1 character long.",
-      // }),
-      // resume: z
-      //   .any()
-      //   .refine((files) => files?.length == 1, "Resume is required."),
+      phone: z.string().refine(validator.isMobilePhone, {
+        message: "Please enter a valid mobile phone number.",
+      }),
+      message: z.string().min(1, {
+        message: "Please provide a message at least 1 character long.",
+      }),
       resume: z.any(),
     });
 
@@ -48,27 +43,29 @@ export async function handleCareerSubmit(prevState: any, formData: FormData) {
       };
     }
 
+    // https://script.google.com/macros/s/AKfycbw1dkyd3Vo26FoU5TzHd87mDQCR8KVi6_fqfrqu44eAozrwqmd89M5pnHxQYcMYKxnUrA/exec
+    // AKfycbyP-a-5w1deKt2F9k80s8Zb6cX4IWFE7Y19Z6Ll_kywsL_rvcM3FfAOVsQQf2dG0mLIEQ
+    const excelScript = fetch(
+      "https://script.google.com/macros/s/AKfycbyP-a-5w1deKt2F9k80s8Zb6cX4IWFE7Y19Z6Ll_kywsL_rvcM3FfAOVsQQf2dG0mLIEQ/exec",
+      {
+        method: "POST",
+        body: JSON.stringify(data),
+      }
+    );
+
     const res = await fetch("http://localhost:3000/api/career", {
       method: "POST",
       body: formData,
     });
 
-    revalidatePath("/contact-us", "layout");
+    revalidatePath("/career", "layout");
 
-    formData.delete("name");
-    formData.delete("email");
-    formData.delete("phone");
-    formData.delete("message");
-    formData.delete("pdf");
-
-    console.log("result");
     return {
       success: true,
       message: "Thank you! Your form has been successfully submitted.",
       random: Math.random() * 1000,
     };
   } catch (error) {
-    console.log(error);
     return {
       success: false,
       message: "Failed to submit Resume",

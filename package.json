@@ -12,6 +12,7 @@
     "@gsap/react": "^2.1.0",
     "@plaiceholder/next": "^3.0.0",
     "classnames": "^2.5.1",
+    "formidable": "^3.5.1",
     "framer-motion": "^11.0.8",
     "gsap": "^3.12.5",
     "handlebars": "^4.7.8",

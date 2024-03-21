@@ -4,10 +4,10 @@
 
 import React, { useRef, useState } from "react";
 import styles from "./image-picker.module.css";
-import Image from "next/image";
 
 const PDFPicker = ({ label, name }) => {
   const [pickedImage, setPickedImage] = useState();
+  const [pickedFileName, setPickedFileName] = useState(); 
   const imageInputRef = useRef();
 
   const handleImageChange = (e) => {
@@ -20,6 +20,7 @@ const PDFPicker = ({ label, name }) => {
 
     fileReader.onloadend = () => {
       setPickedImage(fileReader.result);
+      setPickedFileName(file.name);
     };
 
     fileReader.readAsDataURL(file);
@@ -47,6 +48,7 @@ const PDFPicker = ({ label, name }) => {
           Pick an PDF
         </div>
       </div>
+      {pickedFileName && <p>Selected file: {pickedFileName}</p>}
     </div>
   );
 };

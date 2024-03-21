@@ -23,19 +23,14 @@ export async function POST(req: NextRequest, res: NextResponse) {
   }
 
   try {
-    const sendResult = await transport.sendMail({
-      from: NEXT_PUBLIC_PERSONAL_EMAIL,
-      to: "mruniquedecoration@gmail.com",
-      subject: "MRUniqueDecoration: New User Joined " + email,
-      html: "New User Register Successfully " + email,
-    });
     const sendResult1 = await transport.sendMail({
       from: NEXT_PUBLIC_PERSONAL_EMAIL,
+      // to: "yadav11adu@gmail.com, mruniquedecoration@gmail.com",
       to: "yadav11adu@gmail.com",
       subject: "MRUniqueDecoration: New User Joined " + email,
       html: "New User Register Successfully " + email,
     });
-    console.log(sendResult);
+    console.log(sendResult1);
   } catch (error) {
     console.log(error);
   }

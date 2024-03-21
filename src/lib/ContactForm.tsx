@@ -35,7 +35,7 @@ export async function handleContactSubmit(prevState: any, formData: FormData) {
     data.phone = data.phone.replace(/\D/g, "");
 
     // Fetch call
-    const res = fetch(
+    const excelScript = fetch(
       "https://script.google.com/macros/s/AKfycbzj6zB4MnkyVJ2vtU_SCVp7iSy-CejV7DnMnAhjdoFluSQ6VJXogMkCgg3uJJV9xHL5IQ/exec",
       {
         method: "POST",
@@ -43,14 +43,13 @@ export async function handleContactSubmit(prevState: any, formData: FormData) {
       }
     );
 
+    const res = await fetch("http://localhost:3000/api/contact", {
+      method: "POST",
+      body: JSON.stringify(data),
+    });
+
     revalidatePath("/contact-us", "layout");
 
-    formData.delete("name");
-    formData.delete("email");
-    formData.delete("phone");
-    formData.delete("message");
-
-    console.log("result");
     return {
       success: true,
       message: "Thank you! Your form has been successfully submitted.",
