@@ -23,53 +23,51 @@ export default ModularInfrastructure;
 
 const MODULAR_INFRASTRUCTURE_DATA = [
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/2021MAKESHIFT%20HOSPITAL.jpeg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introMAKESHIFT HOSPITAL",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/67844564DSCN0088.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introTWO TIER STRUCTURE",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/8117100_2322.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introPORTA CABIN",
   },
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/9092pagoda%2020x20Mtr%20(2).jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introPORTA CABIN",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/6767golf.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introPAGODA STRUCTURE (20X20)",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/919711.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introPAGODA STRUCTURE (5X5)",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/1917Image-12.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introONION SHAPE STRUCTURE",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/65460X4A0002.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introMULTI-PEAK STRUCTURE",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/73011.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introMCU",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/5930DJI_0011.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introHALF-ROUND STRUCTURE",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/16794.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introDOME STRUCTURE",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/62551.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introCONTAINER STRUCTURE",
   },
 ];

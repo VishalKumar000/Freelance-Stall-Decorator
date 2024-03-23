@@ -16,6 +16,7 @@ import "lightgallery/scss/lg-zoom.scss";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 import Link from "next/link";
+import Image from "next/image";
 // import { LazyLoadImage } from "react-lazy-load-image-component";
 // import "react-lazy-load-image-component/src/effects/opacity.css";
 
@@ -27,7 +28,7 @@ const ProjectGallery = (props: {
     console.log("lightGallery has been initialized");
   };
 
-  return (
+  return (  
     <section className="w-full bg-black text-white py-14">
       <div className="w-full max-w-[1200px] my-0 mx-auto px-4 lg:px-8 flex flex-col gap-8">
         <LightGallery
@@ -47,10 +48,11 @@ const ProjectGallery = (props: {
                 }
                 data-sub-html={`<h4>Photo by - Mr Unique Decoration</h4><p>${project.title}</p>`}
               >
-                <img
+                <Image
                   alt={project.title}
                   src={project.thumbnailURL}
-                  className="absolute top-0 left-0 w-full h-full object-cover"
+                  // className="absolute top-0 left-0 w-full h-full object-cover"
+                  fill
                   // effect="blur"
                   // placeholderSrc={project.thumbnailURL}
                 />

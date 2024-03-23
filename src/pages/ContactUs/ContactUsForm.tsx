@@ -3,23 +3,56 @@
 "use client";
 
 import styles from "./contactus.module.css";
-
-import CareerFormSubmit from "./CareerFormSubmit";
-import { useFormState } from "react-dom";
-import { handleContactSubmit } from "@/lib/ContactForm";
-import { useEffect, useRef } from "react";
+import { useState } from "react";
 
 export default function ContactUsForm() {
-  const [state, formAction] = useFormState(handleContactSubmit, {
-    message: null,
-    success: false,
-    random: Math.random(),
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
   });
-  const formRef = useRef<HTMLFormElement>(null);
+  const [errMsg, setErrMsg] = useState<null | {
+    success?: boolean;
+    message?: string;
+  }>(null);
+  const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {
-    if (formRef.current) formRef.current.reset();
-  }, [state.random]);
+  const handleChange = (e: any) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e: any) => {
+    try {
+      e.preventDefault();
+      setIsLoading(true);
+      setErrMsg(null);
+
+      const _formData = new FormData();
+      for (const key in formData) {
+        _formData.append(key, formData[key]);
+      }
+
+      await fetch("/api/contact", {
+        method: "POST",
+        body: _formData,
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+    } catch (error) {
+      setErrMsg({ success: false, message: "Something Went Wrong" });
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   return (
     <>
@@ -29,15 +62,27 @@ export default function ContactUsForm() {
         </h1>
       </header>
       <main className={styles.main}>
-        <form ref={formRef} className={styles.form} action={formAction}>
+        <form className={styles.form} onSubmit={handleSubmit} method="post">
           <div className={styles.row}>
             <div>
               <label htmlFor="name">Your name</label>
-              <input type="text" id="name" name="name" required />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                onChange={handleChange}
+              />
             </div>
             <div>
               <label htmlFor="email">Your email</label>
-              <input type="email" id="email" name="email" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                onChange={handleChange}
+              />
             </div>
           </div>
           <div>
@@ -48,19 +93,30 @@ export default function ContactUsForm() {
               name="phone"
               required
               pattern="[0-9]{10,14}"
+              onChange={handleChange}
             />
           </div>
           <div>
             <label htmlFor="message">Message</label>
-            <textarea id="message" name="message" rows={10} required></textarea>
+            <textarea
+              id="message"
+              name="message"
+              rows={10}
+              required
+              onChange={handleChange}
+            ></textarea>
           </div>
-          {state.message && (
-            <p className={state.success ? "text-[#9dff00]" : "text-red-500"}>
-              {state.message}
+          {errMsg && (
+            <p
+              className={errMsg?.success ? "text-[#9dff00]" : "text-[#ff0000]"}
+            >
+              {errMsg?.message}
             </p>
           )}
           <div className={styles.actions}>
-            <CareerFormSubmit />
+            <button type="submit" disabled={isLoading}>
+              {isLoading ? "Submitting..." : "Send"}
+            </button>
           </div>
         </form>
       </main>

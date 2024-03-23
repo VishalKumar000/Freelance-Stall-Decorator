@@ -1,4 +1,4 @@
-"use server";
+"use client";
 
 import { z } from "zod";
 import validator from "validator";
@@ -43,8 +43,7 @@ export async function handleCareerSubmit(prevState: any, formData: FormData) {
       };
     }
 
-    // https://script.google.com/macros/s/AKfycbw1dkyd3Vo26FoU5TzHd87mDQCR8KVi6_fqfrqu44eAozrwqmd89M5pnHxQYcMYKxnUrA/exec
-    // AKfycbyP-a-5w1deKt2F9k80s8Zb6cX4IWFE7Y19Z6Ll_kywsL_rvcM3FfAOVsQQf2dG0mLIEQ
+   
     const excelScript = fetch(
       "https://script.google.com/macros/s/AKfycbyP-a-5w1deKt2F9k80s8Zb6cX4IWFE7Y19Z6Ll_kywsL_rvcM3FfAOVsQQf2dG0mLIEQ/exec",
       {

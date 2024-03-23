@@ -24,51 +24,51 @@ export default UncontainableDelight;
 
 const UNCONTAINABLE_DELIGHT_DATA = [
   {
-    thumbnailURL: "https://deepalidesigns.com/img/4619DSC_8680.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "HERO HONDA 2013",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/4026DSC_8739.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "HERO HONDA 2013",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/6839DSC_8763.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "HERO HONDA 2013",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/3308DSC_8774.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "HERO HONDA 2013",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/3430DSC_8806.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "HERO HONDA 2013",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/3130DSC_8823.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "HERO HONDA 2013",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/5343DSC_8832.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "HERO HONDA 2013",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/5161DSC_8848.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "HERO HONDA 2013",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/5260DSC_8886.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "HERO HONDA 2013",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/4627DSC_8888.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "HERO HONDA 2013",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/2198DSC_9121.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "HERO HONDA 2013",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/5782sggdd.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "HERO HONDA 2013",
   },
 ];

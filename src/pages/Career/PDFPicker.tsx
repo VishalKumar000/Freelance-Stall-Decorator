@@ -5,26 +5,8 @@
 import React, { useRef, useState } from "react";
 import styles from "./image-picker.module.css";
 
-const PDFPicker = ({ label, name }) => {
-  const [pickedImage, setPickedImage] = useState();
-  const [pickedFileName, setPickedFileName] = useState(); 
+const PDFPicker = ({ label, name, pickedFileName, handleResumeChange }) => {
   const imageInputRef = useRef();
-
-  const handleImageChange = (e) => {
-    e.preventDefault();
-    const file = e.target.files[0];
-
-    if (!file) return;
-
-    const fileReader = new FileReader();
-
-    fileReader.onloadend = () => {
-      setPickedImage(fileReader.result);
-      setPickedFileName(file.name);
-    };
-
-    fileReader.readAsDataURL(file);
-  };
 
   return (
     <div className={styles.picker}>
@@ -37,7 +19,7 @@ const PDFPicker = ({ label, name }) => {
           name={name}
           className={styles.input}
           ref={imageInputRef}
-          onChange={handleImageChange}
+          onChange={handleResumeChange}
         />
         <div
           className={styles.button}

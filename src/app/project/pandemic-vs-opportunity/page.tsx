@@ -22,55 +22,45 @@ export default PandemicVsOpportunity;
 
 const PANDEMIC_VS_OPPORTUNITY_DATA = [
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/2755COVID%20Jumbo%20Hospital%20(800%20Beds)%20Pune,%20Maharashtra.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "COVID JUMBO HOSPITAL (800 BEDS) PUNE",
   },
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/9138DRDO%20Makeshift%20Hospital%20(250%20ICU-Beds)%20at%20Varanasi,%20Uttar%20Pradesh.jpeg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "MAHARASHTRADRDO MAKESHIFT HOSPITAL (250 ICU-BEDS) AT VARANASI",
   },
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/3661DRDO%20Makeshift%20Hospital%20(400%20Beds)%20at%20Rishikesh,%20Uttarakhand.jpeg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "UTTAR PRADESHDRDO MAKESHIFT HOSPITAL (400 BEDS) AT RISHIKESH ",
   },
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/9330DRDO%20Makeshift%20Hospital%20(500%20Beds)%20at%20Srinagar,%20UT%20Jammu%20_%20Kashmir.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "UTTARAKHANDDRDO MAKESHIFT HOSPITAL (500 BEDS) AT SRINAGAR",
   },
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/5856Guru%20Teg%20Bahadur%20Annex%20Hospital%20(500%20Beds)%20Ram%20Lila%20Ground,%20Delhi.png",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "UT",
   },
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/6069Lok%20Nayak%20Annex%20Hospital%20(500%20Beds)%20Ram%20Lila%20Ground,%20New%20Delhi.png",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title:
       "JAMMU-KASHMIRGURU TEG BAHADUR ANNEX HOSPITAL (500 BEDS) RAM LILA GROUND",
   },
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/7403Sardar%20Vallabhbhai%20Patel%20COVID%20Hospital%20(1000%20Beds)%20at%20Delhi%20Cantt..jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "DELHILOK NAYAK ANNEX HOSPITAL (500 BEDS) RAM LILA GROUND",
   },
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/9713Extension%20of%20Sardar%20Vallabhbhai%20Patel%20COVID%20Hospital%20(250%20Beds)%20at%20Delhi%20Cantt..jpeg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title:
       "NEW DELHISARDAR VALLABHBHAI PATEL COVID HOSPITAL (1000 BEDS) AT DELHI CANTT.MCU HOSPITAL - EXTENSION OF SARDAR VALLABHBHAI PATEL COVID HOSPITAL (250 BEDS) AT DELHI CANTT.MCU HOSPITAL - MAKESHIFT COVID HOSPITAL (200 BEDS) AT IMPHALMCU HOSPITAL - MAKESHIFT COVID HOSPITAL (300 BEDS) AT INDIRA GANDHI INDOOR STADIUM",
   },
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/6575Makeshift%20Covid%20Hospital%20(200%20Beds)%20at%20Imphal.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "GUWAHATI",
   },
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/4197Makeshift%20COVID%20Hospital%20(300%20Beds)%20at%20Indira%20Gandhi%20Indoor%20Stadium,%20Guwahati,%20Assam.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "ASSAM",
   },
 ];

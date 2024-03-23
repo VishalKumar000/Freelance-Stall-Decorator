@@ -23,35 +23,31 @@ export default SportsEventsInfrastructure;
 
 const SPORTS_EVENTS_INFRASTRUCTURE = [
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/4883WhatsApp%20Image%202024-02-15%20at%2016.20.05%20(2).jpeg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introKHELO INDIA PARAGAMES 2023 - 2024",
   },
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/2157Khelo-India-University-Games-2022-2.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introKHELO INDIA UNIVERSITY GAMES 2022",
   },
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/7738Khelo-India-Youth-Games-1.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introKHELO INDIA YOUTH GAMES 2022, MP",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/1404_MG_6416.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introJIND KABADDI 2018",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/2639_38A0137.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introBHARAT KESARI DANGAL 2017 AMBALA",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/426602.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project intro35TH NATIONAL GAMES 2015",
   },
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/149819264289_483389571998156_8930254135707691022_o.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project intro22ND ASIAN ATHLETICS CHAMPIONSHIP 2017",
   },
 ];

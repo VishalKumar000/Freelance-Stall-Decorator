@@ -34,8 +34,8 @@ export async function POST(req: NextRequest, res: NextResponse) {
     }
     emailContent += "</div>";
 
-    const resumeFile = body.resume;
-    const fileBuffer = Buffer.from(await resumeFile.arrayBuffer());
+    const base64Data = body.resume.split("data:application/pdf;base64,").pop();
+    const fileBuffer = Buffer.from(base64Data, "base64");
 
     await transport.sendMail({
       from: NEXT_PUBLIC_PERSONAL_EMAIL,
@@ -45,11 +45,22 @@ export async function POST(req: NextRequest, res: NextResponse) {
       html: emailContent,
       attachments: [
         {
-          filename: resumeFile.name,
+          filename: "resume.pdf",
           content: fileBuffer,
         },
       ],
     });
+
+    // https://script.google.com/macros/s/AKfycbw1dkyd3Vo26FoU5TzHd87mDQCR8KVi6_fqfrqu44eAozrwqmd89M5pnHxQYcMYKxnUrA/exec
+    // AKfycbyP-a-5w1deKt2F9k80s8Zb6cX4IWFE7Y19Z6Ll_kywsL_rvcM3FfAOVsQQf2dG0mLIEQ
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbyP-a-5w1deKt2F9k80s8Zb6cX4IWFE7Y19Z6Ll_kywsL_rvcM3FfAOVsQQf2dG0mLIEQ/exec",
+      {
+        method: "POST",
+        body: JSON.stringify(body),
+      }
+    );
+
     return NextResponse.json({ success: true, message: body.email });
   } catch (error) {
     return NextResponse.json(

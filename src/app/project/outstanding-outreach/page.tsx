@@ -27,34 +27,34 @@ export default OutstandingOutreach;
 const OUTSTANDING_OUTREACH_DATA = [
   {
     title: "AZADI KA AMRIT MOHATSAV",
-    thumbnailURL: "https://deepalidesigns.com/img/43060F5A8947.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
   },
   {
     title: "AZADI KA AMRIT MOHATSAV",
-    thumbnailURL: "https://deepalidesigns.com/img/11700F5A9013.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
   },
   {
     title: "AZADI KA AMRIT MOHATSAV",
-    thumbnailURL: "https://deepalidesigns.com/img/66520F5A9246.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
   },
   {
     title: "AZADI KA AMRIT MOHATSAV",
-    thumbnailURL: "https://deepalidesigns.com/img/138901.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
   },
   {
     title: "AZADI KA AMRIT MOHATSAV",
-    thumbnailURL: "https://deepalidesigns.com/img/1745IMG_0727.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
   },
   {
     title: "AZADI KA AMRIT MOHATSAV",
-    thumbnailURL: "https://deepalidesigns.com/img/5337IMG_0735.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
   },
   {
     title: "AZADI KA AMRIT MOHATSAV",
-    thumbnailURL: "https://deepalidesigns.com/img/4659IMG_0754.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
   },
   {
     title: "AZADI KA AMRIT MOHATSA",
-    thumbnailURL: "https://deepalidesigns.com/img/4179IMG_0757.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
   },
 ];

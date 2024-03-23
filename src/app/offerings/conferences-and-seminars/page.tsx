@@ -21,29 +21,27 @@ export default ConferencesAndSeminars;
 
 const CONFERENCES_AND_SEMINARS = [
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/1169G20-Uttrakhand-Summit-2022-1.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introG20 UTTRAKHAND SUMMIT 2022",
   },
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/5702Uttar-Pradesh-Global-Investors-Summit-2023-1.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introUTTAR PRADESH GLOBAL INVESTORS SUMMIT 2023",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/18074816Image-18.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introPEDICON 2019",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/9653IMG_20171124_104507.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introGLOBAL CONFERENCE ON CYBER SPACE 2017",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/5054IMG_3879.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introCOP - 14",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/3275YSH_8925.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introADVANTAGE ASSAM GLOBAL INVESTORS SUMMIT 2018",
   },
 ];

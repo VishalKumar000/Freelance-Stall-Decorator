@@ -1,6 +1,6 @@
-import ProjectContent from '@/pages/Projects/ProjectContent';
-import ProjectGallery from '@/pages/Projects/ProjectGallery';
-import React from 'react'
+import ProjectContent from "@/pages/Projects/ProjectContent";
+import ProjectGallery from "@/pages/Projects/ProjectGallery";
+import React from "react";
 
 const StagingItGlobally = () => {
   return (
@@ -20,54 +20,54 @@ Simultaneous interpretation services in multiple world languages, catering sensi
       <ProjectGallery data={STAGING_IT_GLOBALLY} />
     </>
   );
-}
+};
 
-export default StagingItGlobally
+export default StagingItGlobally;
 
 const STAGING_IT_GLOBALLY = [
-  { thumbnailURL: "https://deepalidesigns.com/img/29463.png", title: "COP-14" },
+  { thumbnailURL: "/CaseStudies/image1.JPG", title: "COP-14" },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/7044E38A3144.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "COP-14",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/9820IMG_3879.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "COP-14",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/3114IMG_4345.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "COP-14",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/5281IMG_4445.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "COP-14",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/7243IMG_4532.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "COP-14",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/6762IMG_5911.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "COP-14",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/8319IMG_5916.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "COP-14",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/6866IMG_6037.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "COP-14",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/7475IMG_6094.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "COP-14",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/9563IMG_6634.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "COP-14",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/2901IMG_7097.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "COP-14",
   },
 ];

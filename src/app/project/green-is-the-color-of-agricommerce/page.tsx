@@ -25,55 +25,55 @@ export default GreenIsTheColorOfAgricommerce;
 
 const GREEN_IS_THE_COLOR_OF_AGRICOMMERCE = [
   {
-    thumbnailURL: "https://deepalidesigns.com/img/54641M9A0059.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "KRISHI KUMBH INTERNATIONAL CONFERENCE 2018",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/66301M9A0114.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "KRISHI KUMBH INTERNATIONAL CONFERENCE 2018",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/78011M9A8925.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "KRISHI KUMBH INTERNATIONAL CONFERENCE 2018",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/95351M9A9058.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "KRISHI KUMBH INTERNATIONAL CONFERENCE 2018",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/73621M9A9512.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "KRISHI KUMBH INTERNATIONAL CONFERENCE 2018",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/56614D1A0186.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "KRISHI KUMBH INTERNATIONAL CONFERENCE 2018",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/76964D1A2208.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "KRISHI KUMBH INTERNATIONAL CONFERENCE 2018",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/8893DJI_0056.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "KRISHI KUMBH INTERNATIONAL CONFERENCE 2018",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/5972IMG_8628.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "KRISHI KUMBH INTERNATIONAL CONFERENCE 2018",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/8026IMG_8662.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "KRISHI KUMBH INTERNATIONAL CONFERENCE 2018",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/8026IMG_8662.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "KRISHI KUMBH INTERNATIONAL CONFERENCE 2018",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/7965IMG_8682.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "KRISHI KUMBH INTERNATIONAL CONFERENCE 2018",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/8133IMG_9645.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "KRISHI KUMBH INTERNATIONAL CONFERENCE 2018",
   },
 ];

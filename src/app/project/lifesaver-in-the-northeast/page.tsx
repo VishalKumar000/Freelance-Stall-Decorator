@@ -19,70 +19,69 @@ Despite lack of skilled labour and language and communication issues, we were ab
 
 export default LifeSaverInTheNorthEast;
 
-
 const LIFESAVER_IN_THE_NORTHEAST_DATA = [
   {
-    thumbnailURL: "https://deepalidesigns.com/img/74720X4A0002.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "MAKESHIFT COVID HOSPITAL,IMPHAL",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/20400X4A0006.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "IMPHAL MAKESHIFT COVID HOSPITAL",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/29040X4A0018.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "IMPHAL MAKESHIFT COVID HOSPITAL",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/74210X4A0026.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "IMPHAL MAKESHIFT COVID HOSPITAL",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/35200X4A0030.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "IMPHAL MAKESHIFT COVID HOSPITAL",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/47730X4A0047.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "IMPHAL MAKESHIFT COVID HOSPITAL",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/37780X4A0053.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "IMPHAL MAKESHIFT COVID HOSPITAL",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/42110X4A0064.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "IMPHAL MAKESHIFT COVID HOSPITAL",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/99420X4A0071.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "IMPHAL MAKESHIFT COVID HOSPITAL",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/59730X4A9964.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "IMPHAL MAKESHIFT COVID HOSPITAL",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/59590X4A9969.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "IMPHAL MAKESHIFT COVID HOSPITAL",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/50830X4A9971.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "IMPHAL MAKESHIFT COVID HOSPITAL",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/40940X4A9974.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "IMPHAL MAKESHIFT COVID HOSPITAL",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/61310X4A9991.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "IMPHAL MAKESHIFT COVID HOSPITAL",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/9831DJI_0345.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "IMPHAL MAKESHIFT COVID HOSPITAL",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/6795DJI_0359.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "IMPHAL",
   },
 ];

@@ -3,7 +3,11 @@ import nodemailer from "nodemailer";
 
 export async function POST(req: NextRequest, res: NextResponse) {
   try {
-    const body = await req.json();
+    const formData = await req.formData();
+    let body: any = {};
+    formData.forEach((value, key) => {
+      body[key] = value;
+    });
     const { NEXT_PUBLIC_PERSONAL_EMAIL, NEXT_PUBLIC_EMAIL_PASSWORD } =
       process.env;
 
@@ -36,11 +40,20 @@ export async function POST(req: NextRequest, res: NextResponse) {
       subject: "MR Unique Decoration: Contact " + body.email,
       html: emailContent,
     });
+
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbzj6zB4MnkyVJ2vtU_SCVp7iSy-CejV7DnMnAhjdoFluSQ6VJXogMkCgg3uJJV9xHL5IQ/exec",
+      {
+        method: "POST",
+        body: JSON.stringify(body),
+      }
+    );
+
     return NextResponse.json({ success: true, message: body.email });
   } catch (error) {
     return NextResponse.json(
       {
-        success: true,
+        success: false,
         message: "Please try again after some time",
       },
       {

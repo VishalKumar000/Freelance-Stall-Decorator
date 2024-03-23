@@ -22,64 +22,59 @@ export default ExhibitsTradeShows;
 
 const EXHIBITS_TRADESHOWS_DATA = [
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/9471WhatsApp%20Image%202024-02-22%20at%2018.26.48%20(2).jpeg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introIHGF DELHI FAIR SPRING 2024",
   },
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/8655International-Textile-Machinery-Exhibition-1.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introINDIA INTERNATIONAL TEXTILE MACHINERY EXHIBITION",
   },
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/3773IHGF-DELHI-FAIR-SPRING-2023-1.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introIHGF DELHI FAIR SPRING 2023",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/54251M9A5463.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introKRISHI UNNATI 2018",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/5953DSC_3480.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introKRISHI UNNATI 2016",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/9935DSC_0025.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introINDIA PAVILION BOOTH, AMBIENTE 2017",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/7291E38A0166.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introIHGF SPRING DELHI FAIR - 2019",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/9931Buyer%20Lounge%20.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introIHGF SPRING DELHI FAIR - 2018",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/75928D3A1791.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introIHGF SPRING DELHI FAIR - 2017",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/8246_38A8204.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introIHGF AUTUMN DELHI FAIR - 2019",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/4440IMG_1713.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introIHGF AUTUMN DELHI FAIR - 2018",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/1729_DSC0091.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introIHGF AUTUMN DELHI FAIR - 2017",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/1403DSC_8634.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introHERO MOTORS AUTO EXPO 2016",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/3854_DSC9439.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project intro25TH EDITION MCHI CREDAI PROPERTY EXPO 2015",
   },
 ];
-
-

@@ -10,6 +10,7 @@ const nextConfig = {
     ],
     domains: ["deepalidesigns.com", "assets-global.website-files.com"],
   },
+  // experimental: { serverActions: true },
 };
 
 export default nextConfig;

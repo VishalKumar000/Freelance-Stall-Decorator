@@ -21,34 +21,31 @@ export default EventsActivationsPromotions;
 
 const EVENTS_ACTIVATIONS_PROMOTIONS = [
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/3610WhatsApp%20Image%202024-02-15%20at%2012.59.07.jpeg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introBHARAT PARV 2024",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/6001E38A1389.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introPARYATAN PARV 2019",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/2703_38A4945.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introINTERNATIONAL GITA MAHOTSAV IGM 2018_KURUKSHETRA",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/1462E38A0687.jpg",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introHARYANA CLOSING CEREMONY OF SWARNA JAYANTI_2017",
   },
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/5681Bharat%20Parv%20_%20Paryatan%20Parv_Cover%20Page.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introBHARAT PARV 2020",
   },
   {
-    thumbnailURL:
-      "https://deepalidesigns.com/img/1535Azadi%20Ka%20Amrit%20Mohatsav%20Cover%20page.png",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project introAZADI KA AMRIT MAHOTSAV",
   },
   {
-    thumbnailURL: "https://deepalidesigns.com/img/1111Cover%20Page.JPG",
+    thumbnailURL: "/CaseStudies/image1.JPG",
     title: "project intro21ST NATIONAL YOUTH FESTIVAL 2017",
   },
 ];
