@@ -16,7 +16,7 @@ const menuLinks = [
   { label: "Our Offerings", path: "/offerings" },
   { label: "Case Studies", path: "/case-studies" },
   { label: "Careers", path: "/career" },
-  { label: "Blog", path: "https://blog.www.mruniquedecoration.in/" },
+  { label: "Blog", path: "/blog" },
   { label: "Reach Us", path: "/contact-us" },
 ];
 
@@ -65,22 +65,26 @@ const Header = () => {
   }, [isMenuOpen]);
 
   return (
-    <div className="header-menu-container bg-[#090909]" ref={container}>
+    <div
+      className="header-menu-container bg-[#090909] min-h-[75px]"
+      ref={container}
+    >
       <div className="menu-bar">
         <div
           className="menu-logo cursor-pointer"
           onMouseEnter={() => customCursorEnter("header_overlay_contrast_text")}
           onMouseLeave={customCursorLeave}
         >
-          <Link href={"/"}>
-            <Image
+          <Link href={"/"} className="flex items-center justify-center">
+            <p className="text-white">MR Unique Decoration</p>
+            {/* <Image
               src="/footer/3268white logo.png"
               alt="MR Unique Decoration"
               width={70}
               height={50}
               onMouseEnter={() => customCursorEnter("text")}
               onMouseLeave={customCursorLeave}
-            />
+            /> */}
           </Link>
         </div>
         <div
@@ -89,7 +93,7 @@ const Header = () => {
           onMouseLeave={customCursorLeave}
           onClick={toggleMenu}
         >
-          <p>Menu</p>
+          <p className="text-white">Menu</p>
         </div>
       </div>
       <div className="menu-overlay z-[9999]">
@@ -102,14 +106,15 @@ const Header = () => {
             onMouseLeave={customCursorLeave}
           >
             <Link href={"/"}>
-              <Image
+              MR Unique Decoration
+              {/* <Image
                 src="/footer/3268white logo.png"
                 alt="MR Unique Decoration"
                 width={70}
                 height={50}
                 onMouseEnter={() => customCursorEnter("text")}
                 onMouseLeave={customCursorLeave}
-              />
+              /> */}
             </Link>
           </div>
           <div

@@ -9,7 +9,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 export const NAVIGATION_DATA = [
   { link: "/", title: "Home" },
   { link: "/about-us", title: "Meet Deepali" },
-  { title: "Our Offerings", link: "/offerings" },
+  { link: "/offerings", title: "Our Offerings" },
+  { link: "/blog", title: "Blog" },
   { link: "/case-studies", title: "Case Studies" },
   { link: "/career", title: "Careers" },
   { link: "/contact-us", title: "Reach Us" },
