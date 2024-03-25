@@ -30,6 +30,7 @@ const Footer = () => {
                     <Link
                       href="/"
                       className="text-xl font-semibold text-[#07b2ff]"
+                      style={{ wordBreak: "normal" }}
                     >
                       Mr Unique Decoration
                       {/* <Image

@@ -1,6 +1,11 @@
 import Image from "next/image";
 import React from "react";
 
+import { BsGraphUpArrow } from "react-icons/bs";
+import { FaBalanceScale } from "react-icons/fa";
+import { BsSearch } from "react-icons/bs";
+import { VscWorkspaceTrusted } from "react-icons/vsc";
+
 const WhatWeLiveBy = () => {
   return (
     <section className="w-full bg-white text-[#303030] py-14">
@@ -14,21 +19,27 @@ const WhatWeLiveBy = () => {
           {WHAT_WE_LIVE_BY_DATA.map((item, index) => {
             return (
               <div
-                key={item.imgSrc + item.title + index + Math.random()}
+                key={item.title + index + Math.random()}
                 className="py-9 px-12 flex flex-col gap-2 items-center"
                 style={{
                   backgroundColor: index % 3 === 0 ? "#f7f8f8" : undefined,
                 }}
               >
                 <div className="w-24 min-w-24 h-24 min-h-24 relative p-2">
-                  <Image
+                  {item.icons}
+                  {/* <Image
                     src={item.imgSrc}
                     layout="fill"
                     style={{ objectFit: "contain" }}
                     alt=""
-                  />
+                  /> */}
                 </div>
-                <h4 className="font-medium text-3xl">{item.title}</h4>
+                <h4
+                  className="font-medium text-3xl"
+                  style={{ wordBreak: "normal" }}
+                >
+                  {item.title}
+                </h4>
                 <div className="bg-[#07b2ff] w-20 h-[3px] mb-3" />
                 {item.content.map((_item, index) => {
                   return (
@@ -51,14 +62,16 @@ export default WhatWeLiveBy;
 
 const WHAT_WE_LIVE_BY_DATA = [
   {
-    imgSrc: "/AboutUs/23511.png",
+    // imgSrc: "/AboutUs/23511.png",
+    icons: <BsGraphUpArrow style={{ fontSize: "50px" }} />,
     title: "Hard work",
     content: [
       "It's what motivates us to go beyond the commonplace. With unimaginable application of mind, hard work and depth of thought. People, Processes, and Performance - all working in sync to create extraordinary outcomes.",
     ],
   },
   {
-    imgSrc: "/AboutUs/71772.png",
+    // imgSrc: "/AboutUs/71772.png",
+    icons: <FaBalanceScale style={{ fontSize: "50px" }} />,
     title: "Balance & Fair Play",
     content: [
       "Promotions are encouraged from within the ranks for those who move out of their comfort zone and show initiative and promise, we ensure that they are recognition and responsibility.",
@@ -66,14 +79,16 @@ const WHAT_WE_LIVE_BY_DATA = [
     ],
   },
   {
-    imgSrc: "/AboutUs/48793.png",
+    // imgSrc: "/AboutUs/48793.png",
+    icons: <BsSearch style={{ fontSize: "50px" }} />,
     title: "Research and Development",
     content: [
       "Funds are earmarked on developing and latest technological innovations, new materials, new textures, and new possibilities. We have a talented and reliable R&amp;D team in our company, which burns midnight oil to come up with the latest innovations&nbsp; Our team keeps an eagle eye on current market trends, materials and tech and existing demands so we can ride the wave and benefit our clientele at each step.",
     ],
   },
   {
-    imgSrc: "/AboutUs/55174.png",
+    // imgSrc: "/AboutUs/55174.png",
+    icons: <VscWorkspaceTrusted style={{ fontSize: "50px" }} />,
     title: "Quality Assurance, Infrastructure and Delivery",
     content: [
       "Quality is not something that happens overnight. It is a continuous process of persistence, hard work and a deeply-ingrained habits of delivering quality in every aspect of our services.",

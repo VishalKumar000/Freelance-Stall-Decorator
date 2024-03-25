@@ -3,17 +3,21 @@ import React from "react";
 
 const AboutOwnerMask = () => {
   return (
-    <div className="w-full bg-black text-white py-7 lg:hidden">
+    <div className="w-full bg-[#f7f8f8] text-[#303030] py-7 lg:hidden">
       {/* <div className="background-mask-bg" /> */}
-      <div className="p-6 bg-[#090909] mx-8 mt-[-65px] relative">
-        <h1 className="text-center text-4xl font-extrabold tracking-wide">Meet</h1>
-        <h1 className="text-center text-4xl font-extrabold tracking-wide">Mr Unique Decoration</h1>
+      <div className="p-6 bg-[#fff] mx-8 mt-[-65px] relative shadow-md">
+        <h1 className="text-center text-3xl font-semibold text-[#303030]">
+          Meet
+        </h1>
+        <h1
+          className="text-center text-3xl font-semibold text-[#07b2ff]"
+          style={{ wordBreak: "normal" }}
+        >
+          Mr Unique Decoration
+        </h1>
         {ABOUT_OWNER_MASK_DATA.map((item, index) => {
           return (
-            <p
-              key={index + item + Math.random()}
-              className=" pt-4 w-full text-[#ffffffbd]"
-            >
+            <p key={index + item + Math.random()} className=" pt-4 w-full">
               {item}
             </p>
           );

@@ -1,6 +1,7 @@
 import ExperimentalEnvelope from "@/pages/Home/ExperimentalEnvelope";
 import OurClient from "@/pages/Home/OurClient";
 import OurPricing from "@/pages/Home/OurPricing";
+import OutAchievements from "@/pages/Home/OutAchievements";
 import SmallAboutUs from "@/pages/Home/SmallAboutUs";
 import Testimonials from "@/pages/Home/Testimonials";
 import WeAreHiring from "@/pages/Home/WeAreHiring";
@@ -12,6 +13,7 @@ const Home = () => {
     <>
       {/* <WelcomeSlider /> */}
       <SmallAboutUs />
+      <OutAchievements />
       <OurPricing />
       <ExperimentalEnvelope />
       <OurClient />

@@ -1,7 +1,7 @@
 import AboutOwnerMask from "@/pages/AboutUs/AboutOwnerMask";
 import AboutWelcomeBanner from "@/pages/AboutUs/AboutWelcomeBanner";
-import BackgroundMask from "@/pages/AboutUs/BackgroundMask";
 import WhatWeLiveBy from "@/pages/AboutUs/WhatWeLiveBy";
+import OutAchievements from "@/pages/Home/OutAchievements";
 import React from "react";
 
 const AboutUs = () => {
@@ -9,7 +9,7 @@ const AboutUs = () => {
     <>
       <AboutWelcomeBanner />
       <AboutOwnerMask />
-      <BackgroundMask />
+      <OutAchievements />
       <WhatWeLiveBy />
     </>
   );

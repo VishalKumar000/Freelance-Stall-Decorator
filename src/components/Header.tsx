@@ -84,7 +84,12 @@ const Header = () => {
           // onMouseLeave={customCursorLeave}
         >
           <Link href={"/"} className="flex items-center justify-center">
-            <h2 className="text-[#212529] font-bold">MR Unique Decoration</h2>
+            <h2
+              className="text-[#212529] font-bold"
+              style={{ wordBreak: "normal" }}
+            >
+              MR Unique Decoration
+            </h2>
             {/* <Image
               src="/footer/3268white logo.png"
               alt="MR Unique Decoration"
@@ -113,7 +118,7 @@ const Header = () => {
             // }
             // onMouseLeave={customCursorLeave}
           >
-            <Link href={"/"}>
+            <Link href={"/"} style={{ wordBreak: "break-word" }}>
               MR Unique Decoration
               {/* <Image
                 src="/footer/3268white logo.png"

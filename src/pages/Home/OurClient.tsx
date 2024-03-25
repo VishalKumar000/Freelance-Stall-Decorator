@@ -59,6 +59,7 @@ const OurClient = () => {
             delay: 2500,
             disableOnInteraction: false,
           }}
+          loop={true}
         >
           {OUR_CLIENT_DATA.map((item, index) => {
             return (

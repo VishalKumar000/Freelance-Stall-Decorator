@@ -172,7 +172,7 @@ const ExperimentalEnvelope = () => {
                 </div>
                 <div className="text-white text-lg tracking-[2.5px] font-semibold mb-5 flex items-center justify-center text-center">
                   <h2
-                    className="w-1/2 text-[#212529]"
+                    className="w-3/4 text-[#212529]"
                     style={{ wordBreak: "break-word" }}
                   >
                     {item.title}

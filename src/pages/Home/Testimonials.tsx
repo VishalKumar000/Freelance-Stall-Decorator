@@ -20,11 +20,11 @@ const Testimonials = () => {
         <div className=" mb-7">
           <div className=" pl-10 lg:pl-20 mb-5 relative">
             <div className="text-[9px] min-[550px]:text-[12px] lg:text-sm heading-highlight uppercase font-semibold tracking-[2px] pl-10 mb-4 relative before:absolute before:left-[-30px] before:w-[5px] before:h-[5px] before:bg-[#07b2ff] before:rounded-full before:top-1/2 before:translate-x-[-50%] before:translate-y-[-50%] after:absolute after:top-1/2 after:left-[-20px] after:h-[1px] after:w-12 after:bg-[#07b2ff]">
-              customer reviews
+              Our Achievements
             </div>
           </div>
           <h2 className="text-2xl min-[550px]:text-4xl lg:text-5xl font-bold tracking-[0.01em] text-[#212529]">
-            Testimonials
+            Certifications
           </h2>
         </div>
         <Swiper
