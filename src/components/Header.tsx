@@ -21,10 +21,19 @@ const menuLinks = [
 ];
 
 const socialLinks = [
-  { path: "/", title: "Indian Mart" },
-  { path: "/", title: "Just Dial" },
-  { path: "/", title: "Instagram" },
-  { path: "/", title: "LinkedIn" },
+  {
+    path: "https://www.indiamart.com/mr-uniquedecorationnew-delhi/",
+    title: "Indian Mart",
+  },
+  { path: "https://jsdl.in/DT-23JWAFVGWVS", title: "Just Dial" },
+  {
+    path: "https://www.facebook.com/mruniquedecoration?mibextid=ZbWKwL",
+    title: "Facebook",
+  },
+  {
+    path: "https://www.instagram.com/invites/contact/?i=t2q72vuuiryz&utm_content=tohs576",
+    title: "Instagram",
+  },
 ];
 
 const Header = () => {
@@ -168,6 +177,7 @@ const Header = () => {
                     key={index + link.path + link.title + Math.random()}
                     href={link.path}
                     className="mb-1 cursor-pointer"
+                    target="_blank"
                     // onMouseEnter={() =>
                     //   customCursorEnter("header_overlay_contrast_text")
                     // }
