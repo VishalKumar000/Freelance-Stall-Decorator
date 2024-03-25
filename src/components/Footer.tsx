@@ -11,7 +11,7 @@ import {
   SOCIAL_MEDIA_DATA,
 } from "@/constants/footer.constant";
 // import { useCustomCursor } from "@/context/CustomCursorContext";
-import GsapMagnetic from "./GsapMagnetic"; 
+import GsapMagnetic from "./GsapMagnetic";
 
 const Footer = () => {
   // const { customCursorEnter, customCursorLeave } = useCustomCursor();
@@ -44,7 +44,7 @@ const Footer = () => {
                   </div>
                   <p
                     style={{ textAlign: "left", margin: "10px 0" }}
-                    className="font-bold text-[11px] capitalize tracking-[4px] leading-[1.6] mb-4 mt-8 block cursor-pointer"
+                    className="font-medium capitalize leading-[1.6] mb-4 mt-8 block cursor-pointer"
                     // onMouseEnter={() => customCursorEnter("contrast_text")}
                     // onMouseLeave={customCursorLeave}
                   >
@@ -58,7 +58,7 @@ const Footer = () => {
                         return (
                           <li
                             key={item.link + item.title + Math.random()}
-                            className="text-white text-[14px] font-bold capitalize tracking-[4px] leading-[1.6] w-9 h-9 max-w-9 max-h-9 border rounded-full flex items-center justify-center"
+                            className="text-white capitalize leading-[1] w-9 h-9 max-w-9 max-h-9 border rounded-full flex items-center justify-center"
                             style={{
                               borderColor: "rgba(255, 255, 255, 0.07)",
                             }}
@@ -99,7 +99,7 @@ const Footer = () => {
                             // onMouseLeave={customCursorLeave}
                             className="cursor-pointer"
                           >
-                            <li className="mb-3 font-bold text-[11px] capitalize tracking-[4px] leading-[1.6] my-3">
+                            <li className="mb-3 font-medium capitalize leading-[1] my-1 hover:underline-offset-2 hover:underline">
                               {item.title}
                             </li>
                           </Link>
@@ -129,7 +129,7 @@ const Footer = () => {
                             // onMouseLeave={customCursorLeave}
                             className="cursor-pointer"
                           >
-                            <li className=" mb-3 font-bold text-[11px] capitalize tracking-[4px] leading-[1.6] my-3">
+                            <li className=" mb-3 font-medium capitalize leading-[1.6] my-1 hover:underline-offset-2 hover:underline">
                               {item.title}
                             </li>
                           </Link>
@@ -148,39 +148,45 @@ const Footer = () => {
                   <h4 className={`${styles.footer__title} cursor-pointer`}>
                     Contact
                   </h4>
-                  <div className="font-bold text-[11px] capitalize tracking-[4px] leading-[1.6] my-3">
-                    <strong className="inline-block heading-highlight">
-                      Head Office
-                    </strong>
-                    <span className="inline-block heading-highlight">
-                      &nbsp;:&nbsp;
-                    </span>
-                    <p className="mb-2">{CONTACT_DATA.address}</p>
-                    <strong className="inline-block heading-highlight">
-                      Phone
-                    </strong>
-                    <span className="inline-block heading-highlight">
-                      &nbsp;:&nbsp;
-                    </span>
-                    <Link
-                      className="font-bold inline-block mb-3"
-                      href="https://wa.me/+917042535020/?text=Hi"
-                    >
-                      {CONTACT_DATA.phone}
-                    </Link>
-                    <strong className="inline-block heading-highlight">
-                      Email
-                    </strong>
-                    <span className="inline-block heading-highlight">
-                      &nbsp;:&nbsp;
-                    </span>
-                    <Link
-                      className="link-hover"
-                      href={`mailto:${CONTACT_DATA.email}`}
-                      target="_blank"
-                    >
-                      {CONTACT_DATA.email}
-                    </Link>
+                  <div className="font-medium capitalize leading-[1.6] my-3">
+                    <div>
+                      <strong className="inline-block heading-highlight">
+                        Head Office
+                      </strong>
+                      <span className="inline-block heading-highlight">
+                        &nbsp;:&nbsp;
+                      </span>
+                      <p className="mb-2">{CONTACT_DATA.address}</p>
+                    </div>
+                    <div>
+                      <strong className="inline-block heading-highlight">
+                        Phone
+                      </strong>
+                      <span className="inline-block heading-highlight">
+                        &nbsp;:&nbsp;
+                      </span>
+                      <Link
+                        className="font-bold inline-block mb-3"
+                        href="tel:+91-7042535020"
+                      >
+                        {CONTACT_DATA.phone}
+                      </Link>
+                    </div>
+                    <div>
+                      <strong className="inline-block heading-highlight">
+                        Email
+                      </strong>
+                      <span className="inline-block heading-highlight">
+                        &nbsp;:&nbsp;
+                      </span>
+                      <Link
+                        className="link-hover lowercase"
+                        href={`mailto:${CONTACT_DATA.email}`}
+                        target="_blank"
+                      >
+                        {CONTACT_DATA.email}
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -189,7 +195,7 @@ const Footer = () => {
           <div className={styles.copyright}>
             <div className=" text-left">
               <p
-                className="font-bold text-[11px] capitalize tracking-[4px] leading-[1.6] my-3 cursor-pointer"
+                className="font-medium capitalize leading-[1.6] my-3 cursor-pointer"
                 // onMouseEnter={() => customCursorEnter("contrast_text")}
                 // onMouseLeave={customCursorLeave}
               >
@@ -199,11 +205,11 @@ const Footer = () => {
             <div className=" text-left">
               <Link href={"https://github.com/VKumar786"}>
                 <div
-                  className="font-bold text-[11px] capitalize tracking-[4px] leading-[1.6] my-3 cursor-pointer flex"
+                  className="font-medium capitalize leading-[1.6] my-3 cursor-pointer flex"
                   // onMouseEnter={() => customCursorEnter("contrast_text")}
                   // onMouseLeave={customCursorLeave}
                 >
-                  Made By
+                  Made By&nbsp;
                   <p className="heading-highlight">Vishal</p>
                 </div>
               </Link>

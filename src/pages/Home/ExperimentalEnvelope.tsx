@@ -1,52 +1,117 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import styles from "./experimentalenvelope.module.css";
+
+import { HiOutlineSpeakerphone } from "react-icons/hi";
+import { MdOutlineEmojiEvents } from "react-icons/md";
+import { BsShop } from "react-icons/bs";
+import { RiTeamLine } from "react-icons/ri";
+import { LuBuilding2 } from "react-icons/lu";
+import { MdOutlineSportsBasketball } from "react-icons/md";
+import { GiGlobeRing } from "react-icons/gi";
 
 const EXPERIMENTAL_ENVELOPE_DATA = [
   {
-    imgUrl: "/Home/ExperimentalEnvelope/image1.png",
+    // imgUrl: "/Home/ExperimentalEnvelope/image1.png",
+    icons: (
+      <HiOutlineSpeakerphone
+        className={styles["experiential-envelope-icon"]}
+        style={{
+          fontSize: "50px",
+        }}
+      />
+    ),
     title: "Deepali R&D Division",
     content:
       "Embark on a transformative journey towards sustainability and a net-zero future by exploring our pioneering R&D initiatives.",
     link: "/",
   },
   {
-    imgUrl: "/Home/ExperimentalEnvelope/image2.png",
+    // imgUrl: "/Home/ExperimentalEnvelope/image2.png",
+    icons: (
+      <MdOutlineEmojiEvents
+        className={styles["experiential-envelope-icon"]}
+        style={{
+          fontSize: "50px",
+        }}
+      />
+    ),
     title: "Events, Activations & Promotions",
     content:
       "When it comes to Events or promotions, Deepali believes in taking on challenging projects and implementing them against all odds.",
     link: "/",
   },
   {
-    imgUrl: "/Home/ExperimentalEnvelope/image3.png",
+    // imgUrl: "/Home/ExperimentalEnvelope/image3.png",
+    icons: (
+      <BsShop
+        className={styles["experiential-envelope-icon"]}
+        style={{
+          fontSize: "50px",
+        }}
+      />
+    ),
     title: "Exhibits & Tradeshows",
     content:
       "Be it large-scale expositions or big-ticket exhibits we turn them into reality.",
     link: "/",
   },
   {
-    imgUrl: "/Home/ExperimentalEnvelope/image4.png",
+    // imgUrl: "/Home/ExperimentalEnvelope/image4.png",
+    icons: (
+      <RiTeamLine
+        className={styles["experiential-envelope-icon"]}
+        style={{
+          fontSize: "50px",
+        }}
+      />
+    ),
     title: "Conferences and Seminars",
     content:
       "We are into organizing large format events that include both national level as well as international seminars, symposiums or conferences.",
     link: "/",
   },
   {
-    imgUrl: "/Home/ExperimentalEnvelope/image5.png",
+    // imgUrl: "/Home/ExperimentalEnvelope/image5.png",
+    icons: (
+      <MdOutlineSportsBasketball
+        className={styles["experiential-envelope-icon"]}
+        style={{
+          fontSize: "50px",
+        }}
+      />
+    ),
     title: "Sports Events & Infrastructure",
     content:
       "To showcase the best sporting talent or gamesmanship — there are a lot of factors involved - such as stadium seating,Creative Field of Play, Standard Operating",
     link: "/",
   },
   {
-    imgUrl: "/Home/ExperimentalEnvelope/image6.png",
+    // imgUrl: "/Home/ExperimentalEnvelope/image6.png",
+    icons: (
+      <LuBuilding2
+        className={styles["experiential-envelope-icon"]}
+        style={{
+          fontSize: "50px",
+        }}
+      />
+    ),
     title: "Modular Infrastructure",
     content:
       "With 3 decades of fabricating and setting up large-scale Events & Exhibitions, thereby shaping up its edge, know how , infrastructure",
     link: "/",
   },
   {
-    imgUrl: "/Home/ExperimentalEnvelope/image7.png",
+    // imgUrl: "/Home/ExperimentalEnvelope/image7.png",
+    icons: (
+      <GiGlobeRing
+        className={styles["experiential-envelope-icon"]}
+        style={{
+          fontSize: "50px",
+        }}
+      />
+    ),
     title: "Weddings",
     content:
       "We create authentic wedding experiences with our exquisitely curated wedding banquets, dedicated pandal options, catering services, artist",
@@ -81,9 +146,7 @@ const ExperimentalEnvelope = () => {
           {EXPERIMENTAL_ENVELOPE_DATA.map((item, index) => {
             return (
               <div
-                key={
-                  item.imgUrl + index + Math.random() + item.title + item.link
-                }
+                key={index + Math.random() + item.title + item.link}
                 // className={`p-6 ${
                 //   index % 2
                 //     ? "max-[550px]: bg-[#000]"
@@ -96,15 +159,16 @@ const ExperimentalEnvelope = () => {
                 //   index % 2 === 0 ? "lg:bg-[#000]" : "lg:bg-[#1c2027]"
                 // } flex flex-col justify-between`}
 
-                className="border border-[#07b2ff] rounded-lg p-6"
+                className={`border border-[#07b2ff] rounded-lg p-6 ${styles['experimental-envelope']}`}
               >
                 <div className="relative w-12 h-12 mt-0 mx-auto mb-5">
-                  <Image
+                  {/* <Image
                     src={item.imgUrl}
                     alt="image selected by user"
                     fill
                     className=" object-cover"
-                  />
+                  /> */}
+                  {item.icons}
                 </div>
                 <div className="text-white text-lg tracking-[2.5px] font-semibold mb-5 flex items-center justify-center text-center">
                   <h2

@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
 const OUR_CLIENT_DATA = [
   "/Home/Client/image1.jpg",
@@ -25,27 +29,52 @@ const OurClient = () => {
               our clients
             </div>
           </div>
-          <h2 className="text-2xl min-[550px]:text-4xl lg:text-5xl font-bold tracking-[0.01em]">
+          <h2 className="text-xl min-[550px]:text-4xl lg:text-5xl font-bold tracking-[0.01em]">
             Our Client
           </h2>
         </div>
-        <div className="grid grid-cols-1 gap-4 min-[450px]:grid-cols-2 min-[450px]:gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-4 lg:gap-6">
+        <Swiper
+          slidesPerView={3}
+          modules={[Autoplay]}
+          className="w-full m-0 min-w-full min-h-[150px] max-h-[150px] "
+          breakpoints={{
+            1000: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+            700: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            600: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            100: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+        >
           {OUR_CLIENT_DATA.map((item, index) => {
             return (
-              <div
-                key={index + item + index + Math.random()}
-                className="relative w-full h-full min-h-[250px] lg:min-h-[200px] overflow-hidden rounded-md p-6"
-              >
-                <Image
-                  src={item}
-                  alt="image selected by user"
-                  fill
-                  className=" transition-all hover:scale-110 object-cover"
-                />
-              </div>
+              <SwiperSlide key={index + item + index + Math.random()}>
+                <div className="relative w-full h-full min-h-[150px] max-h-[150px] overflow-hidden rounded-md p-6 shadow-md bg-white">
+                  <Image
+                    src={item}
+                    alt="image selected by user"
+                    fill
+                    className=" transition-all hover:scale-110 object-contain"
+                  />
+                </div>
+              </SwiperSlide>
             );
           })}
-        </div>
+        </Swiper>
       </div>
     </section>
   );
