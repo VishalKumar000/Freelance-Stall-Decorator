@@ -4,24 +4,24 @@ import React from "react";
 
 const SmallAboutUs = () => {
   return (
-    <section className="w-full bg-black text-white py-14">
+    <section className="w-full bg-white text-[#303030] py-14">
       <div className="w-full max-w-[1200px] my-0 mx-auto px-4 flex flex-col gap-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <div>
             <h2
-              className="text-2xl min-[550px]:text-4xl lg:text-5xl font-bold tracking-[0.01em]"
+              className="text-2xl min-[550px]:text-4xl lg:text-5xl font-bold tracking-[0.01em] text-[#212529]"
               style={{ wordBreak: "break-word" }}
             >
               Meet
             </h2>
             <h2
-              className="text-2xl min-[550px]:text-4xl lg:text-5xl font-bold tracking-[0.01em] mb-5"
+              className="text-2xl min-[550px]:text-4xl lg:text-5xl font-bold tracking-[0.01em] mb-5 text-[#212529]"
               style={{ wordBreak: "break-word" }}
             >
-              Deepali Designs
+              Mr Unique Decoration
             </h2>
-            <p className="text-[#ffffffb0] text-sm relative mb-5">
-              Deepali Designs and Exhibits has pioneered a stream of innovative
+            <p className="text-[#303030] text-sm relative mb-5">
+              Mr Unique Decoration and Exhibits has pioneered a stream of innovative
               concepts which have set new benchmarks and raised the bar for
               operations and logistics in the event industry. Powered by several
               factors - including a dedicated R&D division that explores
@@ -33,7 +33,7 @@ const SmallAboutUs = () => {
             <div className="mb-7 flex justify-between">
               <div className=" pr-10 lg:pr-20 mb-1 relative">
                 <div className="text-[9px] min-[550px]:text-[12px] lg:text-sm uppercase font-bold tracking-[2px] pr-10 relative before:absolute before:right-[-30px] before:w-[5px] before:h-[5px] before:bg-white before:rounded-full before:top-1/2 before:translate-x-[-50%] before:translate-y-[-50%] after:absolute after:top-1/2 after:right-[-20px] after:h-[1px] after:w-12 after:bg-[rgba(233, 233, 233, 0.1)]">
-                  DEEPALI DESIGNS
+                  MR UNIQUE DECORATION
                 </div>
               </div>
               <Link href={"/about-us"} className="heading-highlight">
@@ -52,7 +52,7 @@ const SmallAboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="bg-[#1c2027] relative p-4 md:p-6 lg:p-8">
+          <div className="bg-[#1c2027] relative">
             {/*  col-span-2 */}
             <div className="relative overflow-hidden w-full h-full min-h-[300px]">
               <Image

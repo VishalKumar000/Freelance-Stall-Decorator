@@ -5,11 +5,11 @@ import React from "react";
 
 const Career = () => {
   return (
-    <div className="bg-black">
+    <>
       <CareerWelcomeBanner />
       <ThankIntro />
       <CareerForm />
-    </div>
+    </>
   );
 };
 

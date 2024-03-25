@@ -87,7 +87,7 @@ export default function CareerForm() {
     <>
       <header className={styles.header}>
         <h1>
-          Share your <span className={styles.highlight}>Resume</span>
+          Share your <span className={"heading-highlight"}>Resume</span>
         </h1>
       </header>
       <main className={styles.main}>
@@ -99,6 +99,7 @@ export default function CareerForm() {
                 type="text"
                 id="name"
                 name="name"
+                value={formData.name}
                 required
                 onChange={handleChange}
               />
@@ -109,6 +110,7 @@ export default function CareerForm() {
                 type="email"
                 id="email"
                 name="email"
+                value={formData.email}
                 required
                 onChange={handleChange}
               />
@@ -120,6 +122,7 @@ export default function CareerForm() {
               type="text"
               id="phone"
               name="phone"
+              value={formData.phone}
               required
               onChange={handleChange}
             />
@@ -130,6 +133,7 @@ export default function CareerForm() {
               id="message"
               name="message"
               rows={10}
+              value={formData.message}
               required
               onChange={handleChange}
             />
@@ -137,6 +141,7 @@ export default function CareerForm() {
           <PDFPicker
             label={"Resume"}
             name={"resume"}
+            value={formData.resume}
             pickedFileName={pickedFileName}
             handleResumeChange={handleResumeChange}
           />

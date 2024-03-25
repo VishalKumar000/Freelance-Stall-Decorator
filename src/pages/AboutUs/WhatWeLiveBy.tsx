@@ -3,10 +3,10 @@ import React from "react";
 
 const WhatWeLiveBy = () => {
   return (
-    <section className="w-full bg-black text-white py-14">
+    <section className="w-full bg-white text-[#303030] py-14">
       <div className="w-full max-w-[1200px] my-0 mx-auto px-12 lg:px-4 flex flex-col gap-8">
         <div className="w-full" data-dsn-animate="up">
-          <h2 className="text-[42px] font-extrabold tracking-wide">
+          <h2 className="text-[42px] font-extrabold tracking-wide text-[#212529] mb-6">
             What we live by
           </h2>
         </div>
@@ -17,7 +17,7 @@ const WhatWeLiveBy = () => {
                 key={item.imgSrc + item.title + index + Math.random()}
                 className="py-9 px-12 flex flex-col gap-2 items-center"
                 style={{
-                  backgroundColor: index % 3 === 0 ? "#1c1c1c" : undefined,
+                  backgroundColor: index % 3 === 0 ? "#f7f8f8" : undefined,
                 }}
               >
                 <div className="w-24 min-w-24 h-24 min-h-24 relative p-2">
@@ -29,7 +29,7 @@ const WhatWeLiveBy = () => {
                   />
                 </div>
                 <h4 className="font-medium text-3xl">{item.title}</h4>
-                <div className="bg-gradient-to-r from-orange-500 to-yellow-500 w-20 h-[1px] mb-3" />
+                <div className="bg-[#07b2ff] w-20 h-[3px] mb-3" />
                 {item.content.map((_item, index) => {
                   return (
                     <span key={_item + index + Math.random()}>

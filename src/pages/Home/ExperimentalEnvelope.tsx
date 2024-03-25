@@ -56,11 +56,11 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
 
 const ExperimentalEnvelope = () => {
   return (
-    <section className="w-full bg-black text-white py-14">
+    <section className="w-full text-black py-14">
       <div className="w-full max-w-[1200px] my-0 mx-auto px-4 flex flex-col gap-8">
         <div className=" mb-7">
           <div className=" pl-10 lg:pl-20 mb-5 relative">
-            <div className="text-[9px] min-[550px]:text-[12px] lg:text-sm heading-highlight uppercase font-semibold tracking-[2px] pl-10 mb-4 relative before:absolute before:left-[-30px] before:w-[5px] before:h-[5px] before:bg-white before:rounded-full before:top-1/2 before:translate-x-[-50%] before:translate-y-[-50%] after:absolute after:top-1/2 after:left-[-20px] after:h-[1px] after:w-12 after:bg-[rgba(233, 233, 233, 0.1)]">
+            <div className="text-[9px] min-[550px]:text-[12px] lg:text-sm heading-highlight uppercase font-semibold tracking-[2px] pl-10 mb-4 relative before:absolute before:left-[-30px] before:w-[5px] before:h-[5px] before:bg-[#07b2ff] before:rounded-full before:top-1/2 before:translate-x-[-50%] before:translate-y-[-50%] after:absolute after:top-1/2 after:left-[-20px] after:h-[1px] after:w-12 after:bg-[#07b2ff]">
               OUR RANGE OF OFFERINGS
             </div>
           </div>
@@ -77,24 +77,26 @@ const ExperimentalEnvelope = () => {
             EXPERIENTIAL ENVELOPE
           </h2>
         </div>
-        <div className="grid grid-cols-1 gap-4 min-[550px]:grid-cols-2 min-[550px]:gap-2 lg:grid-cols-3 lg:gap-4">
+        <div className="grid grid-cols-1 gap-4 min-[550px]:grid-cols-2 min-[550px]:gap-4 lg:grid-cols-3 lg:gap-4">
           {EXPERIMENTAL_ENVELOPE_DATA.map((item, index) => {
             return (
               <div
                 key={
                   item.imgUrl + index + Math.random() + item.title + item.link
                 }
-                className={`p-6 ${
-                  index % 2
-                    ? "max-[550px]: bg-[#000]"
-                    : "max-[550px]: bg-[#1c2027]"
-                } ${
-                  (index - 1) % 4 == 0 || (index - 1) % 4 == 1
-                    ? "min-[550px]:bg-[#1c2027]"
-                    : "min-[550px]:bg-[#000]"
-                } ${
-                  index % 2 === 0 ? "lg:bg-[#000]" : "lg:bg-[#1c2027]"
-                } flex flex-col justify-between`}
+                // className={`p-6 ${
+                //   index % 2
+                //     ? "max-[550px]: bg-[#000]"
+                //     : "max-[550px]: bg-[#1c2027]"
+                // } ${
+                //   (index - 1) % 4 == 0 || (index - 1) % 4 == 1
+                //     ? "min-[550px]:bg-[#1c2027]"
+                //     : "min-[550px]:bg-[#000]"
+                // } ${
+                //   index % 2 === 0 ? "lg:bg-[#000]" : "lg:bg-[#1c2027]"
+                // } flex flex-col justify-between`}
+
+                className="border border-[#07b2ff] rounded-lg p-6"
               >
                 <div className="relative w-12 h-12 mt-0 mx-auto mb-5">
                   <Image
@@ -105,11 +107,14 @@ const ExperimentalEnvelope = () => {
                   />
                 </div>
                 <div className="text-white text-lg tracking-[2.5px] font-semibold mb-5 flex items-center justify-center text-center">
-                  <h2 className="w-1/2" style={{ wordBreak: "break-word" }}>
+                  <h2
+                    className="w-1/2 text-[#212529]"
+                    style={{ wordBreak: "break-word" }}
+                  >
                     {item.title}
                   </h2>
                 </div>
-                <p className="text-[#ffffffb0] text-sm relative">
+                <p className="text-[#303030] text-sm relative">
                   {item.content}
                 </p>
                 <Link

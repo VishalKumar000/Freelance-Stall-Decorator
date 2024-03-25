@@ -29,7 +29,7 @@ const ProjectGallery = (props: {
   };
 
   return (  
-    <section className="w-full bg-black text-white py-14">
+    <section className="w-full bg-white text-white py-14">
       <div className="w-full max-w-[1200px] my-0 mx-auto px-4 lg:px-8 flex flex-col gap-8">
         <LightGallery
           onInit={onInit}

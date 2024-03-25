@@ -1,8 +1,10 @@
 .footer {
     position: relative;
     width: 100%;
-    background-color: #090909;
-    color: #C2C2C299;
+    /* background-color: #090909; */
+    /* color: #C2C2C299; */
+    background-color: white;
+    color: #303030;
 }
 
 .footer .container {
@@ -47,7 +49,8 @@
 
 .footer__title {
     position: relative;
-    color: #fff;
+    /* color: #fff; */
+    color: #212529;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 15px;
@@ -71,4 +74,7 @@
     font-size: 14px;
     letter-spacing: 2.67px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    display: flex;
+    justify-content: space-between;
 }

@@ -14,11 +14,11 @@ const FixedSlider = (props: { data: any[] }) => {
 
   return (
     <section
-      className="w-full bg-black text-white py-2"
+      className="w-full bg-[#fff] text-[#303030] py-2"
       id="fixed-slider-case-studies"
     >
       <div className="w-full max-w-[1200px] my-0 mx-auto px-4 md:px-8 lg:px-12 flex flex-col gap-8">
-        <div className=" w-full h-full min-h-screen bg-[#000] text-white relative py-[4vw]">
+        <div className=" w-full h-full min-h-screen bg-[#fff] text-white relative py-[4vw]">
           {data?.map((item, index) => {
             return (
               <Link
@@ -57,8 +57,10 @@ const FixedSlider = (props: { data: any[] }) => {
                   <div className="overlay"></div>
                   <div className=" flex justify-between w-full z-[2]">
                     <div>
-                      <h2 className="text-[15px] font-semibold mb-2 md:text-[25px] heading-highlight">{item.title}</h2>
-                      <p className="text-[9px] min-[550px]:text-[12px] lg:text-sm text-[#ffffffb0] uppercase font-semibold tracking-[2px] mb-4">
+                      <h2 className="text-[15px] font-semibold mb-2 md:text-[25px] heading-highlight">
+                        {item.title}
+                      </h2>
+                      <p className="text-[9px] min-[550px]:text-[12px] lg:text-sm text-[#303030] uppercase font-semibold tracking-[2px] mb-4">
                         {item.type}
                       </p>
                     </div>

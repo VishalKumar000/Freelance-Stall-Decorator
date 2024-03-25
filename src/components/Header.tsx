@@ -7,7 +7,7 @@ import "../styles/Header.css";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { IoMdClose } from "react-icons/io";
-import { useCustomCursor } from "@/context/CustomCursorContext";
+// import { useCustomCursor } from "@/context/CustomCursorContext";
 import Image from "next/image";
 
 const menuLinks = [
@@ -21,15 +21,14 @@ const menuLinks = [
 ];
 
 const socialLinks = [
-  { path: "/", title: "X" },
+  { path: "/", title: "Indian Mart" },
+  { path: "/", title: "Just Dial" },
   { path: "/", title: "Instagram" },
   { path: "/", title: "LinkedIn" },
-  { path: "/", title: "Bechance" },
-  { path: "/", title: "Dribble" },
 ];
 
 const Header = () => {
-  const { customCursorEnter, customCursorLeave } = useCustomCursor();
+  // const { customCursorEnter, customCursorLeave } = useCustomCursor();
   const container = useRef<HTMLDivElement>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -39,7 +38,7 @@ const Header = () => {
 
   useGSAP(
     () => {
-      gsap.set(".menu-link-item-holder", { y: 75 });
+      gsap.set(".menu-link-item-holder", { y: 74 });
 
       tl.current = gsap
         .timeline({ paused: true })
@@ -66,17 +65,17 @@ const Header = () => {
 
   return (
     <div
-      className="header-menu-container bg-[#090909] min-h-[75px]"
+      className="header-menu-container bg-white min-h-[74px]"
       ref={container}
     >
-      <div className="menu-bar">
+      <div className="menu-bar shadow">
         <div
           className="menu-logo cursor-pointer"
-          onMouseEnter={() => customCursorEnter("header_overlay_contrast_text")}
-          onMouseLeave={customCursorLeave}
+          // onMouseEnter={() => customCursorEnter("header_overlay_contrast_text")}
+          // onMouseLeave={customCursorLeave}
         >
           <Link href={"/"} className="flex items-center justify-center">
-            <p className="text-white">MR Unique Decoration</p>
+            <h2 className="text-[#212529] font-bold">MR Unique Decoration</h2>
             {/* <Image
               src="/footer/3268white logo.png"
               alt="MR Unique Decoration"
@@ -89,21 +88,21 @@ const Header = () => {
         </div>
         <div
           className="menu-open  cursor-pointer"
-          onMouseEnter={() => customCursorEnter("header_overlay_contrast_text")}
-          onMouseLeave={customCursorLeave}
+          // onMouseEnter={() => customCursorEnter("header_overlay_contrast_text")}
+          // onMouseLeave={customCursorLeave}
           onClick={toggleMenu}
         >
-          <p className="text-white">Menu</p>
+          <p className="text-[#212529]">Menu</p>
         </div>
       </div>
       <div className="menu-overlay z-[9999]">
         <div className="menu-overlay-bar">
           <div
             className="menu-logo cursor-pointer"
-            onMouseEnter={() =>
-              customCursorEnter("header_overlay_contrast_text")
-            }
-            onMouseLeave={customCursorLeave}
+            // onMouseEnter={() =>
+            //   customCursorEnter("header_overlay_contrast_text")
+            // }
+            // onMouseLeave={customCursorLeave}
           >
             <Link href={"/"}>
               MR Unique Decoration
@@ -119,10 +118,10 @@ const Header = () => {
           </div>
           <div
             className="menu-close cursor-pointer"
-            onMouseEnter={() =>
-              customCursorEnter("header_overlay_contrast_text")
-            }
-            onMouseLeave={customCursorLeave}
+            // onMouseEnter={() =>
+            //   customCursorEnter("header_overlay_contrast_text")
+            // }
+            // onMouseLeave={customCursorLeave}
             onClick={toggleMenu}
           >
             <p>Close</p>
@@ -138,10 +137,10 @@ const Header = () => {
                 >
                   <div
                     className="menu-link-item-holder cursor-pointer"
-                    onMouseEnter={() =>
-                      customCursorEnter("header_overlay_text")
-                    }
-                    onMouseLeave={customCursorLeave}
+                    // onMouseEnter={() =>
+                    //   customCursorEnter("header_overlay_text")
+                    // }
+                    // onMouseLeave={customCursorLeave}
                     onClick={toggleMenu}
                   >
                     <Link href={link.path} className="menu-links">
@@ -157,46 +156,49 @@ const Header = () => {
               <p>
                 <IoMdClose
                   className="text-[4.5rem] cursor-pointer"
-                  onMouseEnter={() => customCursorEnter("header_overlay_text")}
-                  onMouseLeave={customCursorLeave}
+                  // onMouseEnter={() => customCursorEnter("header_overlay_text")}
+                  // onMouseLeave={customCursorLeave}
                 />
               </p>
             </div>
-            <div className="menu-info-col">
+            <div className="menu-info-col" style={{ flex: "2" }}>
               {socialLinks.map((link, index) => {
                 return (
                   <Link
                     key={index + link.path + link.title + Math.random()}
                     href={link.path}
-                    className=" cursor-pointer"
-                    onMouseEnter={() =>
-                      customCursorEnter("header_overlay_contrast_text")
-                    }
-                    onMouseLeave={customCursorLeave}
+                    className="mb-1 cursor-pointer"
+                    // onMouseEnter={() =>
+                    //   customCursorEnter("header_overlay_contrast_text")
+                    // }
+                    // onMouseLeave={customCursorLeave}
                   >
                     {link.title} &#8599;
                   </Link>
                 );
               })}
             </div>
-            <div
+            {/* <div
               className="menu-info-col cursor-pointer"
-              onMouseEnter={() =>
-                customCursorEnter("header_overlay_contrast_text")
-              }
-              onMouseLeave={customCursorLeave}
-            >
-              <p>mruniquedecoration@gmail.com</p>
-              <p>+917042535020</p>
-            </div>
+              style={{ flex: "3" }} 
+               onMouseEnter={() =>
+                 customCursorEnter("header_overlay_contrast_text")
+               }
+               onMouseLeave={customCursorLeave}
+             >
+               <p className="text-[10px]">mruniquedecoration@gmail.com</p>
+               <p className="text-[10px]">+917042535020</p>
+             </div>
+            */}
             <div
-              className="menu-preview cursor-pointer"
-              onMouseEnter={() =>
-                customCursorEnter("header_overlay_contrast_text")
-              }
-              onMouseLeave={customCursorLeave}
+              className="menu-preview cursor-pointer flex-col text-center items-center"
+              // onMouseEnter={() =>
+              //   customCursorEnter("header_overlay_contrast_text")
+              // }
+              // onMouseLeave={customCursorLeave}
             >
-              <p>View Showreel</p>
+              <p className="mb-1">mruniquedecoration@gmail.com</p>
+              <p className="">+917042535020</p>
             </div>
           </div>
         </div>

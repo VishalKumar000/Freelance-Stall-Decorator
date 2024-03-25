@@ -70,7 +70,7 @@ export const SOCIAL_MEDIA_DATA = [
 
 export const CONTACT_DATA = {
   email: "mruniquedecoration@gmail.com",
-  phone: "tel:+91-7042535020",
+  phone: "+91-7042535020",
   address:
     "PROPERTY NUMBER NO-G-12/574, Ground Floor, Gali Number 12, opposite NTPC Park Lane, Block G, Khadda Colony, Badarpur, New Delhi, Delhi 110044",
   brand_name: "MR Unique Decoration",

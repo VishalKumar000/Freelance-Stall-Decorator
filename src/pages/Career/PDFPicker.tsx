@@ -5,7 +5,13 @@
 import React, { useRef, useState } from "react";
 import styles from "./image-picker.module.css";
 
-const PDFPicker = ({ label, name, pickedFileName, handleResumeChange }) => {
+const PDFPicker = ({
+  label,
+  value,
+  name,
+  pickedFileName,
+  handleResumeChange,
+}) => {
   const imageInputRef = useRef();
 
   return (
@@ -17,6 +23,7 @@ const PDFPicker = ({ label, name, pickedFileName, handleResumeChange }) => {
           id={name}
           accept=".pdf"
           name={name}
+          value={value}
           className={styles.input}
           ref={imageInputRef}
           onChange={handleResumeChange}

@@ -23,19 +23,19 @@ const CURRENT_JOB_OPENING = [
 
 const ThankIntro = () => {
   return (
-    <section className="w-full bg-black text-white py-14">
+    <section className="w-full bg-white text-[#303030] py-14">
       <div className="w-full max-w-[1200px] my-0 mx-auto px-12 lg:px-4 flex flex-col gap-8">
-        <h2 className="text-[42px] font-extrabold tracking-wide mb-4">
-          THANK YOU FOR YOUR INTEREST IN DEEPALI DESIGNS AND EXHIBITS
+        <h2 className="text-[42px] font-extrabold tracking-wide mb-4 text=[#212529]">
+          THANK YOU FOR YOUR INTEREST IN MR UNIQUE DECORATION AND EXHIBITS
         </h2>
-        <div className="mb-4 text-[#ffffffb0] gap-4">
-          <p>
+        <div className="mb-4 gap-4">
+          <p className="leading-4 mb-2">
             Deepali is powered by a team of creative, quirky, ambitious and
             restless people, looking to evolve, better and push the limits of
             what’s possible.
           </p>
-          <p>WE THINK YOU&apos;LL FIT RIGHT IN</p>
-          <p>
+          <p className="leading-4 mb-2">WE THINK YOU&apos;LL FIT RIGHT IN</p>
+          <p className="leading-6">
             We are continuously on the lookout for both young and experienced
             talent, to join our team. Get a headstart. Build a life with us.
             Remember, success can’t build happiness but happiness can create
@@ -46,15 +46,10 @@ const ThankIntro = () => {
           </p>
         </div>
         <div>
-          <h3 className="text-[#ffffffb0] text-lg mb-2 font-bold">
-            Current Job Openings
-          </h3>
+          <h3 className="text-lg mb-2 font-bold">Current Job Openings</h3>
           {CURRENT_JOB_OPENING.map((item, index) => {
             return (
-              <p
-                key={item + index + Math.random()}
-                className="text-[#ffffffb0]"
-              >
+              <p key={item + index + Math.random()} className="mb-3">
                 {index + 1}) {item}
               </p>
             );

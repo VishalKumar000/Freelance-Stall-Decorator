@@ -37,11 +37,12 @@ const ImageFilter = () => {
             key={filter}
             onClick={() => handleFilterClick(filter)}
             type="button"
-            className={`focus:outline-none border-2 border-orange-500 font-medium rounded-lg text-sm px-5 text-white py-2.5 mb-2 capitalize ${
-              activeFilter === filter
-                ? "bg-gradient-to-r from-orange-500 to-yellow-500"
-                : " "
-            }`}
+            className={`focus:outline-none border-2 border-[#07b2ff] font-medium rounded-lg text-sm px-5 text-white py-2.5 mb-2 capitalize `}
+            style={{
+              backgroundColor:
+                activeFilter === filter ? "#07b2ff" : "transparent",
+              color: activeFilter === filter ? "#fff" : "#07b2ff",
+            }}
           >
             {filter === "all" ? "Show all" : filter}
           </Button>
@@ -51,7 +52,7 @@ const ImageFilter = () => {
           {filterableData.map((item, index) => (
             <div
               key={index}
-              className={`w-full cursor-pointer transition-all duration-200 rounded-lg shadow bg-[#1c2027] border border-gray-600 ${
+              className={`w-full cursor-pointer transition-all duration-200 rounded-lg shadow bg-[#f7f8f8] border border-[#ddd] ${
                 activeFilter === "all" || activeFilter === item.name
                   ? "block"
                   : "hidden"
@@ -60,14 +61,14 @@ const ImageFilter = () => {
               <div className="p-5 flex flex-col justify-center">
                 <Text
                   as="h5"
-                  className="mb-2 text-lg font-bold tracking-tight text-white"
+                  className="mb-2 text-lg font-bold tracking-tight text-[#212529]"
                 >
                   {item.address}
                 </Text>
-                <Text as="p" className="mb-3 font-normal text-gray-400">
+                <Text as="p" className="mb-3 font-normal text-[#303030]">
                   {item.phone}
                 </Text>
-                <Text as="p" className="mb-3 font-normal text-gray-400">
+                <Text as="p" className="mb-3 font-normal text-[#303030]">
                   {item.email}
                 </Text>
                 <Link href={item.location}>

@@ -17,11 +17,11 @@ const OUR_CLIENT_DATA = [
 
 const OurClient = () => {
   return (
-    <section className="w-full bg-black text-white py-14">
+    <section className="w-full bg-[#f7f8f8] text-[#303030] py-14">
       <div className="w-full max-w-[1200px] my-0 mx-auto px-4 flex flex-col gap-8">
         <div className=" mb-7">
           <div className=" pl-10 lg:pl-20 mb-5 relative">
-            <div className="text-[9px] min-[550px]:text-[12px] lg:text-sm heading-highlight uppercase font-semibold tracking-[2px] pl-10 mb-4 relative before:absolute before:left-[-30px] before:w-[5px] before:h-[5px] before:bg-white before:rounded-full before:top-1/2 before:translate-x-[-50%] before:translate-y-[-50%] after:absolute after:top-1/2 after:left-[-20px] after:h-[1px] after:w-12 after:bg-[rgba(233, 233, 233, 0.1)]">
+            <div className="text-[9px] min-[550px]:text-[12px] lg:text-sm heading-highlight uppercase font-semibold tracking-[2px] pl-10 mb-4 relative before:absolute before:left-[-30px] before:w-[5px] before:h-[5px] before:bg-[#07b2ff] before:rounded-full before:top-1/2 before:translate-x-[-50%] before:translate-y-[-50%] after:absolute after:top-1/2 after:left-[-20px] after:h-[1px] after:w-12 after:bg-[#07b2ff]">
               our clients
             </div>
           </div>
@@ -34,7 +34,7 @@ const OurClient = () => {
             return (
               <div
                 key={index + item + index + Math.random()}
-                className="relative w-full h-full min-h-[250px] lg:min-h-[200px] overflow-hidden"
+                className="relative w-full h-full min-h-[250px] lg:min-h-[200px] overflow-hidden rounded-md p-6"
               >
                 <Image
                   src={item}

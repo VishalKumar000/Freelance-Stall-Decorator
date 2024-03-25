@@ -58,7 +58,7 @@ export default function ContactUsForm() {
     <>
       <header className={styles.header}>
         <h1>
-          Write A <span className={styles.highlight}>Comment</span>
+          Write A <span className={"heading-highlight"}>Comment</span>
         </h1>
       </header>
       <main className={styles.main}>
@@ -70,6 +70,7 @@ export default function ContactUsForm() {
                 type="text"
                 id="name"
                 name="name"
+                value={formData.name}
                 required
                 onChange={handleChange}
               />
@@ -80,6 +81,7 @@ export default function ContactUsForm() {
                 type="email"
                 id="email"
                 name="email"
+                value={formData.email}
                 required
                 onChange={handleChange}
               />
@@ -91,6 +93,7 @@ export default function ContactUsForm() {
               type="tel"
               id="phone"
               name="phone"
+              value={formData.phone}
               required
               pattern="[0-9]{10,14}"
               onChange={handleChange}
@@ -102,6 +105,7 @@ export default function ContactUsForm() {
               id="message"
               name="message"
               rows={10}
+              value={formData.message}
               required
               onChange={handleChange}
             ></textarea>
