@@ -8,7 +8,12 @@ const nextConfig = {
         pathname: "**",
       },
     ],
-    domains: ["deepalidesigns.com", "assets-global.website-files.com"],
+    domains: [
+      "deepalidesigns.com",
+      "assets-global.website-files.com",
+      "lh3.googleusercontent.com",
+      "cutesolution.com",
+    ],
   },
   // experimental: { serverActions: true },
 };
