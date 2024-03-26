@@ -6,9 +6,10 @@ import "../styles/Header.css";
 
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import { IoMdClose } from "react-icons/io";
 // import { useCustomCursor } from "@/context/CustomCursorContext";
 import Image from "next/image";
+import { IoMdClose } from "react-icons/io";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const menuLinks = [
   { label: "Home", path: "/" },
@@ -77,20 +78,21 @@ const Header = () => {
       className="header-menu-container bg-white min-h-[74px]"
       ref={container}
     >
-      <div className="menu-bar shadow">
-        <div
-          className="menu-logo cursor-pointer"
-          // onMouseEnter={() => customCursorEnter("header_overlay_contrast_text")}
-          // onMouseLeave={customCursorLeave}
-        >
-          <Link href={"/"} className="flex items-center justify-center">
-            <h2
-              className="text-[#212529] font-bold"
-              style={{ wordBreak: "normal" }}
-            >
-              MR Unique Decoration
-            </h2>
-            {/* <Image
+      <div className="shadow">
+        <div className="menu-bar w-full max-w-[1200px] mx-auto my-0">
+          <div
+            className="menu-logo cursor-pointer"
+            // onMouseEnter={() => customCursorEnter("header_overlay_contrast_text")}
+            // onMouseLeave={customCursorLeave}
+          >
+            <Link href={"/"} className="flex items-center justify-center">
+              <h2
+                className="text-[#212529] font-bold"
+                style={{ wordBreak: "normal" }}
+              >
+                MR Unique Decoration
+              </h2>
+              {/* <Image
               src="/footer/3268white logo.png"
               alt="MR Unique Decoration"
               width={70}
@@ -98,15 +100,18 @@ const Header = () => {
               onMouseEnter={() => customCursorEnter("text")}
               onMouseLeave={customCursorLeave}
             /> */}
-          </Link>
-        </div>
-        <div
-          className="menu-open  cursor-pointer"
-          // onMouseEnter={() => customCursorEnter("header_overlay_contrast_text")}
-          // onMouseLeave={customCursorLeave}
-          onClick={toggleMenu}
-        >
-          <p className="text-[#212529]">Menu</p>
+            </Link>
+          </div>
+          <div
+            className="menu-open  cursor-pointer"
+            // onMouseEnter={() => customCursorEnter("header_overlay_contrast_text")}
+            // onMouseLeave={customCursorLeave}
+            onClick={toggleMenu}
+          >
+            <div>
+              <RxHamburgerMenu className="text-[#212529] text-xl" />
+            </div>
+          </div>
         </div>
       </div>
       <div className="menu-overlay z-[9999]">
@@ -138,7 +143,9 @@ const Header = () => {
             // onMouseLeave={customCursorLeave}
             onClick={toggleMenu}
           >
-            <p>Close</p>
+            <div>
+              <IoMdClose className="text-xl" />
+            </div>
           </div>
         </div>
         <div className="menu-copy">
@@ -146,7 +153,7 @@ const Header = () => {
             {menuLinks.map((link, index) => {
               return (
                 <div
-                  className="menu-link-item"
+                  className="menu-link-item strike-animation"
                   key={index + Math.random() + link.label + link.path}
                 >
                   <div
@@ -169,7 +176,7 @@ const Header = () => {
             <div className="menu-close-icon" onClick={toggleMenu}>
               <p>
                 <IoMdClose
-                  className="text-[4.5rem] cursor-pointer"
+                  className="text-[4.5rem] cursor-pointer hover:text-[#07b2ff]"
                   // onMouseEnter={() => customCursorEnter("header_overlay_text")}
                   // onMouseLeave={customCursorLeave}
                 />
@@ -181,7 +188,7 @@ const Header = () => {
                   <Link
                     key={index + link.path + link.title + Math.random()}
                     href={link.path}
-                    className="mb-1 cursor-pointer"
+                    className="mb-1 cursor-pointer hover:underline hover:text-[#07b2ff] underline-offset-2"
                     target="_blank"
                     // onMouseEnter={() =>
                     //   customCursorEnter("header_overlay_contrast_text")

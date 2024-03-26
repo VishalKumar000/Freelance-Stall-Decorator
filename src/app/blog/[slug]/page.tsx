@@ -1,8 +1,8 @@
 import React from "react";
 import fs from "fs";
+import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
-import PostPreview from "@/pages/Blog/PostPreview";
-import Link from "next/link";
+import './blogpage.css'
 
 const getPostMetaData = () => {
   const folder = "posts/";
@@ -25,31 +25,42 @@ const getPostMetaData = () => {
   return posts;
 };
 
-const Blog = () => {
-  const postMetaData = getPostMetaData();
-  const postPreviews = postMetaData.map((post: any) => {
-    return <PostPreview key={Math.random() + post.slug} {...post} />;
-  });
+const getPostContent = (slug: string) => {
+  const folder = "posts/";
+  const content = fs.readFileSync(`${folder}${slug}.md`, "utf8");
+  return content;
+};
 
+export const generateStaticParams = () => {
+  const posts = getPostMetaData();
+  return posts.map((post) => {
+    return {
+      slug: post.slug,
+    };
+  });
+};
+
+const BlogPage = (props: any) => {
+  const slug = props.params.slug;
+  const content = getPostContent(slug);
   return (
     <section className="w-full bg-white text-[#303030] py-6">
       <div className="w-full max-w-[1200px] my-0 mx-auto px-12 lg:px-4 flex flex-col gap-8">
-        <header>
-          <div className="text-center bg-slate-800 p-8 my-6 rounded-md">
-            <Link href="/">
-              <h1 className="text-2xl text-white font-bold mt-4 mb-2">
-                Mr Unique Decoration Blog
-              </h1>
-            </Link>
-            <p className="text-slate-300">👋 Welcome to My Blog. </p>
-          </div>
-        </header>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-          {postPreviews}
+        <div className="my-12 text-center">
+          <h1 className="text-2xl text-slate-600 ">
+            {props.searchParams.title}
+          </h1>
+          <p className="text-slate-400 mt-2">
+            {props.searchParams.description}
+          </p>
         </div>
+
+        <article className="prose">
+          <Markdown>{content}</Markdown>
+        </article>
       </div>
     </section>
   );
 };
 
-export default Blog;
+export default BlogPage;

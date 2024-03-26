@@ -41,7 +41,7 @@ const OutAchievements = () => {
                     className="text-white text-3xl text-center font-semibold tracking-wide"
                     start={0}
                     end={item?.value}
-                    duration={24}
+                    duration={5}
                     separator=","
                   />
                   <h2
