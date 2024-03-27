@@ -61,3 +61,5 @@ https://docs.srv.us/
 ssh srv.us -R 1:localhost:3000
 
 https://socialsharepreview.com/
+
+https://www.smartdiary.co/

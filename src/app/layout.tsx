@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   },
   description: "for exhibition stall & octornom",
   twitter: {
-    card: "summary"
-  }
+    card: "summary",
+  },
 };
 
 export default function RootLayout({
@@ -38,6 +38,22 @@ export default function RootLayout({
           <Footer />
           <SocialIcons />
         </AppContext>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          `,
+          }}
+        />
       </body>
     </html>
   );
