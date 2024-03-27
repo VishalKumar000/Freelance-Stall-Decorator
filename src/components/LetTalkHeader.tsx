@@ -7,7 +7,7 @@ const LetTalkHeader = () => {
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div>
             <h4 className="text-md text-[#07b2ff] relative tracking-[2px] uppercase font-bold m-0 p-0 before:h-[1px] before:bg-[#07b2ff] before:absolute before:translate-x-[-100%] before:left-[-50px] before:right-auto before:w-[150px] before:top-2/4">
-              LET&apos;S TALK
+              LET&apos; 
             </h4>
             <h1 className="m-0 p-0 mt-4 tracking-[2px] font-bold text-6xl">
               Contact

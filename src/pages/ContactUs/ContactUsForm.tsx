@@ -47,6 +47,7 @@ export default function ContactUsForm() {
         phone: "",
         message: "",
       });
+      setErrMsg({ success: true, message: "Thank you for reaching out" });
     } catch (error) {
       setErrMsg({ success: false, message: "Something Went Wrong" });
     } finally {
@@ -112,7 +113,7 @@ export default function ContactUsForm() {
           </div>
           {errMsg && (
             <p
-              className={errMsg?.success ? "text-[#9dff00]" : "text-[#ff0000]"}
+              className={errMsg?.success ? "text-[#07b2ff]" : "text-[#ff0000]"}
             >
               {errMsg?.message}
             </p>

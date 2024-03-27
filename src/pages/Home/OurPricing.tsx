@@ -22,7 +22,7 @@ const OurPricing = () => {
         <div className="grid grid-cols-1 gap-4 min-[550px]:grid-cols-2 min-[550px]:gap-6 lg:grid-cols-3 lg:gap-8">
           {OUR_PRICING_DATA.map((item, index) => {
             return (
-              <div key={index + Math.random()} className="shadow-md">
+              <div key={index + Math.random()} className="shadow-md transition-all hover:-translate-y-3 rounded-md overflow-hidden">
                 <div className="p-6 flex flex-col items-center bg-[#07b2ff]">
                   <h3 className="text-white text-2xl font-medium mb-4">
                     {item.title}

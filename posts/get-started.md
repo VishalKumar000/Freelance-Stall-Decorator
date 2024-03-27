@@ -1,6 +1,7 @@
 ---
 title: "Getting Started"
-description: "This is something new"
+thumbnail: "/CaseStudies/image2.png"
+description: "This is something new bro new this is random content that is This is something new bro new this is random content that is This is something new bro new this is random content that is This is something new bro new this is random content that is This is something new bro new this is random content that is"
 date: "2020-12-17"
 ---
 
@@ -33,6 +34,6 @@ date: "2020-12-17"
 
 }}>
 
-<img src="https://lh3.googleusercontent.com/pw/AP1GczNUNdQP7TpfzwyJG5_F2AhaTxIvm4iX3_FUpSCX6IG8FPjVwoDn64DCHuha_lQmw52hRPC7wgYlKkevD9c03rlGC9XY9UjeH_8g4EwbIn7xRK0pVw=w2400" style="max-width: 300px; max-height: 300px;">
+<img src="/CaseStudies/image2.png">
 
 </div>

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import styles from "./experimentalenvelope.module.css";
 
 import { HiOutlineSpeakerphone } from "react-icons/hi";
 import { MdOutlineEmojiEvents } from "react-icons/md";
@@ -16,7 +15,7 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     // imgUrl: "/Home/ExperimentalEnvelope/image1.png",
     icons: (
       <HiOutlineSpeakerphone
-        className={styles["experiential-envelope-icon"]}
+        className="group-hover:text-white"
         style={{
           fontSize: "50px",
         }}
@@ -31,7 +30,7 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     // imgUrl: "/Home/ExperimentalEnvelope/image2.png",
     icons: (
       <MdOutlineEmojiEvents
-        className={styles["experiential-envelope-icon"]}
+        className="group-hover:text-white"
         style={{
           fontSize: "50px",
         }}
@@ -46,7 +45,7 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     // imgUrl: "/Home/ExperimentalEnvelope/image3.png",
     icons: (
       <BsShop
-        className={styles["experiential-envelope-icon"]}
+        className="group-hover:text-white"
         style={{
           fontSize: "50px",
         }}
@@ -61,7 +60,7 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     // imgUrl: "/Home/ExperimentalEnvelope/image4.png",
     icons: (
       <RiTeamLine
-        className={styles["experiential-envelope-icon"]}
+        className="group-hover:text-white"
         style={{
           fontSize: "50px",
         }}
@@ -76,7 +75,7 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     // imgUrl: "/Home/ExperimentalEnvelope/image5.png",
     icons: (
       <MdOutlineSportsBasketball
-        className={styles["experiential-envelope-icon"]}
+        className="group-hover:text-white"
         style={{
           fontSize: "50px",
         }}
@@ -91,7 +90,7 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     // imgUrl: "/Home/ExperimentalEnvelope/image6.png",
     icons: (
       <LuBuilding2
-        className={styles["experiential-envelope-icon"]}
+        className="group-hover:text-white"
         style={{
           fontSize: "50px",
         }}
@@ -106,7 +105,7 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     // imgUrl: "/Home/ExperimentalEnvelope/image7.png",
     icons: (
       <GiGlobeRing
-        className={styles["experiential-envelope-icon"]}
+        className="group-hover:text-white"
         style={{
           fontSize: "50px",
         }}
@@ -159,7 +158,7 @@ const ExperimentalEnvelope = () => {
                 //   index % 2 === 0 ? "lg:bg-[#000]" : "lg:bg-[#1c2027]"
                 // } flex flex-col justify-between`}
 
-                className={`border border-[#07b2ff] rounded-lg p-6 ${styles['experimental-envelope']}`}
+                className="group border border-[#07b2ff] rounded-lg p-6 relative flex flex-col justify-evenly overflow-hidden before:content-[''] before:absolute before:top-0 before:w-full before:h-full before:bg-[#07b2ff] before:transition-all before:z-[-1] before:left-[-100%] hover:before:left-0"
               >
                 <div className="relative w-12 h-12 mt-0 mx-auto mb-5">
                   {/* <Image
@@ -172,18 +171,18 @@ const ExperimentalEnvelope = () => {
                 </div>
                 <div className="text-white text-lg tracking-[2.5px] font-semibold mb-5 flex items-center justify-center text-center">
                   <h2
-                    className="w-3/4 text-[#212529]"
+                    className="w-3/4 text-[#212529] group-hover:text-white"
                     style={{ wordBreak: "break-word" }}
                   >
                     {item.title}
                   </h2>
                 </div>
-                <p className="text-[#303030] text-sm relative">
+                <p className="text-[#303030] text-sm relative group-hover:text-[#ffffffb0]">
                   {item.content}
                 </p>
                 <Link
                   href={item.link}
-                  className="w-full heading-highlight mt-2 font-medium flex items-center justify-center"
+                  className="w-full heading-highlight mt-2 font-medium flex items-center justify-center group-hover:text-white group-hover:bg-[white]"
                 >
                   Read More
                 </Link>

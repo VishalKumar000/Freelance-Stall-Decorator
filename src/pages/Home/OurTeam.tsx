@@ -1,5 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
 
 const OurTeam = () => {
   return (
@@ -22,13 +27,34 @@ const OurTeam = () => {
           {OUR_TEAM_DATA.map((item, index) => {
             return (
               <div key={index + Math.random()}>
-                <Image
-                  src={item.imgUrl}
-                  alt={item.name}
-                  width={400}
-                  height={400}
-                  className="object-contain shadow-md"
-                />
+                <div className="relative group max-w-xl mx-auto mt-3">
+                  <Image
+                    // src={item.imgUrl}
+                    src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt={item.name}
+                    width={400}
+                    height={400}
+                    // className="object-contain shadow-md"
+                    className="w-full object-contain rounded-md"
+                  />
+                  <div className="hidden absolute inset-0 bg-gray-700 opacity-60 rounded-md group-hover:block"></div>
+                  <div className="hidden absolute bottom-4 inset-0 items-center justify-end flex-col group-hover:flex">
+                    <div className="flex gap-4">
+                      <Link href={item.instagram}>
+                        <FaInstagram className="bg-white rounded-md w-7 h-7 p-[3px] text-[#07b2ff] text-2xl hover:bg-[#07b2ff] hover:text-white" />
+                      </Link>
+                      <Link href={item.twitter}>
+                        <FaTwitter className="bg-white rounded-md w-7 h-7 p-[3px] text-[#07b2ff] text-2xl hover:bg-[#07b2ff] hover:text-white" />
+                      </Link>
+                      <Link href={item.facebook}>
+                        <FaFacebookF className="bg-white rounded-md w-7 h-7 p-[3px] text-[#07b2ff] text-2xl hover:bg-[#07b2ff] hover:text-white" />
+                      </Link>
+                      <Link href={item.linkedIn}>
+                        <FaLinkedin className="bg-white rounded-md w-7 h-7 p-[3px] text-[#07b2ff] text-2xl hover:bg-[#07b2ff] hover:text-white" />
+                      </Link> 
+                    </div>
+                  </div>
+                </div>
                 <div className="p-4 text-center">
                   <h3 className="font-semibold text-xl">{item.name}</h3>
                   <p className="text-gray-500">{item.designation}</p>
@@ -49,20 +75,36 @@ const OUR_TEAM_DATA = [
     imgUrl: "https://cutesolution.com/html/techvolt/assets/img/team/team-2.jpg",
     name: "Vishal Kumar",
     designation: "Developer",
+    linkedIn: "https://www.linkedin.com/",
+    instagram: "https://www.instagram.com/",
+    twitter: "https://twitter.com/",
+    facebook: "https://www.facebook.com/",
   },
   {
     imgUrl: "https://cutesolution.com/html/techvolt/assets/img/team/team-2.jpg",
     name: "Vishal Kumar",
     designation: "Developer",
+    linkedIn: "https://www.linkedin.com/",
+    instagram: "https://www.instagram.com/",
+    twitter: "https://twitter.com/",
+    facebook: "https://www.facebook.com/",
   },
   {
     imgUrl: "https://cutesolution.com/html/techvolt/assets/img/team/team-2.jpg",
     name: "Vishal Kumar",
     designation: "Developer",
+    linkedIn: "https://www.linkedin.com/",
+    instagram: "https://www.instagram.com/",
+    twitter: "https://twitter.com/",
+    facebook: "https://www.facebook.com/",
   },
   {
     imgUrl: "https://cutesolution.com/html/techvolt/assets/img/team/team-2.jpg",
     name: "Vishal Kumar",
     designation: "Developer",
+    linkedIn: "https://www.linkedin.com/",
+    instagram: "https://www.instagram.com/",
+    twitter: "https://twitter.com/",
+    facebook: "https://www.facebook.com/",
   },
 ];

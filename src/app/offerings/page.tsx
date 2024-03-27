@@ -1,9 +1,11 @@
 import FixedSlider from "@/pages/CaseStudies/FixedSlider";
+import OurPricing from "@/pages/Home/OurPricing";
 import React from "react";
 
 const Offerings = () => {
   return (
     <>
+      <OurPricing/>
       <FixedSlider data={OFFERINGS_DATA} />
     </>
   );

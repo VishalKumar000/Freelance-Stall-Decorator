@@ -64,7 +64,7 @@ const OurClient = () => {
           {OUR_CLIENT_DATA.map((item, index) => {
             return (
               <SwiperSlide key={index + item + index + Math.random()}>
-                <div className="relative w-full h-full min-h-[150px] max-h-[150px] overflow-hidden rounded-md p-6 shadow-md bg-white">
+                <div className="relative w-full h-full min-h-[170px] max-h-[150px] overflow-hidden rounded-md p-6 shadow-md bg-white">
                   <Image
                     src={item}
                     alt="image selected by user"

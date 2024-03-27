@@ -31,7 +31,7 @@ const ImageFilter = () => {
 
   return (
     <section className="w-full flex flex-col gap-12 py-16 lg:px-16 md:px-10 px-5">
-      <div className="flex w-full md:justify-center items-start md:gap-6 gap-3 flex-wrap">
+      <div className="max-w-[1200px] flex w-full md:justify-center items-start md:gap-6 gap-3 flex-wrap mx-auto">
         {buttonCaptions.map((filter) => (
           <Button
             key={filter}

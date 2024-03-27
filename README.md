@@ -48,3 +48,10 @@ https://codepen.io/snorkltv/pen/vYVBPJq?editors=0010
 https://www.youtube.com/watch?v=6VbETTS67rM
 
 https://www.youtube.com/watch?v=EBENCwqVMxs&ab_channel=CluelessExpert
+
+https://www.youtube.com/watch?v=JAYg-87j7bo&list=PL5e68lK9hEzfe1nPJ2aB5A7jmwgRuTZOm&index=97
+
+<!-- SEO -->
+https://www.youtube.com/watch?v=wTGVHLyV09M
+
+https://realfavicongenerator.net/favicon_result?file_id=p1hpvoluqo1vn44al10348eqvhc6

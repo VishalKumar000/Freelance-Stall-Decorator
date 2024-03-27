@@ -29,3 +29,6 @@ App script
 https://script.google.com/u/0/home/projects/1kYJIyYU4e-ix6LjSy6qhOu3Lu1j_UjjEVRxW5HbKb5uLIZi0yNhe0RQ5/edit
 
 https://www.youtube.com/watch?v=JFp_HFtDPHs
+
+
+google search console

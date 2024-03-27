@@ -18,6 +18,7 @@ const getPostMetaData = () => {
       title: matterResult.data.title,
       date: matterResult.data.date,
       description: matterResult.data.description,
+      thumbnail: matterResult.data.thumbnail,
       slug: fileName.replace(".md", ""),
     };
   });

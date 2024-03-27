@@ -76,6 +76,7 @@ export default function CareerForm() {
         message: "",
         resume: null,
       });
+      setErrMsg({ success: true, message: "Thank you for reaching out" });
     } catch (error) {
       setErrMsg({ success: false, message: "Something Went Wrong" });
     } finally {
@@ -147,7 +148,7 @@ export default function CareerForm() {
           />
           {errMsg && (
             <p
-              className={errMsg?.success ? "text-[#9dff00]" : "text-[#ff0000]"}
+              className={errMsg?.success ? "text-[#07b2ff]" : "text-[#ff0000]"}
             >
               {errMsg?.message}
             </p>
