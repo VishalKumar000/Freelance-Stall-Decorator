@@ -1,5 +1,10 @@
 import React from "react";
 import FixedSlider from "@/pages/CaseStudies/FixedSlider";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Case Studies",
+};
 
 const CaseStudies = () => {
   return (

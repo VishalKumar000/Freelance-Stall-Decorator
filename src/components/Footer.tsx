@@ -32,7 +32,7 @@ const Footer = () => {
                       className="text-xl font-semibold text-[#07b2ff]"
                       style={{ wordBreak: "normal" }}
                     >
-                      Mr Unique Decoration
+                      MR Unique Decoration
                       {/* <Image
                         src="/footer/3268white logo.png"
                         alt="MR Unique Decoration"

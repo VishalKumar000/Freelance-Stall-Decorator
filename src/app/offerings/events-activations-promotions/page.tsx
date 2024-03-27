@@ -1,6 +1,11 @@
 import OfferingsContent from "@/pages/Offerings/OfferingsContent";
 import ProjectGallery from "@/pages/Projects/ProjectGallery";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Events Activations Promotions",
+};
 
 const EventsActivationsPromotions = () => {
   return (

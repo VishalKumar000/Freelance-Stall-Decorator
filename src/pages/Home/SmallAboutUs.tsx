@@ -18,10 +18,10 @@ const SmallAboutUs = () => {
               className="text-2xl min-[550px]:text-4xl lg:text-5xl font-bold tracking-[0.01em] mb-5 text-[#212529]"
               style={{ wordBreak: "break-word" }}
             >
-              Mr Unique Decoration
+              MR Unique Decoration
             </h2>
             <p className="text-[#303030] text-sm relative mb-5">
-              Mr Unique Decoration and Exhibits has pioneered a stream of
+              MR Unique Decoration and Exhibits has pioneered a stream of
               innovative concepts which have set new benchmarks and raised the
               bar for operations and logistics in the event industry. Powered by
               several factors - including a dedicated R&D division that explores

@@ -3,6 +3,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import PostPreview from "@/pages/Blog/PostPreview";
 import Link from "next/link";
+import { Metadata } from "next";
 
 const getPostMetaData = () => {
   const folder = "posts/";
@@ -26,6 +27,10 @@ const getPostMetaData = () => {
   return posts;
 };
 
+export const metadata: Metadata = {
+  title: 'Blog',
+}
+
 const Blog = () => {
   const postMetaData = getPostMetaData();
   const postPreviews = postMetaData.map((post: any) => {
@@ -39,7 +44,7 @@ const Blog = () => {
           <div className="text-center bg-slate-800 p-8 my-6 rounded-md">
             <Link href="/">
               <h1 className="text-2xl text-white font-bold mt-4 mb-2">
-                Mr Unique Decoration Blog
+                MR Unique Decoration Blog
               </h1>
             </Link>
             <p className="text-slate-300">👋 Welcome to My Blog. </p>

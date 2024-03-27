@@ -1,6 +1,11 @@
 import FixedSlider from "@/pages/CaseStudies/FixedSlider";
 import OurPricing from "@/pages/Home/OurPricing";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Offerings",
+};
 
 const Offerings = () => {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
-import './blogpage.css'
+import "./blogpage.css";
 
 const getPostMetaData = () => {
   const folder = "posts/";
@@ -18,6 +18,7 @@ const getPostMetaData = () => {
       title: matterResult.data.title,
       date: matterResult.data.date,
       description: matterResult.data.description,
+      thumbnail: matterResult.data.thumbnail,
       slug: fileName.replace(".md", ""),
     };
   });
@@ -39,6 +40,23 @@ export const generateStaticParams = () => {
     };
   });
 };
+
+export async function generateMetadata(props: any) {
+  const posts = getPostMetaData();
+  return {
+    title: props.searchParams.title,
+    description: props.searchParams.description,
+    openGraph: {
+      images: [
+        {
+          url: posts.filter(
+            (post) => post.title === props.searchParams.title
+          )[0].thumbnail,
+        },
+      ],
+    },
+  };
+}
 
 const BlogPage = (props: any) => {
   const slug = props.params.slug;

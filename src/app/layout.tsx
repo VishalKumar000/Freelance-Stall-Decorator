@@ -14,10 +14,13 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Mr Unique Decorator",
-    default: "Mr Unique Decorator",
+    template: "%s - MR Unique Decorator",
+    default: "MR Unique Decorator",
   },
   description: "for exhibition stall & octornom",
+  twitter: {
+    card: "summary"
+  }
 };
 
 export default function RootLayout({

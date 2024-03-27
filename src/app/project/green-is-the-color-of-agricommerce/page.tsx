@@ -1,6 +1,11 @@
 import ProjectContent from "@/pages/Projects/ProjectContent";
 import ProjectGallery from "@/pages/Projects/ProjectGallery";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Green is the color of agriculture",
+};
 
 const GreenIsTheColorOfAgricommerce = () => {
   return (

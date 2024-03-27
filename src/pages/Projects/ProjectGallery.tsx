@@ -46,7 +46,7 @@ const ProjectGallery = (props: {
                 key={
                   index + project.thumbnailURL + project.title + Math.random()
                 }
-                data-sub-html={`<h4>Photo by - Mr Unique Decoration</h4><p>${project.title}</p>`}
+                data-sub-html={`<h4>Photo by - MR Unique Decoration</h4><p>${project.title}</p>`}
               >
                 <Image
                   alt={project.title}

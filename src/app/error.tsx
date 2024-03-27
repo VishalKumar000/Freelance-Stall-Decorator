@@ -1,7 +1,12 @@
 "use client";
 
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Error",
+};
 
 const error = ({ error, reset }: { error: Error; reset: () => void }) => {
   return (

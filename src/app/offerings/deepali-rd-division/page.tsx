@@ -1,5 +1,10 @@
 import OfferingsContent from "@/pages/Offerings/OfferingsContent";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Deepali RD division",
+};
 
 const DeepaliRdDivision = () => {
   return (

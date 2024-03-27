@@ -13,7 +13,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 const menuLinks = [
   { label: "Home", path: "/" },
-  { label: "Meet Deepali", path: "/about-us" },
+  { label: "About Us", path: "/about-us" },
   { label: "Our Offerings", path: "/offerings" },
   { label: "Case Studies", path: "/case-studies" },
   { label: "Careers", path: "/career" },

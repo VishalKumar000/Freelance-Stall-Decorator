@@ -13,7 +13,7 @@ const AboutOwnerMask = () => {
           className="text-center text-3xl font-semibold text-[#07b2ff]"
           style={{ wordBreak: "normal" }}
         >
-          Mr Unique Decoration
+          MR Unique Decoration
         </h1>
         {ABOUT_OWNER_MASK_DATA.map((item, index) => {
           return (
@@ -30,7 +30,7 @@ const AboutOwnerMask = () => {
 export default AboutOwnerMask;
 
 const ABOUT_OWNER_MASK_DATA = [
-  "Mr Unique Decoration and Exhibits has pioneered a stream of innovative concepts which have set new benchmarks and raised the bar for operations and logistics in the event industry. Powered by several factors - including a dedicated R&D division that explores futuristic material usage, immense application of mind, unimaginable hard work, thorough technical know-how and great execution capabilities, we have blazed an unbeatable record of delivering products and services relating to events & exhibitions.",
+  "MR Unique Decoration and Exhibits has pioneered a stream of innovative concepts which have set new benchmarks and raised the bar for operations and logistics in the event industry. Powered by several factors - including a dedicated R&D division that explores futuristic material usage, immense application of mind, unimaginable hard work, thorough technical know-how and great execution capabilities, we have blazed an unbeatable record of delivering products and services relating to events & exhibitions.",
   "To give you a macro snapshot, we have a wide range of capabilities. Be it a quick Rapid Hospital Setup, or creating an immersive for an event or setting up of an exhibition booth - we are quickly off the mark and deliver unexpected results, with blazing fast turnarounds.",
   "We possess the widest range of infrastructure - in the form of our own workshop, an in-house design and execution team and are headquartered in New Delhi with a powerful presence in Mumbai- the commercial and business hub of the country.",
 ];
