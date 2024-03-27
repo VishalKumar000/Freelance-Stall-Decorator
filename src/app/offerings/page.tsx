@@ -58,7 +58,7 @@ const OFFERINGS_DATA = [
   },
   {
     key: "07",
-    title: "Weddings",
+    title: "Green Room & Vanity Van",
     type: "EVENT, EXHIBITION & CONFERENCE",
     imgUrl: "/CaseStudies/image5.jpg",
     link: "/offerings/weddings",
