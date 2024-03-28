@@ -14,6 +14,7 @@ const AboutWelcomeBanner = () => {
             data-dsn-y="30%"
             data-dsn-scale={1}
             fill
+            sizes="100vw"
             className=" object-cover"
             alt=""
             // style={{

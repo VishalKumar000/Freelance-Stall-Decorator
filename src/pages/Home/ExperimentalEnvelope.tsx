@@ -161,12 +161,6 @@ const ExperimentalEnvelope = () => {
                 className="group border border-[#07b2ff] rounded-lg p-6 relative flex flex-col justify-evenly overflow-hidden before:content-[''] before:absolute before:top-0 before:w-full before:h-full before:bg-[#07b2ff] before:transition-all before:z-[-1] before:left-[-100%] hover:before:left-0"
               >
                 <div className="relative w-12 h-12 mt-0 mx-auto mb-5">
-                  {/* <Image
-                    src={item.imgUrl}
-                    alt="image selected by user"
-                    fill
-                    className=" object-cover"
-                  /> */}
                   {item.icons}
                 </div>
                 <div className="text-white text-lg tracking-[2.5px] font-semibold mb-5 flex items-center justify-center text-center">

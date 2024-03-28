@@ -33,9 +33,9 @@ export default function CareerForm() {
       e.preventDefault();
       const file = e.target.files[0];
 
-      if (!file) return;
-      if (file.size > 307200)
-        throw new Error("File size should be less than 300KB");
+      // if (!file) return;
+      // if (file.size > 307200)
+      //   throw new Error("File size should be less than 300KB");
 
       const fileReader = new FileReader();
 
@@ -142,7 +142,6 @@ export default function CareerForm() {
           <PDFPicker
             label={"Resume"}
             name={"resume"}
-            value={formData.resume}
             pickedFileName={pickedFileName}
             handleResumeChange={handleResumeChange}
           />

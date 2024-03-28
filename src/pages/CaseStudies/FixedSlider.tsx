@@ -83,6 +83,7 @@ const FixedSlider = (props: { data: any[] }) => {
           <Image
             src={""}
             fill
+            sizes="100vw"
             alt="thumbnail-case-studies"
             ref={thumbnailImg}
             className=" object-cover"

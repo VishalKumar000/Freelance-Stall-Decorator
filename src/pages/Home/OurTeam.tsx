@@ -34,6 +34,7 @@ const OurTeam = () => {
                     src={item.imgUrl}
                     alt={item.name}
                     fill
+                    sizes="100vw"
                     // className="object-contain shadow-md"
                     className="w-full object-cover rounded-md"
                   />
@@ -75,7 +76,9 @@ const OurTeam = () => {
                 </div>
                 <div className="p-4 text-center">
                   <h3 className="font-semibold text-[14px]">{item.name}</h3>
-                  {item.designation && <p className="text-gray-500">{item.designation}</p>}
+                  {item.designation && (
+                    <p className="text-gray-500">{item.designation}</p>
+                  )}
                 </div>
               </div>
             );

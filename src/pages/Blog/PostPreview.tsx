@@ -11,13 +11,12 @@ const PostPreview = (props: any) => {
         query: { title: title, description: description },
       }}
     >
-      <div
-        className="group border border-slate-300 rounded-md shadow-sm transition-all bg-white"
-      >
+      <div className="group border border-slate-300 rounded-md shadow-sm transition-all bg-white">
         <div className="h-40 w-full relative transition-all overflow-hidden">
           <Image
             src={thumbnail}
             fill
+            sizes="100vw"
             objectFit="cover"
             alt=""
             className="rounded-md group-hover:scale-105 transition-all"
@@ -26,7 +25,9 @@ const PostPreview = (props: any) => {
         <div className=" p-4">
           <p className="text-sm text-slate-400">{date}</p>
           <h2 className=" text-[#07b2ff] mb-4">{title}</h2>
-          <p className="text-slate-700 leading-5">{description?.slice(0, 200)}</p>
+          <p className="text-slate-700 leading-5">
+            {description?.slice(0, 200)}
+          </p>
         </div>
       </div>
     </Link>

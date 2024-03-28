@@ -51,10 +51,8 @@ const ProjectGallery = (props: {
                 <Image
                   alt={project.title}
                   src={project.thumbnailURL}
-                  // className="absolute top-0 left-0 w-full h-full object-cover"
                   fill
-                  // effect="blur"
-                  // placeholderSrc={project.thumbnailURL}
+                  sizes="100vw"
                 />
                 <p className=" absolute left-0 bottom-3 py-1 px-3 text-white text-[12px] bg-gradient-to-r from-gray-800/50 to-gray-800">
                   {project.title}

@@ -69,6 +69,7 @@ const OurClient = () => {
                     src={item}
                     alt="image selected by user"
                     fill
+                    sizes="100vw"
                     className=" transition-all hover:scale-110 object-contain"
                   />
                 </div>

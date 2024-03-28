@@ -87,6 +87,7 @@ const WelcomeSlider = () => {
                 src={slide.imgUrl}
                 alt=""
                 fill
+                sizes="100vw"
                 placeholder="blur"
                 priority
               />
@@ -126,7 +127,7 @@ const WelcomeSlider = () => {
                 Math.random()
               }
             >
-              <Image src={slide.imgUrl} alt="" fill />
+              <Image src={slide.imgUrl} alt="" fill sizes="100vw" />
             </SwiperSlide>
           );
         })}

@@ -3,6 +3,7 @@ import AboutWelcomeBanner from "@/pages/AboutUs/AboutWelcomeBanner";
 import WhatWeLiveBy from "@/pages/AboutUs/WhatWeLiveBy";
 import OurTeam from "@/pages/Home/OurTeam";
 import OutAchievements from "@/pages/Home/OutAchievements";
+import Testimonials from "@/pages/Home/Testimonials";
 import { Metadata } from "next";
 import React from "react";
 
@@ -17,6 +18,7 @@ const AboutUs = () => {
       <AboutOwnerMask />
       <OutAchievements />
       <OurTeam />
+      <Testimonials />
       <WhatWeLiveBy />
     </>
   );

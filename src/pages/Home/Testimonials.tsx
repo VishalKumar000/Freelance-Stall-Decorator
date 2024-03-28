@@ -44,6 +44,7 @@ const Testimonials = () => {
                   src={item}
                   alt="image selected by user"
                   fill
+                  sizes="100vw"
                   className=" object-cover"
                 />
               </SwiperSlide>
