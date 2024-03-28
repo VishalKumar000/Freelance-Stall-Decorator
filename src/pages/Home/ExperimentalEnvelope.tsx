@@ -1,8 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-import { HiOutlineSpeakerphone } from "react-icons/hi";
 import { MdOutlineEmojiEvents } from "react-icons/md";
 import { BsShop } from "react-icons/bs";
 import { RiTeamLine } from "react-icons/ri";
@@ -11,21 +9,6 @@ import { MdOutlineSportsBasketball } from "react-icons/md";
 import { GiGlobeRing } from "react-icons/gi";
 
 const EXPERIMENTAL_ENVELOPE_DATA = [
-  {
-    // imgUrl: "/Home/ExperimentalEnvelope/image1.png",
-    icons: (
-      <HiOutlineSpeakerphone
-        className="group-hover:text-white"
-        style={{
-          fontSize: "50px",
-        }}
-      />
-    ),
-    title: "Deepali R&D Division",
-    content:
-      "Embark on a transformative journey towards sustainability and a net-zero future by exploring our pioneering R&D initiatives.",
-    link: "/",
-  },
   {
     // imgUrl: "/Home/ExperimentalEnvelope/image2.png",
     icons: (
@@ -99,21 +82,6 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     title: "Modular Infrastructure",
     content:
       "With 3 decades of fabricating and setting up large-scale Events & Exhibitions, thereby shaping up its edge, know how , infrastructure",
-    link: "/",
-  },
-  {
-    // imgUrl: "/Home/ExperimentalEnvelope/image7.png",
-    icons: (
-      <GiGlobeRing
-        className="group-hover:text-white"
-        style={{
-          fontSize: "50px",
-        }}
-      />
-    ),
-    title: "Weddings",
-    content:
-      "We create authentic wedding experiences with our exquisitely curated wedding banquets, dedicated pandal options, catering services, artist",
     link: "/",
   },
 ];

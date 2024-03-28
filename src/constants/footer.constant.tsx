@@ -18,10 +18,6 @@ export const NAVIGATION_DATA = [
 
 export const OUR_OFFERINGS_DATA = [
   {
-    link: "/offerings/deepali-rd-division",
-    title: "Deepali R&D Division",
-  },
-  {
     link: "/offerings/events-activations-promotions",
     title: "Events, Activations & Promotions",
   },

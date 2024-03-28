@@ -66,9 +66,11 @@ const FixedSlider = (props: { data: any[] }) => {
                     </div>
                     <h3
                       className="hidden text-5xl font-black text-transparent tracking-[4px] md:block"
-                      style={{ WebkitTextStroke: "1px white" }}
+                      style={{
+                        WebkitTextStroke: "1px #07b2ff",
+                      }}
                     >
-                      {item.key}
+                      {index + 1}
                     </h3>
                   </div>
                 </div>
