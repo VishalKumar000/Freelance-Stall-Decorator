@@ -48,7 +48,7 @@ const WhatOurClientSays = () => {
                 style={{
                   background: "transparent",
                   borderRadius: "15px",
-                  overflow: "hidden"
+                  overflow: "hidden",
                 }}
               >
                 <div className="relative w-full min-h-min overflow-hidden rounded-sm px-6 py-14 shadow-md bg-white text-black">
@@ -102,42 +102,34 @@ export default WhatOurClientSays;
 const WHAT_OUR_CLIENT_SAYS = [
   {
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ullam corporis nulla, incidunt deserunt libero voluptatibus unde veritatis consequatur esse voluptatem temporibus fugiat, optio iure nesciunt ad sequi repellendus sunt.",
+      "Absolutely thrilled with the professionalism and creativity showcased by Mr Unique Decoration. Their Octanorm Stall was a game-changer for our recent exhibition. Mr. Muzammil's attention to detail and prompt communication made the entire process seamless. Highly recommend!",
     imgUrl:
-      "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Vishal Kumar",
+      "https://lh3.googleusercontent.com/a-/ALV-UjVUrLaqNIoHPE-AmPeB7wexYtZEN6MOZCx9X5u89IBA04s=w45-h45-p-rp-mo-ba2-br100",
+    name: "Irshad Gm",
     star: 4,
   },
   {
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ullam corporis nulla, incidunt deserunt libero voluptatibus unde veritatis consequatur esse voluptatem temporibus fugiat, optio iure nesciunt ad sequi repellendus sunt.",
+      "Had a wonderful experience working with Mr Unique Decoration for our corporate event. Their Exhibition Stall design was nothing short of spectacular. The team understood our vision perfectly and delivered beyond our expectations. Will definitely be a returning customer!",
     imgUrl:
-      "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Vishal Kumar 1",
-    star: 4,
+      "https://lh3.googleusercontent.com/a-/ALV-UjU5APzqubtXIWnvcqvGIfVRPG6LSGYwW7FhJGxpReAWclp3=w75-h75-p-rp-mo-br100",
+    name: "Manish Mishra",
+    star: 5,
   },
   {
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ullam corporis nulla, incidunt deserunt libero voluptatibus unde veritatis consequatur esse voluptatem temporibus fugiat, optio iure nesciunt ad sequi repellendus sunt.",
+      "Being in the event management industry, I've come across many suppliers, but none compare to Mr Unique Decoration. Their commitment to quality and customer satisfaction is commendable. The Octanorm Stall provided by them added the perfect touch of elegance to our trade show. Kudos to the team!",
     imgUrl:
-      "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Vishal Kumar2 ",
-    star: 4,
+      "https://lh3.googleusercontent.com/a-/ALV-UjUK8bgx1EQk3Uh7G1CQkd2wbjmebzE3y0VFzLbGHb0ejkA=w75-h75-p-rp-mo-br100",
+    name: "Hayat Perwaiz (Hayat)",
+    star: 5,
   },
   {
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ullam corporis nulla, incidunt deserunt libero voluptatibus unde veritatis consequatur esse voluptatem temporibus fugiat, optio iure nesciunt ad sequi repellendus sunt.",
+      "Mr Unique Decoration truly lives up to its name! Their craftsmanship and attention to detail are unmatched. We recently used their Octanorm Stall for a product launch, and it was the talk of the town. The team's dedication to perfection is evident in every aspect of their work. Definitely our go-to choice for future events.",
     imgUrl:
-      "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Vishal Kumar3",
-    star: 4,
-  },
-  {
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ullam corporis nulla, incidunt deserunt libero voluptatibus unde veritatis consequatur esse voluptatem temporibus fugiat, optio iure nesciunt ad sequi repellendus sunt.",
-    imgUrl:
-      "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Vishal Kumar4",
+      "https://lh3.googleusercontent.com/a/ACg8ocIPBCch7ULQcZDIk2WSiLcr3YmMzVTQWiOMWYS-FYSm=w75-h75-p-rp-mo-br100",
+    name: "Saeeduzzama Ujala",
     star: 4,
   },
 ];

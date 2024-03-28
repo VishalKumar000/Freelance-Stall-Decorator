@@ -68,7 +68,7 @@ const SmallAboutUs = () => {
                 src="/AboutUs/3319abt-h.png"
                 data-dsn-y="30%"
                 data-dsn-scale={1}
-                layout="fill"
+                fill
                 className=" object-cover"
                 alt=""
               />

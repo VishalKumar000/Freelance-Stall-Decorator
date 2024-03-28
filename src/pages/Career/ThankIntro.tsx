@@ -25,7 +25,7 @@ const ThankIntro = () => {
   return (
     <section className="w-full bg-white text-[#303030] py-14">
       <div className="w-full max-w-[1200px] my-0 mx-auto px-4 lg:px-12 flex flex-col gap-8">
-        <h2 className="text-xl md:text-[42px] md:leading-[40px] font-extrabold tracking-wide mb-4 text=[#212529]">
+        <h2 className="text-xl md:text-[42px] md:leading-[40px] font-extrabold tracking-wide mb-4 text=[#212529]" style={{wordBreak: "normal"}}>
           THANK YOU FOR YOUR INTEREST IN MR UNIQUE DECORATION AND EXHIBITS
         </h2>
         <div className="mb-4 gap-4">

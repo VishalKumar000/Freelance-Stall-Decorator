@@ -5,6 +5,8 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
+import { MdLocalPhone } from "react-icons/md";
+import { IoMail } from "react-icons/io5";
 
 const OurTeam = () => {
   return (
@@ -27,37 +29,53 @@ const OurTeam = () => {
           {OUR_TEAM_DATA.map((item, index) => {
             return (
               <div key={index + Math.random()}>
-                <div className="relative group max-w-xl mx-auto mt-3">
+                <div className="relative group max-w-xl mx-auto mt-3 min-h-[224px] overflow-hidden">
                   <Image
-                    // src={item.imgUrl}
-                    src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src={item.imgUrl}
                     alt={item.name}
-                    width={400}
-                    height={400}
+                    fill
                     // className="object-contain shadow-md"
-                    className="w-full object-contain rounded-md"
+                    className="w-full object-cover rounded-md"
                   />
                   <div className="hidden absolute inset-0 bg-gray-700 opacity-60 rounded-md group-hover:block"></div>
                   <div className="hidden absolute bottom-4 inset-0 items-center justify-end flex-col group-hover:flex">
                     <div className="flex gap-4">
-                      <Link href={item.instagram}>
-                        <FaInstagram className="bg-white rounded-md w-7 h-7 p-[3px] text-[#07b2ff] text-2xl hover:bg-[#07b2ff] hover:text-white" />
-                      </Link>
-                      <Link href={item.twitter}>
-                        <FaTwitter className="bg-white rounded-md w-7 h-7 p-[3px] text-[#07b2ff] text-2xl hover:bg-[#07b2ff] hover:text-white" />
-                      </Link>
-                      <Link href={item.facebook}>
-                        <FaFacebookF className="bg-white rounded-md w-7 h-7 p-[3px] text-[#07b2ff] text-2xl hover:bg-[#07b2ff] hover:text-white" />
-                      </Link>
-                      <Link href={item.linkedIn}>
-                        <FaLinkedin className="bg-white rounded-md w-7 h-7 p-[3px] text-[#07b2ff] text-2xl hover:bg-[#07b2ff] hover:text-white" />
-                      </Link> 
+                      {item.instagram && (
+                        <Link href={item.instagram}>
+                          <FaInstagram className="bg-white rounded-md w-7 h-7 p-[3px] text-[#07b2ff] text-2xl hover:bg-[#07b2ff] hover:text-white" />
+                        </Link>
+                      )}
+                      {item.twitter && (
+                        <Link href={item.twitter}>
+                          <FaTwitter className="bg-white rounded-md w-7 h-7 p-[3px] text-[#07b2ff] text-2xl hover:bg-[#07b2ff] hover:text-white" />
+                        </Link>
+                      )}
+                      {item.facebook && (
+                        <Link href={item.facebook}>
+                          <FaFacebookF className="bg-white rounded-md w-7 h-7 p-[3px] text-[#07b2ff] text-2xl hover:bg-[#07b2ff] hover:text-white" />
+                        </Link>
+                      )}
+                      {item.linkedIn && (
+                        <Link href={item.linkedIn}>
+                          <FaLinkedin className="bg-white rounded-md w-7 h-7 p-[3px] text-[#07b2ff] text-2xl hover:bg-[#07b2ff] hover:text-white" />
+                        </Link>
+                      )}
+                      {item.phone && (
+                        <Link href={item.phone}>
+                          <MdLocalPhone className="bg-white rounded-md w-7 h-7 p-[3px] text-[#07b2ff] text-2xl hover:bg-[#07b2ff] hover:text-white" />
+                        </Link>
+                      )}
+                      {item.mail && (
+                        <Link href={item.mail}>
+                          <IoMail className="bg-white rounded-md w-7 h-7 p-[3px] text-[#07b2ff] text-2xl hover:bg-[#07b2ff] hover:text-white" />
+                        </Link>
+                      )}
                     </div>
                   </div>
                 </div>
                 <div className="p-4 text-center">
-                  <h3 className="font-semibold text-xl">{item.name}</h3>
-                  <p className="text-gray-500">{item.designation}</p>
+                  <h3 className="font-semibold text-[14px]">{item.name}</h3>
+                  {item.designation && <p className="text-gray-500">{item.designation}</p>}
                 </div>
               </div>
             );
@@ -72,39 +90,47 @@ export default OurTeam;
 
 const OUR_TEAM_DATA = [
   {
-    imgUrl: "https://cutesolution.com/html/techvolt/assets/img/team/team-2.jpg",
-    name: "Vishal Kumar",
-    designation: "Developer",
-    linkedIn: "https://www.linkedin.com/",
-    instagram: "https://www.instagram.com/",
-    twitter: "https://twitter.com/",
-    facebook: "https://www.facebook.com/",
+    imgUrl: "/Home/OurTeam/member01.png",
+    name: "Mohammad Muzammil",
+    designation: "CEO",
+    phone: "tel:+91-7042535020",
+    mail: "mdmuzmmil797@gmail.com",
+    linkedIn: "",
+    instagram: "",
+    twitter: "",
+    facebook: "",
   },
   {
-    imgUrl: "https://cutesolution.com/html/techvolt/assets/img/team/team-2.jpg",
-    name: "Vishal Kumar",
-    designation: "Developer",
-    linkedIn: "https://www.linkedin.com/",
-    instagram: "https://www.instagram.com/",
-    twitter: "https://twitter.com/",
-    facebook: "https://www.facebook.com/",
+    imgUrl: "/Home/OurTeam/member04.png",
+    name: "Mohd Ragib",
+    designation: "",
+    phone: "tel:+91-9990162919",
+    mail: "ragibmd9016@gmail.com",
+    linkedIn: "",
+    instagram: "",
+    twitter: "",
+    facebook: "",
   },
   {
-    imgUrl: "https://cutesolution.com/html/techvolt/assets/img/team/team-2.jpg",
-    name: "Vishal Kumar",
-    designation: "Developer",
-    linkedIn: "https://www.linkedin.com/",
-    instagram: "https://www.instagram.com/",
-    twitter: "https://twitter.com/",
-    facebook: "https://www.facebook.com/",
+    imgUrl: "/Home/OurTeam/member05.png",
+    name: "Shaukat Ali",
+    designation: "",
+    phone: "tel:+91-8084905068",
+    mail: "shaukatm563@gmail.com",
+    linkedIn: "",
+    instagram: "",
+    twitter: "",
+    facebook: "",
   },
   {
-    imgUrl: "https://cutesolution.com/html/techvolt/assets/img/team/team-2.jpg",
-    name: "Vishal Kumar",
-    designation: "Developer",
-    linkedIn: "https://www.linkedin.com/",
-    instagram: "https://www.instagram.com/",
-    twitter: "https://twitter.com/",
-    facebook: "https://www.facebook.com/",
+    imgUrl: "/Home/OurTeam/member02.png",
+    name: "Md Saqib",
+    designation: "",
+    phone: "tel:+91-9534681585",
+    mail: "saqibb0786@gmail.com",
+    linkedIn: "",
+    instagram: "",
+    twitter: "",
+    facebook: "",
   },
 ];

@@ -27,12 +27,6 @@ const WhatWeLiveBy = () => {
               >
                 <div className="w-24 min-w-24 h-24 min-h-24 relative p-2">
                   {item.icons}
-                  {/* <Image
-                    src={item.imgSrc}
-                    layout="fill"
-                    style={{ objectFit: "contain" }}
-                    alt=""
-                  /> */}
                 </div>
                 <h4
                   className="font-medium text-3xl"

@@ -8,9 +8,10 @@ import "./testimonials.css";
 import Image from "next/image";
 
 const TESTIMONIAL_DATA = [
-  "/Home/Testimonials/testimonial1.jpeg",
-  "/Home/Testimonials/testimonial2.jpeg",
-  "/Home/Testimonials/testimonial3.jpg",
+  "/Home/Testimonials/testimonial1.jpg",
+  "/Home/Testimonials/testimonial.jpg",
+  // "/Home/Testimonials/testimonial2.jpeg",
+  // "/Home/Testimonials/testimonial3.jpg",
 ];
 
 const Testimonials = () => {
@@ -31,7 +32,7 @@ const Testimonials = () => {
           effect={"cards"}
           grabCursor={true}
           modules={[EffectCards]}
-          className="mySwiper"
+          className="mySwiper min-w-full mx-2 md:min-w-[450px]"
         >
           {TESTIMONIAL_DATA.map((item, index) => {
             return (

@@ -12,15 +12,15 @@ const PostPreview = (props: any) => {
       }}
     >
       <div
-        className="border border-slate-300 rounded-md shadow-sm transition-all bg-white hover:-translate-y-5"
+        className="group border border-slate-300 rounded-md shadow-sm transition-all bg-white"
       >
-        <div className="h-40 w-full relative">
+        <div className="h-40 w-full relative transition-all overflow-hidden">
           <Image
             src={thumbnail}
-            layout="fill"
+            fill
             objectFit="cover"
             alt=""
-            className="rounded-md"
+            className="rounded-md group-hover:scale-105 transition-all"
           />
         </div>
         <div className=" p-4">

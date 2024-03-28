@@ -13,7 +13,7 @@ const CareerWelcomeBanner = () => {
             src="/Career/2003back2.png"
             data-dsn-y="30%"
             data-dsn-scale={1}
-            layout="fill"
+            fill
             className=" object-cover"
             alt=""
             // style={{
