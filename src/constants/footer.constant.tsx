@@ -9,7 +9,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 export const NAVIGATION_DATA = [
   { link: "/", title: "Home" },
   { link: "/about-us", title: "About Us" },
-  { link: "/offerings", title: "Our Offerings" },
+  // { link: "/offerings", title: "Our Offerings" },
   { link: "/blog", title: "Blog" },
   { link: "/case-studies", title: "Case Studies" },
   { link: "/career", title: "Careers" },

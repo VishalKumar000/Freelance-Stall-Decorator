@@ -23,7 +23,7 @@ export const Text = <E extends React.ElementType = "div">({
 const ImageFilter = () => {
   const [activeFilter, setActiveFilter] = useState<string>("all");
 
-  const buttonCaptions = ["all", "delhi", "nodia", "gurugram"];
+  const buttonCaptions = ["all", "delhi", "nodia"];
 
   const handleFilterClick = (filter: string) => {
     setActiveFilter(filter);
@@ -61,7 +61,7 @@ const ImageFilter = () => {
               <div className="p-5 flex flex-col justify-center">
                 <Text
                   as="h5"
-                  className="mb-2 text-lg font-bold tracking-tight text-[#212529]"
+                  className="mb-2 text-lg font-medium tracking-tight text-[#212529]"
                 >
                   {item.address}
                 </Text>
@@ -93,28 +93,8 @@ export default ImageFilter;
 const filterableData = [
   {
     name: "delhi",
-    address: "GN-6 Shivaji Enclave, Rajouri Garden, New Delhi-110027",
-    phone: "+91-7042535020",
-    email: "mruniquedecoration@gmail.com",
-    location: "/",
-  },
-  {
-    name: "nodia",
-    address: "GN-6 Shivaji Enclave, Rajouri Garden, New Delhi-110027",
-    phone: "+91-7042535020",
-    email: "mruniquedecoration@gmail.com",
-    location: "/",
-  },
-  {
-    name: "nodia",
-    address: "GN-6 Shivaji Enclave, Rajouri Garden, New Delhi-110027",
-    phone: "+91-7042535020",
-    email: "mruniquedecoration@gmail.com",
-    location: "/",
-  },
-  {
-    name: "gurugram",
-    address: "GN-6 Shivaji Enclave, Rajouri Garden, New Delhi-110027",
+    address:
+      "PROPERTY NUMBER NO-G-12/574, Ground Floor, Gali Number 12, opposite NTPC Park Lane, Block G, Khadda Colony, Badarpur, New Delhi, Delhi 110044",
     phone: "+91-7042535020",
     email: "mruniquedecoration@gmail.com",
     location: "/",
