@@ -1,88 +1,147 @@
-import Link from "next/link";
 import React from "react";
-
-import { MdOutlineEmojiEvents } from "react-icons/md";
-import { BsShop } from "react-icons/bs";
-import { RiTeamLine } from "react-icons/ri";
-import { LuBuilding2 } from "react-icons/lu";
-import { MdOutlineSportsBasketball } from "react-icons/md";
-import { GiGlobeRing } from "react-icons/gi";
+import Image from "next/image";
+import Link from "next/link";
 
 const EXPERIMENTAL_ENVELOPE_DATA = [
   {
-    // imgUrl: "/Home/ExperimentalEnvelope/image2.png",
-    icons: (
-      <MdOutlineEmojiEvents
-        className="group-hover:text-white"
-        style={{
-          fontSize: "50px",
-        }}
-      />
-    ),
-    title: "Events, Activations & Promotions",
-    content:
-      "When it comes to Events or promotions, Deepali believes in taking on challenging projects and implementing them against all odds.",
-    link: "/",
+    title: "Octanorm Stall Rent and service",
+    content: "Can Be used for Multiple Exhibitions And Program",
+    material: "PVC",
+    color: "white",
+    board_thickness: "5mm",
+    price: 350,
+    link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
+    category: "Octanorm Stall",
+    unit: "Square Meter",
   },
   {
-    // imgUrl: "/Home/ExperimentalEnvelope/image3.png",
-    icons: (
-      <BsShop
-        className="group-hover:text-white"
-        style={{
-          fontSize: "50px",
-        }}
-      />
-    ),
-    title: "Exhibits & Tradeshows",
-    content:
-      "Be it large-scale expositions or big-ticket exhibits we turn them into reality.",
-    link: "/",
+    title: "Aluminum Octanorm Stall Service",
+    content: "Can Be used for Multiple Exhibitions And Program",
+    shape: "Rectangle",
+    color: "white (base)",
+    board_thickness: "6mm",
+    price: 450,
+    link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
+    category: "Octanorm Stall",
+    unit: "Square Meter",
   },
   {
-    // imgUrl: "/Home/ExperimentalEnvelope/image4.png",
-    icons: (
-      <RiTeamLine
-        className="group-hover:text-white"
-        style={{
-          fontSize: "50px",
-        }}
-      />
-    ),
-    title: "Conferences and Seminars",
-    content:
-      "We are into organizing large format events that include both national level as well as international seminars, symposiums or conferences.",
-    link: "/",
+    title: "PVC Octanorm Stall Rent and service",
+    content: "Can Be used for Multiple Exhibitions And Program",
+    shape: "Rectangle",
+    color: "white (base)",
+    board_thickness: "6mm",
+    price: 350,
+    link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
+    category: "Octanorm Stall",
+    unit: "Square Meter",
   },
   {
-    // imgUrl: "/Home/ExperimentalEnvelope/image5.png",
-    icons: (
-      <MdOutlineSportsBasketball
-        className="group-hover:text-white"
-        style={{
-          fontSize: "50px",
-        }}
-      />
-    ),
-    title: "Sports Events & Infrastructure",
-    content:
-      "To showcase the best sporting talent or gamesmanship — there are a lot of factors involved - such as stadium seating,Creative Field of Play, Standard Operating",
-    link: "/",
+    title: "Modular Octanorm Stall RE",
+    content: "Can Be used for Multiple Exhibitions And Program",
+    material: "PVC",
+    color: "white (base)",
+    board_thickness: "6mm",
+    price: 450,
+    link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
+    category: "Octanorm Stall",
+    unit: "Square Meter",
   },
   {
-    // imgUrl: "/Home/ExperimentalEnvelope/image6.png",
-    icons: (
-      <LuBuilding2
-        className="group-hover:text-white"
-        style={{
-          fontSize: "50px",
-        }}
-      />
-    ),
-    title: "Modular Infrastructure",
-    content:
-      "With 3 decades of fabricating and setting up large-scale Events & Exhibitions, thereby shaping up its edge, know how , infrastructure",
-    link: "/",
+    title: "Octanorm Exhibition Stalls On Rent",
+    content: "Can Be used for Multiple Exhibitions And Program",
+    material: "PVC",
+    color: "white",
+    board_thickness: "5mm",
+    price: 350,
+    link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
+    category: "Octanorm Stall",
+    unit: "Square Meter",
+  },
+  {
+    title: "4mm Octanorm Stall Rent and Service",
+    content: "Can Be used for Multiple Exhibitions And Program",
+    material: "PVC",
+    color: "white",
+    pattern: "Plain",
+    price: 350,
+    link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
+    category: "Octanorm Stall",
+    unit: "Square Meter",
+  },
+  {
+    title: "5mm White Octanorm Stall Rent service",
+    content: "Can Be used for Multiple Exhibitions And Program",
+    material: "PVC",
+    shape: "Rectangle",
+    fabric: "polyester",
+    price: 350,
+    link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
+    category: "Octanorm Stall",
+    unit: "Square Meter",
+  },
+  {
+    title: "5mm White Octanorm Stall Rent service",
+    content: "Can Be used for Multiple Exhibitions And Program",
+    material: "PVC",
+    shape: "Rectangle",
+    fabric: "polyester",
+    price: 350,
+    link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
+    category: "Octanorm Stall",
+    unit: "Square Meter",
+  },
+  {
+    title: "Exhibition Stall Rent and service",
+    content: "Can Be used for Multiple Exhibitions And Program",
+    material: "PVC",
+    shape: "Rectangle",
+    board_thickness: "5mm",
+    price: 350,
+    link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
+    category: "Exhibition Stall",
+    unit: "Square Meter",
+  },
+  {
+    title: "Modular Exhibition Stall Rent and Service",
+    content: "Can Be used for Multiple Exhibitions And Program",
+    fabric: "polyester",
+    pattern: "Printed",
+    board_thickness: "5mm",
+    price: 350,
+    link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
+    category: "Exhibition Stall",
+    unit: "Square Meter",
+  },
+  {
+    title: "Modular Exhibition Stall Service",
+    content: "Can Be used for Multiple Exhibitions And Program",
+    fabric: "polyester",
+    pattern: "Printed",
+    board_thickness: "5mm",
+    price: 450,
+    link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
+    category: "Exhibition Stall",
+    unit: "Square Meter",
+  },
+  {
+    title: "Modular Exhibition Stall Service",
+    content: "Can Be used for Multiple Exhibitions And Program",
+    fabric: "polyester",
+    pattern: "Printed",
+    material: "PVC",
+    price: 450,
+    link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
+    category: "Exhibition Stall",
+    unit: "Square Meter",
+  },
+  {
+    title: "Designing Exhibition Stall",
+    content: "Designing Exhibition Stall",
+    price: 500,
+    link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
+    category: "Exhibition Stall",
+    unit: "sq ft",
   },
 ];
 
@@ -109,46 +168,125 @@ const ExperimentalEnvelope = () => {
             EXPERIENTIAL ENVELOPE
           </h2>
         </div>
-        <div className="grid grid-cols-1 gap-4 min-[550px]:grid-cols-2 min-[550px]:gap-4 lg:grid-cols-3 lg:gap-4">
+        <div className="grid grid-cols-1 gap-4 min-[550px]:grid-cols-2 min-[550px]:gap-4 lg:grid-cols-3 lg:gap-4 auto-cols-auto">
           {EXPERIMENTAL_ENVELOPE_DATA.map((item, index) => {
             return (
-              <div
+              <Link
                 key={index + Math.random() + item.title + item.link}
-                // className={`p-6 ${
-                //   index % 2
-                //     ? "max-[550px]: bg-[#000]"
-                //     : "max-[550px]: bg-[#1c2027]"
-                // } ${
-                //   (index - 1) % 4 == 0 || (index - 1) % 4 == 1
-                //     ? "min-[550px]:bg-[#1c2027]"
-                //     : "min-[550px]:bg-[#000]"
-                // } ${
-                //   index % 2 === 0 ? "lg:bg-[#000]" : "lg:bg-[#1c2027]"
-                // } flex flex-col justify-between`}
-
-                className="group border border-[#07b2ff] rounded-lg p-6 relative flex flex-col justify-evenly overflow-hidden before:content-[''] before:absolute before:top-0 before:w-full before:h-full before:bg-[#07b2ff] before:transition-all before:z-[-1] before:left-[-100%] hover:before:left-0"
+                className="group min-h-min relative rounded-lg border border-[#07b2ff] overflow-hidden before:content-[''] before:absolute before:top-0 before:w-full before:h-full before:bg-[#07b2ff] before:transition-all before:z-[-1] before:left-[-100%] hover:before:left-0"
+                href={item.link}
               >
-                <div className="relative w-12 h-12 mt-0 mx-auto mb-5">
-                  {item.icons}
+                <div className="relative w-full h-52 mt-0 mx-auto mb-5">
+                  {/* {item.icons} */}
+                  <Image src={"/Home/A2.jpeg"} fill alt="" />
                 </div>
-                <div className="text-white text-lg tracking-[2.5px] font-semibold mb-5 flex items-center justify-center text-center">
-                  <h2
-                    className="w-3/4 text-[#212529] group-hover:text-white"
+                <div
+                  // className={`p-6 ${
+                  //   index % 2
+                  //     ? "max-[550px]: bg-[#000]"
+                  //     : "max-[550px]: bg-[#1c2027]"
+                  // } ${
+                  //   (index - 1) % 4 == 0 || (index - 1) % 4 == 1
+                  //     ? "min-[550px]:bg-[#1c2027]"
+                  //     : "min-[550px]:bg-[#000]"
+                  // } ${
+                  //   index % 2 === 0 ? "lg:bg-[#000]" : "lg:bg-[#1c2027]"
+                  // } flex flex-col justify-between`}
+
+                  className="p-6 pt-0 flex flex-col justify-evenly "
+                >
+                  <div className="text-white text-lg tracking-[2.5px] font-semibold mb-2 text-left">
+                    <h2
+                      className="text-[#212529] group-hover:text-white"
+                      style={{ wordBreak: "break-word" }}
+                    >
+                      {item.title}
+                    </h2>
+                  </div>
+                  <div className="mb-3 group">
+                    <span
+                      className="text-[#fff] border border-[#07b2ff] text-[12px] relative group-hover:text-[#07b2ff] bg-[#07b2ff] py-1 rounded-lg px-2  group-hover:border-[#fff] group-hover:bg-white"
+                      style={{ wordBreak: "break-word" }}
+                    >
+                      {">"} {item.category}
+                    </span>
+                  </div>
+                  <p
+                    className="text-[#303030] text-sm relative group-hover:text-[#ffffffb0]"
                     style={{ wordBreak: "break-word" }}
                   >
-                    {item.title}
-                  </h2>
+                    {item.content}
+                  </p>
+                  {item.material && (
+                    <div className="mt-1 flex items-center gap-1">
+                      <h2 className=" font-medium group-hover:text-[#ffffffee]">
+                        Material:
+                      </h2>
+                      <p className="text-[#303030] text-sm relative group-hover:text-[#ffffffb0]">
+                        {item.material}
+                      </p>
+                    </div>
+                  )}
+                  {item.color && (
+                    <div className="mt-1 flex items-center gap-1">
+                      <h2 className=" font-medium group-hover:text-[#ffffffee]">
+                        Color:
+                      </h2>
+                      <p className="text-[#303030] text-sm relative group-hover:text-[#ffffffb0]">
+                        {item.color}
+                      </p>
+                    </div>
+                  )}
+                  {item.board_thickness && (
+                    <div className="mt-1 flex items-center gap-1">
+                      <h2 className=" font-medium group-hover:text-[#ffffffee]">
+                        Board Thickness:
+                      </h2>
+                      <p className="text-[#303030] text-sm relative group-hover:text-[#ffffffb0]">
+                        {item.board_thickness}
+                      </p>
+                    </div>
+                  )}
+                  {item.shape && (
+                    <div className="mt-1 flex items-center gap-1">
+                      <h2 className=" font-medium group-hover:text-[#ffffffee]">
+                        Shape:
+                      </h2>
+                      <p className="text-[#303030] text-sm relative group-hover:text-[#ffffffb0]">
+                        {item.shape}
+                      </p>
+                    </div>
+                  )}
+                  {item.pattern && (
+                    <div className="mt-1 flex items-center gap-1">
+                      <h2 className=" font-medium group-hover:text-[#ffffffee]">
+                        Pattern:
+                      </h2>
+                      <p className="text-[#303030] text-sm relative group-hover:text-[#ffffffb0]">
+                        {item.pattern}
+                      </p>
+                    </div>
+                  )}
+                  {item.fabric && (
+                    <div className="mt-1 flex items-center gap-1">
+                      <h2 className=" font-medium group-hover:text-[#ffffffee]">
+                        Fabric:
+                      </h2>
+                      <p className="text-[#303030] text-sm relative group-hover:text-[#ffffffb0]">
+                        {item.fabric}
+                      </p>
+                    </div>
+                  )}
+                  <div className="mt-1 flex items-center gap-1 justify-center">
+                    <h2 className=" text-xl font-medium group-hover:text-[#ffffffee]">
+                      ₹{item.price}
+                    </h2>
+                    <p className="text-[#303030] text-sm relative group-hover:text-[#ffffffb0]">
+                      {item.unit}
+                    </p>
+                  </div>
                 </div>
-                <p className="text-[#303030] text-sm relative group-hover:text-[#ffffffb0]">
-                  {item.content}
-                </p>
-                <Link
-                  href={item.link}
-                  className="w-full heading-highlight mt-2 font-medium flex items-center justify-center group-hover:text-white group-hover:bg-[white]"
-                >
-                  Read More
-                </Link>
-              </div>
+              </Link>
             );
           })}
         </div>
