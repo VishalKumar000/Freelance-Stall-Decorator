@@ -204,7 +204,7 @@ const Footer = () => {
               </p>
             </div>
             <div className=" text-left">
-              <Link href={"https://github.com/VKumar786"}>
+              <Link href={"https://vishal-portfolio-dev.vercel.app/"}>
                 <div
                   className="font-medium capitalize leading-[1.6] my-3 cursor-pointer flex"
                   // onMouseEnter={() => customCursorEnter("contrast_text")}
