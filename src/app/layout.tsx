@@ -20,7 +20,12 @@ export const metadata: Metadata = {
   },
   description: "for exhibition stall & octornom",
   twitter: {
-    card: "summary",
+    title: "MR Unique Decoration",
+    description:
+      "MR Unique Decoration and Exhibits has pioneered a stream of innovative concepts which have set new benchmarks and raised the bar for operations and logistics in the event industry. Powered by several factors - including a dedicated R&D division that explores futuristic material usage, immense application of mind, unimaginable hard work, thorough technical know-how and great execution capabilities, we have blazed an unbeatable record of delivering products and services relating to events & exhibitions.",
+    card: "summary_large_image",
+    images:
+      "https://scontent.fdel3-3.fna.fbcdn.net/v/t39.30808-6/420174314_1620925182059479_2925260245991065526_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Iw0sTjYgUYMAX86VIjn&_nc_ht=scontent.fdel3-3.fna&oh=00_AfBWA4vOrKSyFbJyTh2l800BwHiqHO-GBSrDSqm0z6WH8w&oe=660F95CF",
   },
   metadataBase: new URL("https://www.mruniquedecoration.in"),
   keywords: [
@@ -38,7 +43,19 @@ export const metadata: Metadata = {
     "unique decoration.in",
     "uniquedecoration.in",
     "uniquedecoration . in",
+    "stall decoration",
+    "stall decoration mr unique decoration",
   ],
+  openGraph: {
+    title: "MR Unique Decoration",
+    description:
+      "MR Unique Decoration and Exhibits has pioneered a stream of innovative concepts which have set new benchmarks and raised the bar for operations and logistics in the event industry. Powered by several factors - including a dedicated R&D division that explores futuristic material usage, immense application of mind, unimaginable hard work, thorough technical know-how and great execution capabilities, we have blazed an unbeatable record of delivering products and services relating to events & exhibitions.",
+    locale: "en_US",
+    url: "https://www.mruniquedecoration.in",
+    siteName: "MR Unique Decoration",
+    images:
+      "https://scontent.fdel3-3.fna.fbcdn.net/v/t39.30808-6/420174314_1620925182059479_2925260245991065526_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Iw0sTjYgUYMAX86VIjn&_nc_ht=scontent.fdel3-3.fna&oh=00_AfBWA4vOrKSyFbJyTh2l800BwHiqHO-GBSrDSqm0z6WH8w&oe=660F95CF",
+  },
 };
 
 export default function RootLayout({

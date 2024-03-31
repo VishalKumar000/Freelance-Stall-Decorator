@@ -37,7 +37,7 @@ export const OUR_OFFERINGS_DATA = [
     link: "/offerings/modular-infrastructure",
     title: "Modular Infrastructure",
   },
-  { link: "/offerings/weddings", title: "Weddings" },
+  // { link: "/offerings/weddings", title: "Weddings" },
 ];
 
 export const SOCIAL_MEDIA_DATA = [

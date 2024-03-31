@@ -13,6 +13,7 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
     category: "Octanorm Stall",
     unit: "Square Meter",
+    imgUrl: "/Home/ExperimentalEnvelope/image1.jpeg",
   },
   {
     title: "Aluminum Octanorm Stall Service",
@@ -24,6 +25,7 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
     category: "Octanorm Stall",
     unit: "Square Meter",
+    imgUrl: "/Home/ExperimentalEnvelope/image2.jpeg",
   },
   {
     title: "PVC Octanorm Stall Rent and service",
@@ -35,6 +37,7 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
     category: "Octanorm Stall",
     unit: "Square Meter",
+    imgUrl: "/Home/ExperimentalEnvelope/image3.jpeg",
   },
   {
     title: "Modular Octanorm Stall RE",
@@ -46,6 +49,7 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
     category: "Octanorm Stall",
     unit: "Square Meter",
+    imgUrl: "/Home/ExperimentalEnvelope/image4.jpg",
   },
   {
     title: "Octanorm Exhibition Stalls On Rent",
@@ -57,6 +61,7 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
     category: "Octanorm Stall",
     unit: "Square Meter",
+    imgUrl: "/Home/ExperimentalEnvelope/image5.jpg",
   },
   {
     title: "4mm Octanorm Stall Rent and Service",
@@ -68,6 +73,7 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
     category: "Octanorm Stall",
     unit: "Square Meter",
+    imgUrl: "/Home/ExperimentalEnvelope/image6.jpg",
   },
   {
     title: "5mm White Octanorm Stall Rent service",
@@ -79,6 +85,7 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
     category: "Octanorm Stall",
     unit: "Square Meter",
+    imgUrl: "/Home/ExperimentalEnvelope/image8.jpg",
   },
   {
     title: "5mm White Octanorm Stall Rent service",
@@ -90,6 +97,7 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
     category: "Octanorm Stall",
     unit: "Square Meter",
+    imgUrl: "/Home/ExperimentalEnvelope/image9.jpg",
   },
   {
     title: "Exhibition Stall Rent and service",
@@ -101,6 +109,7 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
     category: "Exhibition Stall",
     unit: "Square Meter",
+    imgUrl: "/Home/ExperimentalEnvelope/image10.jpg",
   },
   {
     title: "Modular Exhibition Stall Rent and Service",
@@ -112,6 +121,7 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
     category: "Exhibition Stall",
     unit: "Square Meter",
+    imgUrl: "/Home/ExperimentalEnvelope/image38.jpg",
   },
   {
     title: "Modular Exhibition Stall Service",
@@ -123,6 +133,7 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
     category: "Exhibition Stall",
     unit: "Square Meter",
+    imgUrl: "/Home/ExperimentalEnvelope/image37.jpg",
   },
   {
     title: "Modular Exhibition Stall Service",
@@ -134,6 +145,7 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
     category: "Exhibition Stall",
     unit: "Square Meter",
+    imgUrl: "/Home/ExperimentalEnvelope/image42.jpg",
   },
   {
     title: "Designing Exhibition Stall",
@@ -142,6 +154,7 @@ const EXPERIMENTAL_ENVELOPE_DATA = [
     link: "https://api.whatsapp.com/send?phone=+917042535020&text=Hi, I visited your website and interested in your offerings. So please coordinate ASAP with me. ",
     category: "Exhibition Stall",
     unit: "sq ft",
+    imgUrl: "/Home/ExperimentalEnvelope/image41.jpg",
   },
 ];
 
@@ -178,7 +191,7 @@ const ExperimentalEnvelope = () => {
               >
                 <div className="relative w-full h-52 mt-0 mx-auto mb-5">
                   {/* {item.icons} */}
-                  <Image src={"/Home/A2.jpeg"} fill alt="" />
+                  <Image src={item.imgUrl} fill alt="" />
                 </div>
                 <div
                   // className={`p-6 ${
@@ -277,7 +290,7 @@ const ExperimentalEnvelope = () => {
                       </p>
                     </div>
                   )}
-                  <div className="mt-1 flex items-center gap-1 justify-center">
+                  <div className="mt-3 flex items-center gap-1 justify-center">
                     <h2 className=" text-xl font-medium group-hover:text-[#ffffffee]">
                       ₹{item.price}
                     </h2>

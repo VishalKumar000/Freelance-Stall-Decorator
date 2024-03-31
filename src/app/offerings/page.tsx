@@ -49,10 +49,10 @@ const OFFERINGS_DATA = [
     imgUrl: "/CaseStudies/image3.JPG",
     link: "/offerings/modular-infrastructure",
   },
-  {
-    title: "Green Room & Vanity Van",
-    type: "EVENT, EXHIBITION & CONFERENCE",
-    imgUrl: "/CaseStudies/image5.jpg",
-    link: "/offerings/weddings",
-  },
+  // {
+  //   title: "Green Room & Vanity Van",
+  //   type: "EVENT, EXHIBITION & CONFERENCE",
+  //   imgUrl: "/CaseStudies/image5.jpg",
+  //   link: "/offerings/weddings",
+  // },
 ];
