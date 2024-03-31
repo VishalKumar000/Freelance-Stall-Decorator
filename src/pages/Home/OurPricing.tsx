@@ -22,7 +22,10 @@ const OurPricing = () => {
         <div className="grid grid-cols-1 gap-4 min-[550px]:grid-cols-2 min-[550px]:gap-6 lg:grid-cols-3 lg:gap-8">
           {OUR_PRICING_DATA.map((item, index) => {
             return (
-              <div key={index + Math.random()} className="shadow-md transition-all hover:-translate-y-3 rounded-md overflow-hidden">
+              <div
+                key={index + Math.random()}
+                className="shadow-md transition-all hover:-translate-y-3 rounded-md overflow-hidden bg-white"
+              >
                 <div className="p-6 flex flex-col items-center bg-[#07b2ff]">
                   <h3 className="text-white text-2xl font-medium mb-4">
                     {item.title}
@@ -30,8 +33,8 @@ const OurPricing = () => {
                   <p className="text-white text-4xl font-bold mb-4">
                     ₹{item.price}
                   </p>
-                  <p className="text-white text-md font-medium mb-4">
-                    - Per Service
+                  <p className="text-white text-md font-medium mb-4 text-center w-3/4">
+                    - {item.subtitle}
                   </p>
                 </div>
                 <div className="p-6 flex flex-col items-center bg-white">
@@ -81,7 +84,8 @@ export default OurPricing;
 const OUR_PRICING_DATA = [
   {
     title: "Startup Plan",
-    price: "50",
+    price: "350", //Per Pannel
+    subtitle: "Per Pannel",
     features: [
       { title: "Basic Structure", isAvailable: true },
       { title: "Designing", isAvailable: false },
@@ -91,7 +95,8 @@ const OUR_PRICING_DATA = [
   },
   {
     title: "Standard Plan",
-    price: "120",
+    price: "450", // per pannel per light
+    subtitle: "Per Pannel per light",
     features: [
       { title: "Basic Structure", isAvailable: true },
       { title: "Designing", isAvailable: true },
@@ -101,7 +106,8 @@ const OUR_PRICING_DATA = [
   },
   {
     title: "Premium Plan",
-    price: "200",
+    price: "500", // ft sqt per pannel per light with designing
+    subtitle: "Square footage per panel per light with design.",
     features: [
       { title: "Basic Structure", isAvailable: true },
       { title: "Designing", isAvailable: true },
