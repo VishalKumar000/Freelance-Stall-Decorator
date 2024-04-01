@@ -10,12 +10,9 @@ import {
   OUR_OFFERINGS_DATA,
   SOCIAL_MEDIA_DATA,
 } from "@/constants/footer.constant";
-// import { useCustomCursor } from "@/context/CustomCursorContext";
 import GsapMagnetic from "./GsapMagnetic";
 
 const Footer = () => {
-  // const { customCursorEnter, customCursorLeave } = useCustomCursor();
-
   return (
     <>
       <footer className={`${styles.footer} px-2`}>
@@ -33,21 +30,11 @@ const Footer = () => {
                       style={{ wordBreak: "normal" }}
                     >
                       MR Unique Decoration
-                      {/* <Image
-                        src="/footer/3268white logo.png"
-                        alt="MR Unique Decoration"
-                        width={200}
-                        height={160}
-                         onMouseEnter={() => customCursorEnter("text")}
-                         onMouseLeave={customCursorLeave}
-                      /> */}
                     </Link>
                   </div>
                   <p
                     style={{ textAlign: "left", margin: "10px 0" }}
                     className="font-medium capitalize leading-[1.6] mb-4 mt-8 block cursor-pointer"
-                    // onMouseEnter={() => customCursorEnter("contrast_text")}
-                    // onMouseLeave={customCursorLeave}
                   >
                     We&apos;re All About Passion, And Creativity Is At The Heart
                     Of Our DNA, Fusing Into Brands To Create One-Of-A-Kind
@@ -67,8 +54,6 @@ const Footer = () => {
                             <Link
                               href={item.link}
                               target="_blank"
-                              // onMouseEnter={() => customCursorEnter("text")}
-                              // onMouseLeave={customCursorLeave}
                               className="cursor-pointer"
                             >
                               {item.title}
@@ -84,8 +69,6 @@ const Footer = () => {
                 <div className="footer-block col-menu">
                   <h4
                     className={`${styles.footer__title} cursor-pointer`}
-                    // onMouseEnter={() => customCursorEnter("contrast_text")}
-                    // onMouseLeave={customCursorLeave}
                   >
                     Navigation
                   </h4>
@@ -96,8 +79,6 @@ const Footer = () => {
                           <Link
                             key={item.link + item.title + Math.random()}
                             href={item.link}
-                            // onMouseEnter={() => customCursorEnter("text")}
-                            // onMouseLeave={customCursorLeave}
                             className="cursor-pointer"
                           >
                             <li className="mb-3 font-medium capitalize leading-[1] my-1 hover:underline-offset-2 hover:underline">
@@ -112,11 +93,7 @@ const Footer = () => {
               </div>
               <div className="col-md-3 dsn-col-footer fu_sndb">
                 <div className="footer-block col-menu">
-                  <h4
-                    className={`${styles.footer__title} cursor-pointer`}
-                    // onMouseEnter={() => customCursorEnter("contrast_text")}
-                    // onMouseLeave={customCursorLeave}
-                  >
+                  <h4 className={`${styles.footer__title} cursor-pointer`}>
                     Our Offerings
                   </h4>
                   <nav>
@@ -126,8 +103,6 @@ const Footer = () => {
                           <Link
                             key={item.link + item.title + Math.random()}
                             href={item.link}
-                            // onMouseEnter={() => customCursorEnter("text")}
-                            // onMouseLeave={customCursorLeave}
                             className="cursor-pointer"
                           >
                             <li className=" mb-3 font-medium capitalize leading-[1.6] my-1 hover:underline-offset-2 hover:underline">
@@ -140,11 +115,7 @@ const Footer = () => {
                   </nav>
                 </div>
               </div>
-              <div
-                className="col-md-3 dsn-col-footer cursor-pointer"
-                // onMouseEnter={() => customCursorEnter("contrast_text")}
-                // onMouseLeave={customCursorLeave}
-              >
+              <div className="col-md-3 dsn-col-footer cursor-pointer">
                 <div className="col-address">
                   <h4 className={`${styles.footer__title} cursor-pointer`}>
                     Contact
@@ -195,11 +166,7 @@ const Footer = () => {
           </div>
           <div className={styles.copyright}>
             <div className=" text-left">
-              <p
-                className="font-medium capitalize leading-[1.6] my-3 cursor-pointer"
-                // onMouseEnter={() => customCursorEnter("contrast_text")}
-                // onMouseLeave={customCursorLeave}
-              >
+              <p className="font-medium capitalize leading-[1.6] my-3 cursor-pointer">
                 © {new Date().getFullYear()} {CONTACT_DATA.brand_name}
               </p>
             </div>

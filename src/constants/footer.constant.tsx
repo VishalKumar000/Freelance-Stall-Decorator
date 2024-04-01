@@ -18,26 +18,13 @@ export const NAVIGATION_DATA = [
 
 export const OUR_OFFERINGS_DATA = [
   {
-    link: "/offerings/events-activations-promotions",
-    title: "Events, Activations & Promotions",
+    link: "/offerings/exhibition-stall",
+    title: "Exhibition Stall",
   },
   {
-    link: "/offerings/exhibits-tradeshows",
-    title: "Exhibits & Tradeshows",
+    link: "/offerings/octanorm-stall",
+    title: "Octanorm Stall",
   },
-  {
-    link: "/offerings/conferences-and-seminars",
-    title: "Conferences and Seminars",
-  },
-  {
-    link: "/offerings/sports-events-infrastructure",
-    title: "Sports Events & Infrastructure",
-  },
-  {
-    link: "/offerings/modular-infrastructure",
-    title: "Modular Infrastructure",
-  },
-  // { link: "/offerings/weddings", title: "Weddings" },
 ];
 
 export const SOCIAL_MEDIA_DATA = [
