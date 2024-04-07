@@ -1,5 +1,5 @@
 import ContactUsForm from "@/pages/ContactUs/ContactUsForm";
-import BlogIntro from "@/pages/Home/BlogIntro";
+import BlogIntro from "@/app/BlogIntro";
 import ExperimentalEnvelope from "@/pages/Home/ExperimentalEnvelope";
 import OurClient from "@/pages/Home/OurClient";
 import OurPricing from "@/pages/Home/OurPricing";

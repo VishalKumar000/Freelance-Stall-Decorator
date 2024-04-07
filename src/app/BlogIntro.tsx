@@ -1,6 +1,6 @@
 import React from "react";
-import PostPreview from "../Blog/PostPreview";
-import { client } from "../../../sanity/lib/client";
+import PostPreview from "../pages/Blog/PostPreview";
+import { client } from "../../sanity/lib/client";
 
 const getPosts = async () => {
   const query = `
@@ -10,14 +10,13 @@ const getPosts = async () => {
       thumbnail,
       "slug": slug.current
     } [0...3]
-  `
-  const data = await client.fetch(query)
-
+  `;
+  const data = await client.fetch(query);
   return data;
 };
 
 const BlogIntro = async () => {
-  const posts = await getPosts();
+  const posts: any[] = await getPosts();
   const postPreviews = posts?.map((post: any) => {
     return <PostPreview key={Math.random() + post.slug} {...post} />;
   });

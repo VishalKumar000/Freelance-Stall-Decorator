@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const Blog = async () => {
   const posts = await getPosts();
-  const postPreviews = posts.map((post: any) => {
+  const postPreviews = posts?.map((post: any) => {
     return <PostPreview key={Math.random() + post.slug} {...post} />;
   });
 
