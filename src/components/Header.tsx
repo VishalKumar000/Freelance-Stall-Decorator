@@ -15,7 +15,7 @@ const menuLinks = [
   { label: "Home", path: "/" },
   { label: "About Us", path: "/about-us" },
   { label: "Our Offerings", path: "/offerings" },
-  { label: "Case Studies", path: "/case-studies" },
+  // { label: "Case Studies", path: "/case-studies" },
   { label: "Careers", path: "/career" },
   { label: "Blog", path: "/blog" },
   { label: "Reach Us", path: "/contact-us" },

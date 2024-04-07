@@ -11,7 +11,7 @@ export const NAVIGATION_DATA = [
   { link: "/about-us", title: "About Us" },
   // { link: "/offerings", title: "Our Offerings" },
   { link: "/blog", title: "Blog" },
-  { link: "/case-studies", title: "Case Studies" },
+  // { link: "/case-studies", title: "Case Studies" },
   { link: "/career", title: "Careers" },
   { link: "/contact-us", title: "Reach Us" },
 ];

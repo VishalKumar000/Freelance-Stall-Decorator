@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #090909;
+    background: #fff;
 }
 
 .loader {
@@ -15,7 +15,7 @@
 }
 
 .dot {
-    background: white;
+    background: #07b2ff;
     margin: 5px;
     animation-name: loader;
     animation-duration: 1s;

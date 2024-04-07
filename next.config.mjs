@@ -14,6 +14,7 @@ const nextConfig = {
       "lh3.googleusercontent.com",
       "cutesolution.com",
       "images.unsplash.com",
+      'cdn.sanity.io'
     ],
   },
   webpack: (config, { isServer }) => {

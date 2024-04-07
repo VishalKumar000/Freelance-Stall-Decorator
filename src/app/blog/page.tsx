@@ -1,39 +1,31 @@
 import React from "react";
-import fs from "fs";
-import matter from "gray-matter";
 import PostPreview from "@/pages/Blog/PostPreview";
 import Link from "next/link";
 import { Metadata } from "next";
+import {client} from '../../../sanity/lib/client'
 
-const getPostMetaData = () => {
-  const folder = "posts/";
-  const files = fs.readdirSync(folder);
-  const markdownPosts = files.filter((file) => file.endsWith(".md"));
-  // const slug = markdownPosts.map((file) => file.replace(".md", ""));
+const getPosts = async () => {
+  const query = `
+    *[_type == 'MRUniqueDecorationBlog'] | order(_createdAt desc) {
+      title,
+      "description": smallDescription,
+      thumbnail,
+      "slug": slug.current
+    }
+  `
+  const data = await client.fetch(query)
 
-  const posts = markdownPosts.map((fileName) => {
-    const fileContent = fs.readFileSync(`posts/${fileName}`, "utf8");
-    const matterResult = matter(fileContent);
-
-    return {
-      title: matterResult.data.title,
-      date: matterResult.data.date,
-      description: matterResult.data.description,
-      thumbnail: matterResult.data.thumbnail,
-      slug: fileName.replace(".md", ""),
-    };
-  });
-
-  return posts;
+  return data;
 };
 
 export const metadata: Metadata = {
   title: 'Blog',
+  description: 'MR Unique Decoration Blog is your go-to source for innovative interior design ideas. From blending patterns to incorporating sustainable elements, we inspire creativity and personal expression. Explore diverse styles and DIY projects, turning ordinary spaces into extraordinary reflections of individuality. Let us guide you on a journey to reimagine your surroundings and make your home truly unique.'
 }
 
-const Blog = () => {
-  const postMetaData = getPostMetaData();
-  const postPreviews = postMetaData.map((post: any) => {
+const Blog = async () => {
+  const posts = await getPosts();
+  const postPreviews = posts.map((post: any) => {
     return <PostPreview key={Math.random() + post.slug} {...post} />;
   });
 

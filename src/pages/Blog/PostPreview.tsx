@@ -1,20 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import {urlForImage} from '../../../sanity/lib/image'
 
 const PostPreview = (props: any) => {
   const { title, date, description, slug, thumbnail } = props;
   return (
-    <Link
-      href={{
-        pathname: `/blog/${slug}`,
-        query: { title: title, description: description },
-      }}
-    >
+    <Link href={`/blog/${slug}`}>
       <div className="group border border-slate-300 rounded-md shadow-sm transition-all bg-white">
         <div className="h-40 w-full relative transition-all overflow-hidden">
           <Image
-            src={thumbnail}
+            src={urlForImage(thumbnail)}
             fill
             sizes="100vw"
             objectFit="cover"

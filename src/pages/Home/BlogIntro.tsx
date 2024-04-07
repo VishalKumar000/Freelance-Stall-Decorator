@@ -1,33 +1,24 @@
 import React from "react";
-import fs from "fs";
 import PostPreview from "../Blog/PostPreview";
-import matter from "gray-matter";
+import { client } from "../../../sanity/lib/client";
 
-const getPostMetaData = () => {
-  const folder = "posts/";
-  const files = fs.readdirSync(folder);
-  const markdownPosts = files.filter((file) => file.endsWith(".md"));
-  // const slug = markdownPosts.map((file) => file.replace(".md", ""));
+const getPosts = async () => {
+  const query = `
+    *[_type == 'MRUniqueDecorationBlog'] | order(_createdAt desc) {
+      title,
+      "description": smallDescription,
+      thumbnail,
+      "slug": slug.current
+    } [0...3]
+  `
+  const data = await client.fetch(query)
 
-  const posts = markdownPosts.map((fileName) => {
-    const fileContent = fs.readFileSync(`posts/${fileName}`, "utf8");
-    const matterResult = matter(fileContent);
-
-    return {
-      title: matterResult.data.title,
-      date: matterResult.data.date,
-      description: matterResult.data.description,
-      thumbnail: matterResult.data.thumbnail,
-      slug: fileName.replace(".md", ""),
-    };
-  });
-
-  return posts;
+  return data;
 };
 
-const BlogIntro = () => {
-  const postMetaData = getPostMetaData();
-  const postPreviews = postMetaData?.map((post: any) => {
+const BlogIntro = async () => {
+  const posts = await getPosts();
+  const postPreviews = posts?.map((post: any) => {
     return <PostPreview key={Math.random() + post.slug} {...post} />;
   });
 
