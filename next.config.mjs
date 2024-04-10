@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "res.cloudinary.com",
+        hostname: "**",
         pathname: "**",
       },
     ],
@@ -14,7 +14,8 @@ const nextConfig = {
       "lh3.googleusercontent.com",
       "cutesolution.com",
       "images.unsplash.com",
-      'cdn.sanity.io'
+      'cdn.sanity.io',
+      '127.0.0.1'
     ],
   },
   webpack: (config, { isServer }) => {

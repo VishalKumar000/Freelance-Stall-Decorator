@@ -2,20 +2,9 @@ import React from "react";
 import PostPreview from "@/pages/Blog/PostPreview";
 import Link from "next/link";
 import { Metadata } from "next";
-import {client} from '../../../sanity/lib/client'
 
 const getPosts = async () => {
-  const query = `
-    *[_type == 'MRUniqueDecorationBlog'] | order(_createdAt desc) {
-      title,
-      "description": smallDescription,
-      thumbnail,
-      "slug": slug.current
-    }
-  `
-  const data = await client.fetch(query)
-
-  return data;
+  return await (await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/blog-posts/`)).json()
 };
 
 export const metadata: Metadata = {
@@ -24,7 +13,8 @@ export const metadata: Metadata = {
 }
 
 const Blog = async () => {
-  const posts = await getPosts();
+  const data = await getPosts();
+  const posts = data.docs
   const postPreviews = posts?.map((post: any) => {
     return <PostPreview key={Math.random() + post.slug} {...post} />;
   });

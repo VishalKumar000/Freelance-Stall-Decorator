@@ -53,8 +53,9 @@ const ProjectGallery = (props: {
                   src={project.thumbnailURL}
                   fill
                   sizes="100vw"
+                  className=" object-cover"
                 />
-                <p className=" absolute left-0 bottom-3 py-1 px-3 text-white text-[12px] bg-gradient-to-r from-gray-800/50 to-gray-800">
+                <p className="absolute left-0 bottom-3 py-1 px-3 text-white text-[12px] bg-gradient-to-r from-gray-800/50 to-gray-800">
                   {project.title}
                 </p>
               </Link>

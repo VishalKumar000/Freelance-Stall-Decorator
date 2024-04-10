@@ -1,22 +1,13 @@
 import React from "react";
 import PostPreview from "../pages/Blog/PostPreview";
-import { client } from "../../sanity/lib/client";
 
 const getPosts = async () => {
-  const query = `
-    *[_type == 'MRUniqueDecorationBlog'] | order(_createdAt desc) {
-      title,
-      "description": smallDescription,
-      thumbnail,
-      "slug": slug.current
-    } [0...3]
-  `;
-  const data = await client.fetch(query);
-  return data;
+  return await (await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/blog-posts/`)).json()
 };
 
 const BlogIntro = async () => {
-  const posts: any[] = await getPosts();
+  const data: any = await getPosts();
+  const posts = data.docs
   const postPreviews = posts?.map((post: any) => {
     return <PostPreview key={Math.random() + post.slug} {...post} />;
   });

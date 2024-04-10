@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { urlForImage } from "../../../sanity/lib/image";
 
 const PostPreview = (props: any) => {
   const { title = "", description = "", slug = "", thumbnail = "" } = props;
@@ -10,7 +9,7 @@ const PostPreview = (props: any) => {
       <div className="group border border-slate-300 rounded-md shadow-sm transition-all bg-white">
         <div className="h-40 w-full relative transition-all overflow-hidden bg-gray-400">
           {thumbnail ? <Image
-            src={urlForImage(thumbnail)}
+            src={thumbnail}
             fill
             sizes="100vw"
             objectFit="cover"

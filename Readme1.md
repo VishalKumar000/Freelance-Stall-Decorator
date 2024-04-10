@@ -32,3 +32,5 @@ https://www.youtube.com/watch?v=JFp_HFtDPHs
 
 
 google search console
+
+https://payloadcms.com/community-help/discord/serialising-lexical-generated-content-to-html
