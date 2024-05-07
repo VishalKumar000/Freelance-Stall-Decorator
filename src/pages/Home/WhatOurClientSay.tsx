@@ -110,18 +110,10 @@ const WHAT_OUR_CLIENT_SAYS = [
   },
   {
     content:
-      "Had a wonderful experience working with Mr Unique Decoration for our corporate event. Their Exhibition Stall design was nothing short of spectacular. The team understood our vision perfectly and delivered beyond our expectations. Will definitely be a returning customer!",
-    imgUrl:
-      "https://lh3.googleusercontent.com/a-/ALV-UjU5APzqubtXIWnvcqvGIfVRPG6LSGYwW7FhJGxpReAWclp3=w75-h75-p-rp-mo-br100",
-    name: "Manish Mishra",
-    star: 5,
-  },
-  {
-    content:
       "Being in the event management industry, I've come across many suppliers, but none compare to Mr Unique Decoration. Their commitment to quality and customer satisfaction is commendable. The Octanorm Stall provided by them added the perfect touch of elegance to our trade show. Kudos to the team!",
     imgUrl:
-      "https://lh3.googleusercontent.com/a-/ALV-UjUK8bgx1EQk3Uh7G1CQkd2wbjmebzE3y0VFzLbGHb0ejkA=w75-h75-p-rp-mo-br100",
-    name: "Hayat Perwaiz (Hayat)",
+      "https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX460_.png",
+    name: "Vishal Kumar",
     star: 5,
   },
   {
@@ -131,5 +123,13 @@ const WHAT_OUR_CLIENT_SAYS = [
       "https://lh3.googleusercontent.com/a/ACg8ocIPBCch7ULQcZDIk2WSiLcr3YmMzVTQWiOMWYS-FYSm=w75-h75-p-rp-mo-br100",
     name: "Saeeduzzama Ujala",
     star: 4,
+  },
+  {
+    content:
+      "Had a wonderful experience working with Mr Unique Decoration for our corporate event. Their Exhibition Stall design was nothing short of spectacular. The team understood our vision perfectly and delivered beyond our expectations. Will definitely be a returning customer!",
+    imgUrl:
+      "https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX460_.png",
+    name: "Vivek Singh",
+    star: 5,
   },
 ];
